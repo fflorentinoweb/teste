@@ -1,0 +1,339 @@
+.actions {
+    @media screen and (max-width: $break-sm) {
+        [class*="col"] {
+            &:last-child {
+                display: none;
+            }
+        }
+    }
+}
+
+.tabs-valeta {
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    .mat-tab-header {
+        margin: 0;
+        border: none;
+        @media screen and (max-width: $break-sm) {
+            margin: 70px 0 0 0;
+            width: 100%;
+        }
+        .mat-tab-header-pagination {
+            display: none;
+        }
+        .mat-tab-label-container {
+            .mat-tab-list {
+                .mat-tab-labels {
+                    .mat-tab-label {
+                        height: 70px;
+                        padding: 12px 30px 0 30px;
+                        min-width: 180px;
+                        @include transition-padrao;
+                        &.mat-tab-disabled {
+                            color: rgba($cor-branco, 0.38) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mat-tab-body-wrapper {
+        width: 100%;
+        border-top: 2px solid rgba($cor-branco, 0.1);
+        .mat-tab-body-content {
+            overflow: hidden;
+            height: 539px;
+            margin: 30px 15px 0 15px;
+            padding: 0 0 0 0;
+            @media screen and (max-width: $break-md) {
+                overflow: auto;
+                height: calc(100vh - 140px);
+                .grid {
+                    height: 100%;
+                }
+            }
+            @media screen and (min-height: 810px) {
+                height: 705px;
+            }
+            @media screen and (min-height: 950px) {
+                height: 855px;
+            }
+            .mat-spinner {
+                margin: auto;
+                width: 50px;
+                height: 50px;
+            }
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(86px, 1fr));
+            grid-template-rows: repeat(100, 155px);
+            grid-gap: 30px 20px;
+            @media screen and (max-width: $break-sm) {
+                width: 100%;
+                display: block;
+                .item-grid {
+                    .item-valeta {
+                        background: none;
+                        .item-valeta-number {
+                            text-align: left;
+                            font-size: 14px;
+                            &:before {
+                                display: inline-block;
+                                margin: 0 10px 0 0;
+                                content: "Valeta";
+                                text-transform: uppercase;
+                            }
+                        }
+                        .item-valeta-veiculos {
+                            display: block;
+                            .veiculo {
+                                padding: 0 !important;
+                                background: $cor-valeta;
+                                border-radius: 6px;
+                                display: block;
+                                margin: 5px 0 0 0;
+                                align-items: center;
+                                &:first-child {
+                                    margin: 0;
+                                }
+                                .box-veiculo {
+                                    flex-grow: 1;
+                                    max-width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            @media screen and (min-height: 810px) {
+                grid-template-columns: repeat(auto-fill, minmax(118px, 1fr));
+                grid-template-rows: repeat(100, 205px);
+                .item-grid {
+                    background: $cor-valeta;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .item-grid {
+                    .item-valeta {
+                        min-width: 100px;
+                        .veiculo {
+                            .box-veiculo {
+                                min-height: 86px;
+                                min-width: 84px;
+                                .veiculo-number {
+                                    font-size: 20px;
+                                }
+                                svg {
+                                    height: 56px;
+                                    width: 56px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            @media screen and (min-height: 950px) {
+                grid-template-columns: repeat(auto-fill, minmax(143px, 1fr));
+                grid-template-rows: repeat(100, 255px);
+                .item-grid {
+                    .item-valeta {
+                        min-width: 124px;
+                        .veiculo {
+                            .box-veiculo {
+                                min-height: 100px;
+                                min-width: 98px;
+                                .veiculo-number {
+                                    font-size: 22px;
+                                }
+                                svg {
+                                    height: 64px;
+                                    width: 64px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .grid-2 {
+                grid-column-end: span 2;
+            }
+            .grid-3 {
+                grid-column-end: span 3;
+            }
+            .grid-4 {
+                grid-column-end: span 4;
+            }
+            .grid-5 {
+                grid-column-end: span 5;
+            }
+            .grid-6 {
+                grid-column-end: span 6;
+            }
+            .grid-7 {
+                grid-column-end: span 7;
+            }
+            .grid-8 {
+                grid-column-end: span 8;
+            }
+            .grid-9 {
+                grid-column-end: span 9;
+            }
+        }
+        .list-valetas {
+            margin: auto;
+            .item-valeta {
+                background: $cor-valeta;
+                border-radius: 10px;
+                padding: 18px 0 12px 0;
+                .item-valeta-number {
+                    display: block;
+                    font-size: 28px;
+                    color: $cor-branco;
+                    font-family: $font-Book;
+                    line-height: 1;
+                    text-align: center;
+                    padding: 0 0 15px;
+                }
+                .veiculo {
+                    padding: 0 13px !important;
+                    .box-veiculo {
+                        text-align: center;
+                        width: 68px;
+                        height: 70px;
+                        border-radius: 8px;
+                        &.veiculo-atrasado {
+                            box-shadow: 0 0 0 8px rgba($cor-valeta-atrasado, 0.01), 0 0 0 4px rgba($cor-valeta-atrasado, 0.08);
+                            background: $cor-valeta-atrasado;
+                            /* Old browsers */
+                            background: -moz-linear-gradient(-45deg, $cor-valeta-atrasado 0%, #d65757 100%);
+                            /* FF3.6-15 */
+                            background: -webkit-linear-gradient(-45deg, $cor-valeta-atrasado 0%, #d65757 100%);
+                            /* Chrome10-25,Safari5.1-6 */
+                            background: linear-gradient(135deg, $cor-valeta-atrasado 0%, #d65757 100%);
+                            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                        }
+                        &.veiculo-finalizado {
+                            box-shadow: 0 0 0 8px rgba(#b3db6e, 0.01), 0 0 0 4px rgba(#b3db6e, 0.08);
+                            background: #b3db6e;
+                          /* Old browsers */
+                          background: -moz-linear-gradient(left, #b3db6e 0%, #7ca03a 199%);
+                          /* FF3.6-15 */
+                          background: -webkit-linear-gradient(left, #b3db6e 0%, #7ca03a 100%);
+                          /* Chrome10-25,Safari5.1-6 */
+                          background: linear-gradient(to right, #b3db6e 0%, #7ca03a 100%);
+                            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                        }
+                        &.veiculo-alocado {
+                            box-shadow: 0 0 0 8px rgba($cor-valeta-alocado, 0.01), 0 0 0 4px rgba($cor-valeta-alocado, 0.08);
+                            background: $cor-valeta-alocado;
+                            /* Old browsers */
+                            background: -moz-linear-gradient(-45deg, $cor-valeta-alocado 0%, #f28702 100%);
+                            /* FF3.6-15 */
+                            background: -webkit-linear-gradient(-45deg, $cor-valeta-alocado 0%, #f28702 100%);
+                            /* Chrome10-25,Safari5.1-6 */
+                            background: linear-gradient(135deg, $cor-valeta-alocado 0%, #f28702 100%);
+                            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                        }
+                        &.veiculo-execucao {
+                            box-shadow: 0 0 0 8px rgba($cor-valeta-execucao, 0.01), 0 0 0 4px rgba($cor-valeta-execucao, 0.08);
+                            background: $cor-valeta-execucao;
+                            /* Old browsers */
+                            background: -moz-linear-gradient(-45deg, $cor-valeta-execucao 50%, #ffffff 130%);
+                            /* FF3.6-15 */
+                            background: -webkit-linear-gradient(-45deg, $cor-valeta-execucao 50%, #ffffff 130%);
+                            /* Chrome10-25,Safari5.1-6 */
+                            background: linear-gradient(135deg, $cor-valeta-execucao 50%, #ffffff 130%);
+                            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                        }
+                        &.box-veiculo-livre {
+                            border: 2px dotted $cor-branco;
+                            width: 68px;
+                            height: 70px;
+                            background: none;
+                            filter: none;
+                        }
+                        .veiculo-number {
+                            display: block;
+                            color: $cor-font-valeta;
+                            font-size: 13px;
+                            font-family: $font-Book;
+                            font-weight: bold;
+                            line-height: 1;
+                            padding: 6px 0 0 0;
+                        }
+                        svg {
+                            color: $cor-font-valeta;
+                        }
+                    }
+                    .veiculo-status {
+                        color: $cor-valeta-livre;
+                        text-align: center;
+                        display: block;
+                        font-size: 17px;
+                        padding: 5px 0 0 0;
+                        &.veiculo-atrasado {
+                            color: $cor-valeta-atrasado;
+                        }
+                        &.veiculo-finalizado {
+                            color: $cor-valeta-finalizado;
+                        }
+                        &.veiculo-alocado {
+                            color: $cor-valeta-alocado;
+                        }
+                        &.veiculo-execucao {
+                            color: $cor-valeta-execucao;
+                        }
+                    }
+                }
+            }
+            &.valetas-virtuais {
+                .item-valeta {
+                    .veiculo {
+                        .box-veiculo {
+                            background: none;
+                            &.box-veiculo-livre {
+                                border: 2px dotted $cor-branco;
+                                width: 68px;
+                                height: 70px;
+                                background: none;
+                                filter: none;
+                            }
+                            &.veiculo-atrasado {
+                                border: 2px solid $cor-valeta-atrasado;
+                                svg {
+                                    color: $cor-valeta-atrasado;
+                                }
+                            }
+                            &.veiculo-finalizado {
+                                border: 2px solid $cor-valeta-finalizado;
+                                svg {
+                                    color: $cor-valeta-finalizado;
+                                }
+                            }
+                            &.veiculo-alocado {
+                                border: 2px solid $cor-valeta-alocado;
+                                svg {
+                                    color: $cor-valeta-alocado;
+                                }
+                            }
+                            &.veiculo-execucao {
+                                border: 2px solid $cor-valeta-execucao;
+                                svg {
+                                    color: $cor-valeta-execucao;
+                                }
+                            }
+                            .veiculo-number {
+                                color: $cor-branco;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

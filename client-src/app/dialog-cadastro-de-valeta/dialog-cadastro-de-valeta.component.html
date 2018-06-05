@@ -1,0 +1,146 @@
+<form novalidate (ngSubmit)="salvar(formCadastroValeta.form)" #formCadastroValeta="ngForm">
+    <div class="dialog-header row align-items-center">
+        <button md-mini-fab class="btn-close" mdTooltipShowDelay="1200" mdTooltip="Fechar" type="button" (click)="Close()">
+      <svg class="nc-icon  nc-icon-grid-16">
+        <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-fechar-1x">
+          <title></title>
+        </use>
+      </svg>
+    </button>
+        <h1 md-dialog-title>
+            Cadastro de Valetas
+        </h1>
+    </div>
+
+    <div md-dialog-content>
+        <div class="dialog-content">
+
+            <div class="row form-group">
+                <div class="col-12">
+                    <label class="control-label">Garagem
+            <strong mdTooltipShowDelay="1200" mdTooltip="Campo obrigatório">*</strong>
+          </label>
+                    <app-empresa-filial [items]="empresas" (valueChange)="handleValueUpdated($event, formCadastroValeta.form)" [ngClass]="{'has-error': !valeta.empresaAssociacaoId && submitted, 'succeed': valeta.empresaAssociacaoId}">
+                    </app-empresa-filial>
+
+                    <div *ngIf="!valeta.empresaAssociacaoId && submitted" class="alert alert-danger">
+                        <div>
+                            *O campo Garagem é obrigatório.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <label class="control-label">Código
+            <strong mdTooltipShowDelay="1200" mdTooltip="Campo obrigatório">*</strong>
+          </label>
+                    <input class="form-control" type="text" maxlength="3" placeholder="Ex: 200" pattern="[0-9]+$" [disabled]="!valeta.empresaAssociacaoId" [ngClass]="{'has-error': codigo.invalid && (codigo.dirty || submitted),
+                                'succeed': codigo.valid}" [(ngModel)]="valeta.codigo" name="codigo" (change)="obterPorCodigo(formCadastroValeta.form)" #codigo="ngModel" required>
+
+                    <div *ngIf="codigo.invalid && (codigo.dirty || submitted)" class="alert alert-danger">
+                        <div *ngIf="codigo.errors.required">
+                            *O campo Código é obrigatório.
+                        </div>
+                        <div *ngIf="codigo.errors.pattern">
+                            *Permitido somente números.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <label class="control-label">Limite de veículos
+            <strong mdTooltipShowDelay="1200" mdTooltip="Campo obrigatório">*</strong>
+          </label>
+                    <input myOnlyNumbers class="form-control" type="text" maxlength="1" [ngClass]="{'has-error': quantidadeVeiculos.invalid && (quantidadeVeiculos.dirty || submitted) || valeta.quantidadeVeiculos == 0,
+                                'succeed': quantidadeVeiculos.valid && !valeta.quantidadeVeiculos == 0}" [(ngModel)]="valeta.quantidadeVeiculos" name="quantidadeVeiculos" [disabled]="disabledCampos()" #quantidadeVeiculos="ngModel" required>
+                    <div *ngIf="quantidadeVeiculos.invalid && (quantidadeVeiculos.dirty || submitted)" class="alert alert-danger">
+                        <div *ngIf="quantidadeVeiculos.errors.required">
+                            *O campo Limite de veículos é obrigatório.
+                        </div>
+                    </div>
+
+                    <div *ngIf="quantidadeVeiculos.valid" class="alert alert-danger">
+                        <div *ngIf="valeta.quantidadeVeiculos == 0">
+                            *O limite de veiculo deve ser maior que 0.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-12">
+                    <label class="control-label">Descrição
+            <strong mdTooltipShowDelay="1200" mdTooltip="Campo obrigatório">*</strong>
+          </label>
+                    <textarea autosize class="form-control" placeholder="Ex: Valeta destinada a elétrica..." [ngClass]="{'has-error': descricao.invalid && (descricao.dirty || submitted), 
+                                'succeed': !descricao.invalid}" [(ngModel)]="valeta.descricao" name="descricao" maxlength="100" [disabled]="disabledCampos()" #descricao="ngModel" (change)="OnChange()" required></textarea>
+
+                    <div *ngIf="descricao.invalid && (descricao.dirty || submitted)" class="alert alert-danger">
+                        <div *ngIf="descricao.errors.required">
+                            *O campo Descrição é obrigatório.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="form-group col-12">
+                    <label class="control-label">Grupo
+            <strong mdTooltipShowDelay="1200" mdTooltip="Campo obrigatório">*</strong>
+          </label>
+                    <dx-lookup class="form-control" [(ngModel)]="valeta.grupoValetaId" name="grupoValetaId" [dataSource]="listaGrupoValetas" [displayExpr]="displayGrupoValetas" valueExpr="id" [searchEnabled]="true" (onValueChanged)="verificarCampo(valeta)" [disabled]="disabledCampos()"
+                        [closeOnOutsideClick]="true" [ngClass]="{'has-error': !validationGrupoValid && (validationGrupoDirty || submitted),
+                                    'succeed': validationGrupoValid}" itemTemplate="item">
+                        <div *dxTemplate="let item of 'item'">
+                            <span class="item-01">{{item.codigo}}</span>
+                            <span class="item-02">{{item.descricao}}</span>
+                        </div>
+                    </dx-lookup>
+
+
+
+                    <div *ngIf="!validationGrupoValid && (validationGrupoDirty || submitted)" class="alert alert-danger">
+                        <div *ngIf="!validationGrupoValid && (validationGrupoDirty || submitted)">
+                            *O campo Grupo é obrigatório.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-12 col-sm-8">
+                    <label class="control-label">Tipo</label>
+                    <md-radio-group class="row form-control" [(ngModel)]="valeta.tipo" name="tipo" [disabled]="disabledCampos()">
+                        <md-radio-button value="0" class="col-6 row align-items-center">Física</md-radio-button>
+                        <md-radio-button value="1" class="col-6 row align-items-center">Virtual</md-radio-button>
+                    </md-radio-group>
+                </div>
+                <div class="col-12 col-sm-4 form-group">
+                    <label class="control-label">Situação</label>
+                    <div class="form-control row align-items-center justify-content-center">
+                        <md-checkbox [checked]="!valeta.ativa" (click)="clickSituacao()" (change)="valeta.ativa = !valeta.ativa" name="ativa">Inativa</md-checkbox>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div md-dialog-actions>
+        <div class="row">
+            <div class="col-6">
+                <button md-button type="submit" [disabled]="globals.processSpinner">
+          <md-spinner *ngIf="globals.processSpinner" class="spinner-small"></md-spinner>
+          <svg class="nc-icon nc-icon-grid-24 cor-card-execusao" *ngIf="!globals.processSpinner">
+            <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-gravar-2x" [hidden]="process" />
+          </svg>
+          <span *ngIf="!globals.processSpinner">Salvar</span>
+          <span *ngIf="globals.processSpinner">Carregando</span>
+        </button>
+            </div>
+            <div class="col-6">
+                <button md-button type="button" (click)="excluir(formCadastroValeta.form)" [disabled]="disabledExcluir()">
+          <svg class="nc-icon nc-icon-grid-16">
+            <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-fechar-1x" />
+          </svg>
+          Excluir
+        </button>
+            </div>
+        </div>
+    </div>
+</form>

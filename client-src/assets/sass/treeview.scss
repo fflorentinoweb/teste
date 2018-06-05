@@ -1,0 +1,206 @@
+.dx-treeview{
+    height:auto;
+    padding: 10px 0;
+
+    .dx-treeview-toggle-item-visibility{
+        left:5px;
+
+        &:before{
+            content: "\f010";
+            color: $cor-azulado;
+        }
+
+        &.dx-treeview-toggle-item-visibility-opened{
+           &:before{
+                content: "\f016";
+            }
+        }
+    }
+
+    .dx-treeview-node-container{
+        li{
+            padding:0;
+
+            &[aria-level="1"]{
+                // padding:0 15px 0 25px;
+
+                > .dx-treeview-item{
+                    .dx-item-content{
+                        background: $cor-azulado;
+                        border-radius:10px;
+                        color: $cor-card-border;
+                        font-family: $font-Roman;
+                        text-transform: none;
+                        padding: 0 5px;
+                    }
+                }
+            }
+
+            &[aria-level="2"]{
+                > .dx-treeview-item{
+                    .dx-item-content{
+                        color: $cor-azulado;
+                        font-family: $font-Roman;
+                        text-transform: none;
+                        padding: 0 5px;
+                    }
+                }
+
+                > .dx-treeview-toggle-item-visibility{
+                    font-size:14px;
+                }
+            }
+
+            &[aria-level="3"]{
+                > .dx-treeview-item{
+                    padding:0;
+                    min-height:inherit;
+
+                    .dx-item-content{
+                        color: $cor-azulado;
+                        background:$cor-card-bg;
+                        font-family: $font-Roman;
+                        text-transform: none;
+                        padding: 0 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.search-empresa-filial-garagem{
+    position: relative;
+
+    .form-group{
+        position: relative;
+        margin: 0;
+        background:$cor-treeview-bg !important;
+        border-radius: .25rem;
+
+        &.popup-open{
+            border-radius: .25rem .25rem 0 0;
+        }
+
+        &:before{
+            position: absolute;
+            bottom: -7px;
+            left: 0;
+            z-index: 10;
+            display: block;
+            content: "";
+            width: 100%;
+            height: 8px;
+            @include linear-gradient(rgba(0, 0, 0, 0.08), transparent);
+        }
+
+        &:after{
+            content: "\f027";
+            display: block;
+            font: 18px/1 DXIcons;
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            margin-top: -18px;
+            width: 34px;
+            height: 34px;
+            background-position: 8px 8px;
+            -webkit-background-size: 18px 18px;
+            -moz-background-size: 18px 18px;
+            background-size: 18px 18px;
+            padding: 8px;
+            text-align: center;
+            line-height: 18px;
+            color: $cor-branco;
+        }
+
+        .form-control{
+            background: none !important;
+            padding: 0 15px 0 10px;
+            text-indent: 40px;
+            font-size: 24px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .btn-clean{
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            z-index: 15;
+            background: none !important;
+            width: 28px !important;
+            height: 28px !important;
+            transform: translate(0,-50%);
+        }
+    }
+
+    .box-search{
+        border-radius: 0 0 .25rem .25rem;
+        background:$cor-treeview-bg;
+        position: absolute;
+        top: 56px;
+        width:100%;
+        // max-height: 330px;
+        max-height: 30vh;
+        overflow: auto;
+
+        .items-empresa{
+            .title-empresa{
+                display: flex;
+                justify-content: center;
+                padding: 15px 0 0 0;
+
+                span{
+                    background: $cor-azulado;
+                    border-radius:10px;
+                    color: $cor-card-border;
+                    font-family: $font-Roman;
+                    text-transform: none;
+                    font-size: 14px;
+                    padding: 1px 10px 0 10px;
+                }
+            }
+
+            .items-filial{
+                border-bottom: 1px solid $cor-card-border;
+
+                .title-filial{
+                    display: flex;
+                    justify-content: center;
+                    margin: 15px 0;
+
+                    span{
+                        color: $cor-azulado;
+                        font-family: $font-Roman;
+                        text-transform: none;
+                        font-size: 14px;
+                    }
+                }
+
+                .items-garagem{
+                    border-top: 1px solid $cor-card-border;
+
+                    .btn-garagem{
+                        color: $cor-branco;
+                        background:$cor-card-bg;
+                        font-family: $font-Roman;
+                        text-transform: none;
+                        font-size: 14px;
+                        padding: 10px 15px;
+                        width: 100%;
+                        border-radius: 0 !important;
+                        height: inherit;
+                        line-height: 1;
+                        min-height: inherit;
+                        text-decoration: none;
+                        text-align: left;
+                        margin: 0;
+                        overflow: inherit;
+                    }
+                }
+            }
+        }
+    }
+}

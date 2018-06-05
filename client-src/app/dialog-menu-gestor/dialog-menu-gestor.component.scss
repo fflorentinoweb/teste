@@ -1,0 +1,131 @@
+.dialog {
+    z-index: 1000;
+    position: fixed;
+    width: 630px;
+    height: 372px;
+    top: calc(50vh - 186px);
+    left: calc(50vw - 315px);
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        left: initial;
+    }
+}
+
+.overlay-menu-gestor {
+    background: rgba(46, 55, 64, 1);
+    opacity: 1;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    .menu-logo {
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+        width: 250px;
+        margin: 0;
+    }
+}
+
+.btn-voltar {
+    z-index: 9999;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    min-width: 48px;
+    min-height: 48px;
+    @media screen and (max-width: 575px) {
+        padding: 0;
+        .button-text {
+            display: none;
+        }
+        svg {
+            margin: 0;
+            width: 14.28px;
+            height: 12px;
+            color: #1db4e9;
+        }
+    }
+}
+
+.content-menu-gestor {
+    width: 630px;
+    margin: 0 auto;
+    .col-md-3 {
+        margin-bottom: 99px;
+        height: 168px;
+        &:first-child {
+            margin-top: 8px;
+        }
+        &:nth-child(3) {
+            margin-top: 8px;
+        }
+        @media screen and (max-width: 767px) {
+            margin-bottom: 32px;
+            height: auto;
+            justify-content: left!important;
+        }
+        @media screen and (max-height:588px) {
+            margin-bottom: 16px;
+        }
+        &.no-mb {
+            margin-bottom: 0;
+            @media screen and (max-width: 767px) {
+                margin-bottom: 32px;
+                &:last-child {
+                    margin-bottom: 0!important;
+                }
+            }
+            @media screen and (max-height:588px) {
+                margin-bottom: 16px;
+                &:last-child {
+                    margin-bottom: 0!important;
+                }
+            }
+        }
+    }
+    .btn-gestor {
+        width: 96px;
+        height: 96px;
+        background: none;
+        &:hover {
+            box-shadow: 0 0 0 10px rgba(#fff, 0.01), 0 0 0 20px rgba(#fff, 0.01) !important; //    svg{
+            //        transition: ease-in .3s;
+            //        color:#fff;
+            //    }
+        }
+        @media screen and (max-width:767px) {
+            width: 48px;
+            height: 48px;
+            svg {
+                width: 23.94px;
+                height: 23.94px;
+            }
+        }
+    }
+    p {
+        font-family: 'Avenir LT Std Book';
+        font-size: 14px;
+        text-align: center;
+        margin: 9px 0 0 0;
+        @media screen and (max-width: 767px) {
+            margin-left: 19px;
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    br {
+        display: none;
+    }
+}
+
+img {
+    max-width: 300px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+}

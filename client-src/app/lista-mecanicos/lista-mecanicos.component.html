@@ -1,0 +1,13 @@
+<div class="overlay-default" (click)="toggleListaMecanicos()" [ngClass]="{'overlay-active' : listaMecanicoActive}"></div>
+<div (swipeup)="swipe($event.type)" (swipedown)="swipe($event.type)" class="mechanics" (click)="toggleListaMecanicos()" *ngIf="funcionarios.length > 0" [ngClass]="{'active-mechanics-list' : listaMecanicoActive }">
+    <h2 class="cor-azulado">funcionários:</h2>
+    <ul class="list-mechanics">
+        <li *ngFor="let funcionario of funcionarios">
+            <button md-raised-button (click)="autenticarFuncionario(funcionario)" tabindex="2" [ngClass]="{'funcionario-finalizado': funcionario.statusServico == 1}">
+          <svg class="nc-icon nc-icon-grid-16 check" *ngIf="funcionario.statusServico == 1"><use href="/assets/icons/icons/nc-icons.svg#nc-bgm-check-1x" /></svg>
+         <span class="text-button">{{funcionario.nome}}</span>
+         <svg class="nc-icon nc-icon-grid-24 arrow"><use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-seta-direita-2x"/></svg>
+      </button>
+        </li>
+    </ul>
+</div>

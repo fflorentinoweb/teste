@@ -1,0 +1,108 @@
+<button md-raised-button class="btn-voltar" *ngIf="visible" (click)="close()" routerLink="/login">
+  <svg class="nc-icon nc-icon-grid-24">
+    <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-retorno-2x" />
+  </svg>
+  <span class="button-text">Sair</span>
+</button>
+<div [@dialog] *ngIf="visible && !opened" class="dialog row justify-content-center align-items-center">
+    <ng-content></ng-content>
+    <!-- <button *ngIf="closable" (click)="close()" aria-label="Close" class="dialog__close-btn">X</button> -->
+
+    <div class="content-menu-gestor row justify-content-center align-items-center">
+        <div class="col-12 col-md-3 row justify-content-center align-items-center" routerLink="/SelecionaGaragem" (click)="close()">
+            <button md-fab class="row justify-content-center align-items-center btn-gestor">
+        <svg class="nc-icon nc-icon-grid-32">
+          <use href="assets/icons/icons/nc-icons.svg#nc-bgm-mecanico-3x">
+            <title></title>
+          </use>
+        </svg>
+      </button>
+            <p>
+                Registro de disponibilidade dos funcionários
+            </p>
+        </div>
+        <div class="col-12 col-md-3 row justify-content-center align-items-center" routerLink="/AgrupamentoMecanico" (click)="close()">
+            <button md-fab class="row justify-content-center align-items-center btn-gestor">
+        <svg class="nc-icon nc-icon-grid-32">
+          <use href="assets/icons/icons/nc-icons.svg#nc-bgm-registro-de-disponibilidade-3x">
+            <title></title>
+          </use>
+        </svg>
+      </button>
+            <p>
+                Agrupamento dos funcionários
+            </p>
+        </div>
+        <div class="col-12 col-md-3 row justify-content-center align-items-center" routerLink="/RegistroPresenca" (click)="close()">
+            <button md-fab class="row justify-content-center align-items-center btn-gestor">
+        <svg class="nc-icon nc-icon-grid-32">
+          <use href="assets/icons/icons/nc-icons.svg#nc-bgm-lista-1-3x">
+            <title>Consulta de disponibilidade dos funcionários</title>
+          </use>
+        </svg>
+      </button>
+            <p>
+                Consulta de disponibilidade dos funcionários
+            </p>
+        </div>
+        <div class="col-12 col-md-3 row justify-content-center align-items-center" routerLink="/PainelDeValetas" (click)="close()">
+            <button md-fab class="row justify-content-center align-items-center btn-gestor">
+        <svg class="nc-icon nc-icon-grid-32">
+          <use href="assets/icons/icons/nc-icons.svg#nc-bgm-cards-grupo-4x">
+            <title></title>
+          </use>
+        </svg>
+      </button>
+            <p>
+                Painel de
+                <br>valetas
+            </p>
+        </div>
+        <div class="col-12 col-md-3 no-mb row justify-content-center align-items-center" (click)="adicionarValeta()">
+            <button md-fab class="row justify-content-center align-items-center btn-gestor">
+        <svg class="nc-icon nc-icon-grid-32">
+          <use href="assets/icons/icons/nc-icons.svg#nc-bgm-bus-valeta-3x">
+            <title></title>
+          </use>
+        </svg>
+      </button>
+            <p>
+                Cadastrar
+                <br>valetas
+            </p>
+        </div>
+        <div class="col-12 col-md-3 no-mb row justify-content-center align-items-center" (click)="adicionarGrupoDeValeta()">
+            <button md-fab class="row justify-content-center align-items-center btn-gestor">
+        <svg class="nc-icon nc-icon-grid-32">
+          <use href="assets/icons/icons/nc-icons.svg#nc-bgm-agrupamento-valetas-3x">
+            <title></title>
+          </use>
+        </svg>
+      </button>
+            <p>
+                Cadastrar
+                <br>grupos de valetas
+            </p>
+        </div>
+        <div class="col-12 col-md-3 no-mb row justify-content-center align-items-center" routerLink="/EmpresaFilialGaragemExecucaoDaOs" (click)="close()">
+            <button md-fab class="row justify-content-center align-items-center btn-gestor">
+        <svg class="nc-icon nc-icon-grid-32">
+          <use href="assets/icons/icons/nc-icons.svg#nc-bgm-chave-3x">
+            <title>Execução da OS</title>
+          </use>
+        </svg>
+      </button>
+            <p>
+                Execução
+                <br>da OS
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="overlay-menu-gestor" *ngIf="visible">
+    <app-logo-manu class="menu-logo"></app-logo-manu>
+</div>

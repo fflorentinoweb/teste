@@ -1,0 +1,54 @@
+<form class="login" name="formAuth" (ngSubmit)="login(formAuth.form)" #formAuth="ngForm" novalidate>
+    <app-logo-manu></app-logo-manu>
+    <div *ngIf="usuarioSenhaInvalido" class="alert alert-danger invalid-value" role="alert">
+        <div *ngIf="usuarioSenhaInvalido">
+            <svg class="nc-icon  nc-icon-grid-16">
+        <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-alert-1x" />
+      </svg> *Usuário e/ou Senha inválido(s)
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-12">
+            <label class="control-label">Usuário*</label>
+            <input type="text" (keypress)="onKeyPress()" class="form-control" [(ngModel)]="user.username" maxlength="32" name="username" #username="ngModel" required [ngClass]="{'has-error': (username.invalid || usuarioSenhaInvalido) && (username.dirty || submitted),
+                  'succeed': !username.invalid || usuarioSenhaInvalido}">
+            <div *ngIf="username.invalid && (username.dirty || submitted)" class="alert alert-danger">
+                <div *ngIf="username.errors.required">
+                    *O campo Usuário é obrigatório.
+                </div>
+            </div>
+        </div>
+        <div class="form-group col-12">
+            <label class="control-label">Senha
+        <strong mdTooltipShowDelay="1200" mdTooltip="Campo obrigatório">*</strong>
+      </label>
+            <input myActiveCapsLock class="form-control" [(ngModel)]="user.senha" type="password" (keypress)="onKeyPress()" name="senha" maxlength="32" [ngClass]="{'has-error': (senha.invalid || ativouCapsLock) && (senha.dirty || submitted) || usuarioSenhaInvalido,
+                  'succeed': !senha.invalid || usuarioSenhaInvalido}" #senha="ngModel" required (capsLock)="capsLockEvent($event)">
+            <div *ngIf="senha.invalid && (senha.dirty || submitted)" class="alert alert-danger">
+                <div *ngIf="senha.errors.required">
+                    *O campo Senha é obrigatório.
+                </div>
+            </div>
+            <div class="alert alert-danger" [hidden]="!ativouCapsLock">
+                <span>ATENÇÃO: Capslock está ligado</span>
+            </div>
+        </div>
+        <div class="form-group col-12">
+            <button md-button class="button-block" type="submit" [disabled]="globals.processSpinner">
+        <md-spinner *ngIf="globals.processSpinner"></md-spinner>
+        <svg *ngIf="!globals.processSpinner" class="nc-icon nc-icon-grid-32">
+          <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-seta-direita-3x" />
+        </svg>
+        <span class="text-button">Entrar</span>
+      </button>
+        </div>
+        <dx-popup class="popup" [width]="313" [height]="400" [showTitle]="false" title="Empresa/Filial/Garagem" [dragEnabled]="false" [closeOnOutsideClick]="true" [(visible)]="popupVisible">
+            <div *dxTemplate="let data of 'content'">
+                <dx-text-box #textBox placeholder="Empresa/Filial/Garagem" [width]="313" mode="search" valueChangeEvent="keyup" value="">
+                </dx-text-box>
+                <dx-tree-view id="simple-treeview" [dataSource]="empresas" [width]="313" displayExpr="descricao" itemsExpr="items" [focusStateEnabled]="false" [hoverStateEnabled]="false" [searchValue]="textBox.value" (onItemClick)="selectItem($event)">
+                </dx-tree-view>
+            </div>
+        </dx-popup>
+    </div>
+</form>

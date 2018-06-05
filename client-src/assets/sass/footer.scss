@@ -1,0 +1,27 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  @include transition(filter linear 0.2s);
+
+  @media screen and (max-width: $break-md) {
+    position: relative;
+    bottom: inherit;
+    right: inherit;
+    margin: -72px 0 0 0 !important;
+  }
+
+  &.row{
+    @media screen and (max-width: $break-md) {
+      justify-content: center !important;
+    }
+  }
+
+  svg {
+    fill: $cor-branco;
+    width: 160px;
+    height: 28px;
+    margin: 22px 30px;
+  }
+}

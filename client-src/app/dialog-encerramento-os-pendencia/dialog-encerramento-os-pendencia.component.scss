@@ -1,0 +1,34 @@
+.planos-revisao{
+    .dx-accordion{
+        margin-top: 20px;
+        .dx-accordion-item, .dx-item{
+            background-color:rgba(255, 255, 255, 0.1)!important;
+        }
+        .dx-accordion-item{
+            height:40px!important;
+        }
+    }
+
+}
+.plano-revisao-label{
+    margin-top: 0!important;
+}
+.accordion-invalid {
+    border: 1px solid #ed4a4a;
+}
+.accordion-valid{
+    border: 1px solid green; 
+}
+
+.accordion-invalid-item {
+    border: 1px solid #ed4a4a;
+    border-top:0;    
+}
+.accordion-valid-item{
+    border: 1px solid green; 
+    border-top:0;
+}
+
+.dx-accordion .dx-accordion-item-title{
+    height:35px!important;
+}

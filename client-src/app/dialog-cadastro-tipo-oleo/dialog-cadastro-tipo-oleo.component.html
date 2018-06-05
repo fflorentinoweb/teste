@@ -1,0 +1,113 @@
+<div class="dialog-header row align-items-center">
+    <button md-mini-fab class="btn-close" mdTooltipShowDelay="1200" mdTooltip="Fechar" type="button" (click)="Close()">
+    <svg class="nc-icon  nc-icon-grid-16">
+      <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-fechar-1x">
+        <title></title>
+      </use>
+    </svg>
+  </button>
+    <h1 md-dialog-title>
+        Informe os tipos de óleo
+    </h1>
+</div>
+
+<div md-dialog-content>
+    <form novalidate #formCadastroTipoDeOleo="ngForm" (change)="OnChange">
+        <div class="row form-group" *ngFor="let trocaDeOleoPorTipo of trocasDeOleoPorTipo;let i=index">
+            <div class="col-12 col-sm-6">
+                <label class="control-label">{{displayDescricao(trocaDeOleoPorTipo)}}
+          <strong mdTooltipShowDelay="1200" mdTooltip="Campo obrigatório">*</strong>
+        </label>
+                <dx-lookup [(ngModel)]="trocaDeOleoPorTipo.oleoId" class="form-control" name="oleoId_{{i}}" valueExpr="id" [dataSource]="dataSourceOleos(trocaDeOleoPorTipo.tipoTrocaDeOleo)" [displayExpr]="displayOleos" [searchEnabled]="true" [closeOnOutsideClick]="true"
+                    (onValueChanged)="verificarCampo(trocaDeOleoPorTipo)" [disabled]="trocaDeOleoPorTipo.desabilitado" [ngClass]="{'has-error': !trocaDeOleoPorTipo.oleoValid && (trocaDeOleoPorTipo.oleoDirty || submitted)}" itemTemplate="item" required>
+                    <div *dxTemplate="let item of 'item'">
+                        <span class="item-01">{{item.codigo}}</span>
+                        <span class="item-02">{{item.descricao}}</span>
+                    </div>
+                </dx-lookup>
+                <div *ngIf="!trocaDeOleoPorTipo.oleoValid && (trocaDeOleoPorTipo.oleoDirty || submitted)" class="alert alert-danger">
+                    <div *ngIf="!trocaDeOleoPorTipo.oleoValid && (trocaDeOleoPorTipo.oleoDirty || submitted)">
+                        *O campo tipo óleo é obrigatório.
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6" *ngIf="usuarioApontador">
+                <div>
+                    <label class="control-label fix-quantidade">Quantidade
+              <strong mdTooltipShowDelay="1200" mdTooltip="Campo obrigatório" class="fix-quantidade">*</strong>
+            </label>
+                    <input myOnlyNumbersMessage [(ngModel)]="trocaDeOleoPorTipo.quantidade" class="form-control" type="text" name="{{i}}_quantidade" #quantidade="ngModel" currencyMask maxlength="6" minlength="1" [disabled]="!trocaDeOleoPorTipo.oleoId || trocaDeOleoPorTipo.desabilitado"
+                        (ngModelChange)="validaQuantidade(trocaDeOleoPorTipo)" (change)="OnChange()" [options]="{ prefix: '', thousands: '', decimal: ',', precision: 2, allowZero: true, align: right }" [ngClass]="{'has-error': trocaDeOleoPorTipo.oleoId && !trocaDeOleoPorTipo.quantidadeValid && (quantidade.dirty || submitted) ||  trocaDeOleoPorTipo.quantidade > trocaDeOleoPorTipo.saldo}">
+                </div>
+
+                <div class="col-12 mt-3 text-right">
+                    <div *ngIf="trocaDeOleoPorTipo.oleoId && !trocaDeOleoPorTipo.quantidadeValid && (quantidade.dirty || submitted)" class="alert alert-danger">
+                        <div *ngIf="trocaDeOleoPorTipo.quantidade == null">
+                            *O campo quantidade é obrigatório.
+                        </div>
+                        <div *ngIf="trocaDeOleoPorTipo.quantidade == 0">
+                            *O campo quantidade deve ser maior que 0.
+                        </div>
+                        <div *ngIf="trocaDeOleoPorTipo.quantidade > 0">
+                            *A capacidade do {{trocaDeOleoPorTipo.descricaoTipoOleo}} do veículo é de {{trocaDeOleoPorTipo.capacidadeLitros}} L .
+                        </div>
+                    </div>
+                    <div *ngIf="trocaDeOleoPorTipo.quantidade > trocaDeOleoPorTipo.saldo" class="alert alert-danger">
+                        *Saldo Insuficiente em estoque. Valor restante {{trocaDeOleoPorTipo.saldo}} L.
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6" *ngIf="!usuarioApontador">
+                <div>
+                    <label class="control-label fix-quantidade">Quantidade
+              <strong mdTooltipShowDelay="1200" mdTooltip="Campo obrigatório" class="fix-quantidade">*</strong>
+            </label>
+                    <input myOnlyNumbersMessage [(ngModel)]="trocaDeOleoPorTipo.quantidade" class="form-control" type="text" name="{{i}}_quantidade" #quantidade="ngModel" currencyMask maxlength="6" minlength="1" [disabled]="!trocaDeOleoPorTipo.oleoId || trocaDeOleoPorTipo.desabilitado"
+                        (ngModelChange)="validaQuantidade(trocaDeOleoPorTipo)" (change)="OnChange()" [options]="{ prefix: '', thousands: '', decimal: ',', precision: 2, allowZero: true }" [ngClass]="{'has-error': trocaDeOleoPorTipo.oleoId && !trocaDeOleoPorTipo.quantidadeValid && (quantidade.dirty || submitted) ||  trocaDeOleoPorTipo.quantidade > trocaDeOleoPorTipo.saldo}">
+                </div>
+
+                <div class="col-12 mt-3 text-right">
+                    <div *ngIf="trocaDeOleoPorTipo.oleoId && !trocaDeOleoPorTipo.quantidadeValid && (quantidade.dirty || submitted)" class="alert alert-danger">
+                        <div *ngIf="trocaDeOleoPorTipo.quantidade == null">
+                            *O campo quantidade é obrigatório.
+                        </div>
+                        <div *ngIf="trocaDeOleoPorTipo.quantidade == 0">
+                            *O campo quantidade deve ser maior que 0.
+                        </div>
+                        <div *ngIf="trocaDeOleoPorTipo.quantidade > 0">
+                            *A capacidade do {{trocaDeOleoPorTipo.descricaoTipoOleo}} do veículo é de {{trocaDeOleoPorTipo.capacidadeLitros}} L .
+                        </div>
+                    </div>
+                    <div *ngIf="trocaDeOleoPorTipo.quantidade > trocaDeOleoPorTipo.saldo" class="alert alert-danger">
+                        *Saldo Insuficiente em estoque. Valor restante {{trocaDeOleoPorTipo.saldo}} L.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div md-dialog-actions>
+    <div class="row">
+        <div class="col-6">
+            <button md-button (click)="gravarTrocaDeOleo()" [disabled]="globals.processSpinner">
+        <md-spinner *ngIf="globals.processSpinner" class="spinner-small"></md-spinner>
+        <svg *ngIf="!globals.processSpinner" class="nc-icon nc-icon-grid-24 cor-card-execusao">
+          <use href="/assets/icons/icons/nc-icons.svg#nc-bgm-check-2x" />
+        </svg>
+        <span *ngIf="!globals.processSpinner">Confirmar</span>
+        <span *ngIf="globals.processSpinner">Carregando</span>
+      </button>
+        </div>
+        <div class="col-6">
+            <button md-button (click)="Close()">
+        <svg class="nc-icon nc-icon-grid-16">
+          <use href="/assets/icons/icons/nc-icons.svg#nc-bgm-seta-esquerda-1x" />
+        </svg>
+        Cancelar
+      </button>
+        </div>
+    </div>
+</div>

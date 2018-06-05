@@ -1,0 +1,75 @@
+<div class="dialog-header row align-items-center">
+    <button md-mini-fab class="btn-close" mdTooltipShowDelay="1200" mdTooltip="Fechar" type="button" (click)="Close()">
+    <svg class="nc-icon  nc-icon-grid-16">
+      <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-fechar-1x">
+        <title></title>
+      </use>
+    </svg>
+  </button>
+    <h1 md-dialog-title>
+        Cadastro de Grupo de Valetas
+    </h1>
+</div>
+
+<form novalidate (ngSubmit)="salvar(formCadastroGrupoDeValeta.form)" #formCadastroGrupoDeValeta="ngForm" (change)="OnChange()">
+    <div md-dialog-content>
+        <div class="dialog-content">
+            <div class="row form-group">
+                <div class="col-12">
+                    <label class="control-label">Código
+            <strong mdTooltipShowDelay="1200" mdTooltip="Campo obrigatório">*</strong>
+          </label>
+                    <input class="form-control" type="text" maxlength="3" placeholder="Ex: 200" pattern="[0-9]+$" [ngClass]="{'has-error': codigo.invalid && (codigo.dirty || submitted),
+                                    'succeed': codigo.valid}" [(ngModel)]="grupoDeValeta.codigo" name="codigo" (change)="obterPorCodigo(formCadastroGrupoDeValeta.form)" #codigo="ngModel" required>
+                    <div *ngIf="codigo.invalid && (codigo.dirty || submitted)" class="alert alert-danger">
+                        <div *ngIf="codigo.errors.required">
+                            *O campo Código é obrigatório.
+                        </div>
+                        <div *ngIf="codigo.errors.pattern">
+                            *Permitido somente números.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <div class="col-12">
+                    <label class="control-label">Descrição
+            <strong mdTooltipShowDelay="1200" mdTooltip="Campo obrigatório">*</strong>
+          </label>
+                    <textarea autosize class="form-control" placeholder="Ex: Valeta destinada a elétrica..." [ngClass]="{'has-error': descricao.invalid && (descricao.dirty || submitted),
+                                    'succeed': descricao.valid}" [(ngModel)]="grupoDeValeta.descricao" name="descricao" maxlength="100" #descricao="ngModel" required></textarea>
+                    <div *ngIf="descricao.invalid && (descricao.dirty || submitted)" class="alert alert-danger">
+                        <div *ngIf="descricao.errors.required">
+                            *O campo Descrição é obrigatório.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div md-dialog-actions>
+        <div class="row">
+            <div class="col-6">
+                <button md-button type="submit" [disabled]="globals.processSpinner">
+          <md-spinner *ngIf="globals.processSpinner" class="spinner-small"></md-spinner>
+          <svg *ngIf="!globals.processSpinner" class="nc-icon nc-icon-grid-24 cor-card-execusao">
+            <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-gravar-2x" />
+          </svg>
+          <span *ngIf="!globals.processSpinner">Salvar</span>
+          <span *ngIf="globals.processSpinner">Carregando</span>
+        </button>
+            </div>
+            <div class="col-6">
+                <button md-button type="button" (click)="excluir(formCadastroGrupoDeValeta.form)" [disabled]="disabledExcluir()">
+          <svg class="nc-icon nc-icon-grid-16">
+            <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-fechar-1x" />
+          </svg>
+          Excluir
+        </button>
+            </div>
+        </div>
+    </div>
+</form>

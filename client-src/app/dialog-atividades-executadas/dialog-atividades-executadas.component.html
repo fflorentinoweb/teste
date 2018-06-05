@@ -1,0 +1,34 @@
+<div class="dialog-header row align-items-center">
+    <button md-mini-fab md-dialog-close class="btn-close" mdTooltipShowDelay="1200" mdTooltip="Fechar">
+    <svg class="nc-icon  nc-icon-grid-16">
+      <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-fechar-1x">
+        <title></title>
+      </use>
+    </svg>
+  </button>
+    <h1 md-dialog-title>
+        {{ informacoesFuncionario.nome }}
+    </h1>
+</div>
+
+<div md-dialog-content class="no-action">
+    <div class="dialog-content registro-presenca">
+        <div class="list-solucoes">
+            <p>Atividades em execução</p>
+            <p>OS: {{ informacoesDialog.numeroOS }}</p>
+            <p>Valeta: {{ informacoesDialog.codigoValeta }}</p>
+            <p>Prefixo: {{ informacoesDialog.prefixo }}</p>
+            <dx-accordion #accordion [dataSource]="atividadesFuncionario" [collapsible]="false" [multiple]="false" [animationDuration]="300" [selectedItems]="[atividadesFuncionario[0]]">
+                <div *dxTemplate="let atividade of 'title'">
+                    <h1>Grupo: {{ atividade.codigo }} - {{ atividade.descricao }}</h1>
+                </div>
+                <div *dxTemplate="let atividade of 'item'">
+                    <div *ngFor="let servicos of atividade.servicosDefeitos">
+                        <p *ngIf="servicos.tipo == 1">Defeito: {{ servicos.codigo }} - {{ servicos.descricao }}</p>
+                        <p *ngIf="servicos.tipo == 0">Serviço: {{ servicos.codigo }} - {{ servicos.descricao }}</p>
+                    </div>
+                </div>
+            </dx-accordion>
+        </div>
+    </div>
+</div>

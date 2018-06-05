@@ -1,0 +1,46 @@
+virtual-keyboard {
+    .container {
+        background-color: #2e3740;
+        padding: 30px;
+    }
+    virtual-keyboard-key {
+        button.mat-raised-button {
+            border-radius: 3px;
+            &.mat-primary {
+                background-color: lighten(#2e3740, 5%);
+            }
+        }
+    }
+    .mat-input-underline {
+        background-color: lighten(#2e3740, 5%);
+        .mat-input-ripple {
+            background: #fff!important;
+        }
+    }
+    .close {
+        border-radius: 3px;
+        background: #fff!important;
+        opacity: 1!important;
+        width: 50px!important;
+        height: 50px!important;
+        position: absolute!important;
+        .mat-icon {
+            position: relative;
+            top: -8px;
+            color: #2e3740;
+        }
+    }
+    .mat-input-placeholder {
+        color: #fff!important;
+        margin-top: 20px;
+    }
+    .mat-input-infix {
+        padding: 0;
+    }
+    input {
+        color: #fff!important;
+    }
+    div[fxlayout="row"] {
+        height: 68px!important;
+    }
+}

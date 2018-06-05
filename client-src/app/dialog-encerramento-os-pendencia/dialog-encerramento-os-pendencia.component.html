@@ -1,0 +1,127 @@
+<div class="dialog-header row align-items-center">
+    <button md-mini-fab class="btn-close" mdTooltipShowDelay="1200" mdTooltip="Fechar" (click)="Close()">
+    <svg class="nc-icon  nc-icon-grid-16">
+      <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-fechar-1x">
+        <title></title>
+      </use>
+    </svg>
+  </button>
+    <h1 md-dialog-title>
+        Finalizar OS com pendência
+    </h1>
+</div>
+
+<form novalidate (ngSubmit)="finalizar(formEncerramentoPendencia.form)" #formEncerramentoPendencia="ngForm">
+    <div md-dialog-content>
+        <div class="dialog-content">
+            <div class="row form-group">
+                <div class="col-12 col-sm-12">
+                    <label class="control-label">Setor
+            <strong mdTooltipShowDelay="1200" mdTooltip="Campo obrigatório">*</strong>
+          </label>
+                    <dx-lookup class="form-control" [(ngModel)]="finalizarOsPendencia.setorId" name="setorId" [dataSource]="setores" displayExpr="descricao" valueExpr="id" [searchEnabled]="true" [closeOnOutsideClick]="true" (onValueChanged)="verificarSetor(finalizarOsPendencia)"
+                        [ngClass]="{'has-error': !validationSetorValid && (validationSetorDirty || submitted),
+                                    'succeed': validationSetorValid}" intemTemplate="item">
+                        <div *dxTemplate="let item of 'item'">
+                            <span class="item-01">{{item.descricao}}</span>
+                        </div>
+                    </dx-lookup>
+
+                    <div *ngIf="!validationSetorValid && (validationSetorDirty || submitted)" class="alert alert-danger">
+                        <div *ngIf="!validationSetorValid && (validationSetorDirty || submitted)">
+                            *O campo Setor é obrigatório.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-12 col-sm-12">
+                    <label class="control-label">Motivo
+            <strong mdTooltipShowDelay="1200" mdTooltip="Campo obrigatório">*</strong>
+          </label>
+                    <dx-tag-box class="form-control" name="motivoIds" placeholder="Digite aqui..." [hideSelectedItems]="true" [searchEnabled]="true" [dataSource]="optionsMotivo" [displayExpr]="displayMotivos" valueExpr="id" (onValueChanged)="onValueChanged($event)" [ngClass]="{'has-error': !validationMotivoValid && (validationMotivoDirty || submitted),
+                                    'succeed': validationMotivoValid}">
+                    </dx-tag-box>
+
+                    <div *ngIf="!validationMotivoValid && (validationMotivoDirty || submitted)" class="alert alert-danger">
+                        <div *ngIf="!validationMotivoValid && (validationMotivoDirty || submitted)">
+                            *O campo Motivo é obrigatório.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="selectSobrevida">
+                <div class="row form-group">
+                    <div class="col-12 col-sm-12 planos-revisao">
+
+                        <dx-accordion #accordion [dataSource]="planosDeRevisao" [deferRendering]="false" [collapsible]="false" [multiple]="false" [animationDuration]="300" [selectedItems]="[planosDeRevisao[0]]">
+                            <div class="title-item-planos" *dxTemplate="let motivo of 'title';" [ngClass]="{'accordion-invalid': planosDeRevisao[getIndex(motivo)].kmSobrevida == 0 || planosDeRevisao[getIndex(motivo)].kmSobrevida == null && submitted,
+              'accordion-valid': planosDeRevisao[getIndex(motivo)].kmSobrevida > 0 || planosDeRevisao[getIndex(motivo)].kmSobrevida != null && submitted}">
+                                <h1>Plano: {{ motivo.descricao }}</h1>
+                            </div>
+                            <div *dxTemplate="let motivo of 'item'" [ngClass]="{'accordion-invalid-item': planosDeRevisao[getIndex(motivo)].kmSobrevida == 0 || planosDeRevisao[getIndex(motivo)].kmSobrevida == null && submitted,
+              'accordion-valid-item': planosDeRevisao[getIndex(motivo)].kmSobrevida > 0 || planosDeRevisao[getIndex(motivo)].kmSobrevida != null && submitted}">
+
+                                <label class="control-label plano-revisao-label">Km de sobrevida
+                  <strong mdTooltipShowDelay="1200" mdTooltip="Campo obrigatório">*</strong>
+                </label>
+                                <input myOnlyNumbersMessage class="form-control" type="text" [(ngModel)]="planosDeRevisao[getIndex(motivo)].kmSobrevida" name="kmSobrevida_{{getIndex(motivo)}}" (digitString)="digitStringEvent($event)" maxlength="9" currencyMask [options]="{ prefix: '', thousands: '', decimal: ',', precision: 3, allowZero: true, align: right }"
+                                    #kmSobrevida="ngModel" required [ngClass]="{'has-error': kmSobrevida.invalid && (kmSobrevida.dirty || submitted) || planosDeRevisao[getIndex(motivo)].kmSobrevida == 0, 'succeed': kmSobrevida.valid}">
+
+                                <div *ngIf="digitString" class="alert alert-danger">
+                                    *Permitido somente números.
+                                </div>
+
+                                <div *ngIf="kmSobrevida.invalid && (kmSobrevida.dirty || submitted)" class="alert alert-danger">
+                                    <div *ngIf="planosDeRevisao[getIndex(motivo)].kmSobrevida == null || planosDeRevisao[getIndex(motivo)].kmSobrevida == undefined || planosDeRevisao[getIndex(motivo)].kmSobrevida">
+                                        *O campo Km de sobrevida é obrigatório.
+                                    </div>
+                                </div>
+
+                                <div *ngIf="kmSobrevida.valid && (kmSobrevida.dirty || submitted)" class="alert alert-danger">
+                                    <div *ngIf="planosDeRevisao[getIndex(motivo)].kmSobrevida == 0">
+                                        *O campo Km de sobrevida não pode ser 0.
+                                    </div>
+                                </div>
+
+                                <label class="control-label">Observações</label>
+                                <textarea autosize #text (keyup)="myText = text.value" class="form-control" placeholder="Caso ache necessário informe as condições de sobrevida." [(ngModel)]="planosDeRevisao[getIndex(motivo)].observacao" name="observacao" maxlength="100"></textarea>
+
+
+
+                            </div>
+                        </dx-accordion>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div md-dialog-actions>
+        <div class="row">
+            <div class="col-6">
+                <button md-button type="submit" [disabled]="process">
+          <md-spinner *ngIf="process" class="spinner-small"></md-spinner>
+          <svg *ngIf="!process" class="nc-icon nc-icon-grid-24 cor-card-execusao">
+            <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-check-2x" />
+          </svg>
+          Confirmar
+        </button>
+            </div>
+            <div class="col-6">
+                <button md-button (click)="Close()" type="button">
+          <svg class="nc-icon nc-icon-grid-16">
+            <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-seta-esquerda-1x" />
+          </svg>
+          Cancelar
+        </button>
+            </div>
+        </div>
+    </div>
+</form>

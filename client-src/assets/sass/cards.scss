@@ -1,0 +1,593 @@
+.card-action-top,
+.solucoes-action-top {
+    position: fixed;
+    top: -76px;
+    left: 0;
+    width: 100%;
+    min-height: 76px;
+    z-index: 50;
+    background: $cor-card-action-top-bg;
+    padding: 20px;
+    @include transition-padrao;
+    @media screen and (max-width: $break-md) {
+        justify-content: flex-end !important;
+    }
+    .actions {
+        padding: 0 0 0 45px;
+    }
+    [class*="col"] {
+        padding: 0;
+        button {
+            padding: 0 16px;
+            @media screen and (max-width: 767px) {
+                padding: 0 0 0 12px;
+            }
+        }
+    }
+    &.has-card-action-top {
+        top: 0;
+    }
+    .mat-button {
+        background: none;
+        min-height: inherit;
+        font-size: 14px;
+        color: $cor-branco;
+        font-family: $font-Book;
+        text-transform: none;
+        &.green-play {
+            svg {
+                color: #70a83b;
+            }
+        }
+        &.yellow-pause {
+            svg {
+                color: #e6da78;
+            }
+        }
+        &.red-finalizar {
+            svg {
+                color: #ff775c;
+            }
+        }
+        &.color-desfazer {
+            svg {
+                color: #beddff;
+            }
+        }
+        .mat-button-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        svg {
+            margin: 0 5px 0 0;
+        }
+        @media screen and (max-width: $break-lg) {
+            min-width: inherit;
+            padding: 0 8px;
+            .text-button {
+                display: none;
+            }
+        }
+        @media screen and (max-width: 385px) {
+            padding: 0 0 0 12px;
+        }
+    }
+    .mat-mini-fab {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 17px;
+    }
+    .qts-checkeds {
+        margin: 0 40px 0 0;
+        color: $cor-branco;
+        @media screen and (max-width: 385px) {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 80px;
+            margin: 0 10px 0 0;
+        }
+    }
+}
+
+.solucoes-action-top {
+    top: 0;
+    -webkit-animation: animate-action-top 2s cubic-bezier(0.24, 0, 0.38, 1);
+    animation: animate-action-top 2s cubic-bezier(0.24, 0, 0.38, 1);
+}
+
+.card-container {
+    width: 1220px;
+    margin: auto !important;
+    max-width: 100%;
+    padding: 0 0 30px 0;
+}
+
+.mat-card {
+    background: none;
+    padding: 18px !important;
+    @include box-shadow(none);
+    // @include transition-padrao;
+    max-width: 406px;
+    .card-box {
+        // border: 2px solid transparent;
+        // @include transition-padrao;
+        @include animation-duration;
+        position: relative;
+        &::before,
+        &::after {
+            box-sizing: inherit;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            border-radius: 4px;
+        }
+        &.draw {
+            &::before,
+            &::after {
+                border: 2px solid transparent;
+                width: 0;
+                height: 0;
+                opacity: 0;
+            }
+            &::before {
+                top: 0;
+                right: 0;
+            }
+            &::before {
+                border-top-color: $cor-azulado;
+                border-left-color: $cor-azulado;
+                @include transition(border 0s ease-out 0.15s, height 0.15s ease-out 0.3s, width 0.15s ease-out 0.45s, opacity 0.15s ease-out 0.5s);
+            }
+            &::after {
+                border-bottom-color: $cor-azulado;
+                border-right-color: $cor-azulado;
+                @include transition(border 0s ease-out 0.15s, width 0.15s ease-out 0.3s, height 0.15s ease-out 0.45s, opacity 0.15s ease-out 0.5s);
+            }
+            &.has-card-checked::before,
+            &.has-card-checked::after,
+            &.has-card-checked2::before,
+            &.has-card-checked2::after {
+                width: 100%;
+                height: 100%;
+                opacity: 1;
+            }
+            &.has-card-checked::before,
+            &.has-card-checked2::before {
+                border-top-color: $cor-azulado;
+                border-left-color: $cor-azulado;
+                @include transition(opacity 0.15s ease-out, width 0.15s ease-out, height 0.15s ease-out 0.15s);
+            }
+            &.has-card-checked::after,
+            &.has-card-checked2::after {
+                border-bottom-color: $cor-azulado;
+                border-right-color: $cor-azulado;
+                @include transition(opacity 0.15s ease-out, border 0s ease-out 0.3s, width 0.15s ease-out 0.3s, height 0.15s ease-out 0.45s);
+            }
+        }
+        &.meet {
+            &::after {
+                top: 0;
+                right: 0;
+            }
+            &.has-card-checked::before,
+            &.has-card-checked2::before {
+                border-top-color: $cor-azulado;
+                border-left-color: $cor-azulado;
+            }
+            &.has-card-checked::after,
+            &.has-card-checked2::after {
+                border-bottom-color: $cor-azulado;
+                border-right-color: $cor-azulado;
+                @include transition(opacity 0.15s ease-out, height 0.15s ease-out, width 0.15s ease-out 0.15s);
+            }
+        }
+        .spinner-md {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 50;
+            @include transform(translate(-50%, -50%));
+            border-radius: 50px;
+            background: rgba($cor-escura, 0.2);
+            padding: 10px;
+        }
+    }
+    .mat-card-header {
+        padding: 18px 18px 0 18px;
+        display: block;
+        background: $cor-card-bg;
+        position: relative;
+        border-radius: 3px 3px 0 0;
+        [class*="col"] {
+            padding: 0;
+        }
+        .mat-card-header-text {
+            display: none;
+        }
+        .card-action-header {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 16px 12px 12px 12px;
+            z-index: 10;
+            .mat-button {
+                background: transparent;
+                width: 36px;
+                height: 36px;
+                min-width: inherit;
+                padding: 0;
+                min-height: inherit;
+                // overflow: hidden;
+                position: relative;
+                // &.details svg{
+                //   color:$cor-azulado;
+                // }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 1px;
+                    height: 26px;
+                    right: -9px;
+                    top: 6px;
+                    border-right: 1px solid $cor-card-checkbox-inactive;
+                }
+                .mat-button-ripple {
+                    border-radius: 50px;
+                }
+                svg {
+                    color: $cor-azulado;
+                }
+            }
+            .btn-historico {
+                &.mat-button {
+                    &.cdk-focused,
+                    &.cdk-keyboard-focused,
+                    &.cdk-keyboard-focused {
+                        background: transparent !important;
+                        box-shadow: none !important;
+                    }
+                }
+                .mat-button-ripple {
+                    width: 46px !important;
+                    height: 46px !important;
+                    top: -4.25px;
+                    left: -4.25px;
+                }
+                &:focus,
+                &.cdk-focused,
+                &.cdk-keyboard-focused {
+                    background-color: transparent;
+                    .mat-button-ripple {
+                        background: rgba($cor-azulado, 0.2);
+                        opacity: 1 !important;
+                    }
+                }
+                .mat-button-focus-overlay {
+                    background: transparent !important;
+                    display: none;
+                }
+            }
+            .mat-checkbox {
+                margin-left: 5px;
+                .mat-checkbox-inner-container {
+                    width: 26px;
+                    height: 26px;
+                    .mat-checkbox-background,
+                    .mat-checkbox-frame {
+                        border-radius: 4px;
+                        border: none;
+                    }
+                    .mat-checkbox-background {
+                        background: rgba($cor-card-checkbox-inactive, 1);
+                    }
+                }
+                .mat-checkbox-checkmark {
+                    padding: 3px;
+                    .mat-checkbox-checkmark-path {
+                        stroke-dashoffset: 0;
+                        stroke: $cor-card-bg !important;
+                        stroke-width: 1px;
+                    }
+                }
+                &.mat-checkbox-checked {
+                    @include box-shadow(0 0 14px 4px rgba(255, 255, 255, 0.1));
+                    .mat-checkbox-background {
+                        background: $cor-azulado;
+                    }
+                    .mat-checkbox-checkmark-path {
+                        stroke: rgba($cor-escura, 0.6) !important;
+                    }
+                }
+            }
+        }
+        .tag {
+            span {
+                display: inline-block;
+                color: $cor-card-bg;
+                border-radius: 50px;
+                font-size: 14px;
+                padding: 0 10px;
+                font-family: $font-Medium;
+                &.card-execusao {
+                    background-color: $cor-card-execusao;
+                }
+                &.card-aberto {
+                    background-color: $cor-card-aberto;
+                }
+                &.card-pausada {
+                    background-color: $cor-card-pausada;
+                }
+                &.card-finalizado {
+                    color: rgba($cor-branco, 0.8);
+                    background-color: $cor-card-finalizado;
+                }
+            }
+        }
+        svg.nc-icon {
+            stroke-width: 5px;
+            &.card-execusao {
+                color: $cor-card-execusao;
+            }
+            &.card-aberto {
+                color: $cor-card-aberto;
+            }
+            &.card-pausada {
+                color: $cor-card-pausada;
+            }
+            &.card-finalizado {
+                color: $cor-card-finalizado;
+            }
+        }
+        .timer {
+            .time {
+                margin: 2 0 0 0;
+                color: $cor-branco;
+                font-family: $font-Book;
+            }
+            &.card-pausada {
+                -webkit-animation: time-pausada-animation linear 1s infinite;
+                animation: time-pausada-animation linear 1s infinite;
+            }
+            @media screen and (max-width: 380px) {
+                margin: 0 0 0 8px !important;
+            }
+        }
+    }
+    .mat-card-content {
+        background: $cor-card-bg;
+        margin: 0;
+        padding: 18px;
+        min-height: 260px;
+        position: relative;
+        overflow: hidden;
+        .descricao {
+            padding: 0 0 15px 0;
+            height: 75px;
+            .title-card {
+                font-size: 22px;
+                color: $cor-azulado;
+                font-family: $font-Book;
+                margin: 0;
+                &.card-defeito {
+                    color: $cor-card-defeito;
+                }
+                small {
+                    font-size: 14px;
+                    line-height: 1.3;
+                    padding: 4px 0 0 0;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    color: $cor-branco;
+                }
+            }
+        }
+        ul {
+            margin: 0;
+            padding: 10px 0 0 0;
+            min-height: 125px;
+            border-top: 1px solid $cor-card-border;
+            li {
+                margin: 10px 0;
+                svg {
+                    margin: 0 10px 0 0;
+                    &.card-defeito {
+                        color: $cor-card-defeito;
+                    }
+                }
+            }
+        }
+        p {
+            font-size: 14px;
+            color: $cor-branco;
+            font-family: $font-Book;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 285px;
+        }
+        .transition-animate-play-pause {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include transform(scale(2));
+            opacity: 0;
+            &.show-transition {
+                z-index: 999;
+            }
+            &.animate-key-play {
+                transform: scale(1);
+                opacity: 0;
+                -webkit-animation: animate-key-play 2s linear;
+                animation: animate-key-play 2s linear;
+            }
+            &.animate-key-pause {
+                transform: scale(1);
+                opacity: 0;
+                -webkit-animation: animate-key-pause 2s linear;
+                animation: animate-key-pause 2s linear;
+            }
+            .icon {
+                width: 120px;
+                height: 120px;
+                border-radius: 100px;
+                background: rgba(#000, 0.1);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            svg {
+                color: #fff;
+                width: 48px;
+                height: 48px;
+            }
+        }
+        .complemento {
+            text-overflow: initial;
+            white-space: initial;
+            z-index: 77;
+        }
+        .ver-mais {
+            font-family: $font-Book;
+            text-decoration: underline;
+            padding: 5px 0 0 5px;
+            z-index: 99;
+            transition: .3s;
+            position: relative;
+            left: -3px;
+            &:hover {
+                color: darken($cor-azulado, 15%);
+                transition: .3s;
+            }
+        }
+    }
+    .mat-card-actions {
+        margin: 0 !important;
+        padding: 2px 0 0 0;
+        opacity: 1;
+        position: relative;
+        overflow: hidden;
+        @include transition-padrao;
+        border-radius: 0 0 3px 3px;
+        &.fadeOutUp {
+            opacity: 0;
+            z-index: -1;
+            padding: 0;
+            .row {
+                margin: -57px 0 0 0;
+            }
+        }
+        .row {
+            @include transition-padrao;
+            width: 100%;
+            [class*="col"] {
+                padding: 0;
+            }
+            .pl-1 {
+                padding-left: 2px !important;
+            }
+            .pr-1 {
+                padding-right: 2px !important;
+            }
+        }
+        .mat-button {
+            border-radius: 0 !important;
+            width: 100%;
+            background: $cor-card-bg;
+            text-transform: none;
+            font-size: 14px;
+            &.cdk-focused,
+            &.cdk-keyboard-focused {
+                @include transition-padrao;
+                background-color: lighten($cor-card-bg, 12%) !important;
+                box-shadow: none !important;
+            }
+            &.btn-play {
+                svg {
+                    color: $cor-card-execusao;
+                }
+                .mat-ripple-element {
+                    background: rgba($cor-card-execusao, 0.8);
+                    @include box-shadow(0 0 0 50px rgba($cor-card-execusao, 0.6), 0 0 0 100px rgba($cor-card-execusao, 0.4));
+                }
+            }
+            &.btn-pause {
+                svg {
+                    color: $cor-card-pausada;
+                }
+                .mat-ripple-element {
+                    background: rgba($cor-card-pausada, 0.8);
+                    @include box-shadow(0 0 0 50px rgba($cor-card-pausada, 0.6), 0 0 0 100px rgba($cor-card-pausada, 0.4));
+                }
+            }
+            &.btn-finalizar {
+                svg {
+                    color: $cor-card-defeito;
+                }
+                .mat-ripple-element {
+                    background: rgba($cor-card-defeito, 0.8);
+                    @include box-shadow(0 0 0 50px rgba($cor-card-defeito, 0.6), 0 0 0 100px rgba($cor-card-defeito, 0.4));
+                }
+            }
+            &.btn-desfazer {
+                svg {
+                    color: $cor-card-desfazer;
+                }
+                .mat-ripple-element {
+                    background: rgba($cor-card-desfazer, 0.8);
+                    @include box-shadow(0 0 0 50px rgba($cor-card-desfazer, 0.6), 0 0 0 100px rgba($cor-card-desfazer, 0.4));
+                }
+            }
+            .mat-button-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                z-index: 10;
+            }
+            // .mat-ripple-element{
+            //     @include transition(all 0s linear);
+            // }
+            svg {
+                margin: 0 10px 0 0;
+            }
+        }
+    }
+}
+
+.menu-acoes-coletivas {
+    width: 315px;
+    max-width: 315px;
+    .mat-menu-content {
+        .mat-menu-item {
+            &:focus,
+            &:hover {
+                background: darken($cor-card-bg, 7%);
+            }
+        }
+    }
+}
+
+.card-defeito {
+    span {
+        color: $cor-card-defeito!important;
+    }
+}
+
+.nc-icon.card-defeito {
+    color: $cor-card-defeito!important;
+}

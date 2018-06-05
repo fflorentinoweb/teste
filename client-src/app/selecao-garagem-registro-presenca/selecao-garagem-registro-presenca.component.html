@@ -1,0 +1,8 @@
+<div class="row justify-content-center align-items-center login vh100">
+  <div class="col-12">
+    <app-logo-manu></app-logo-manu>   
+    <h1>Selecione a garagem para continuar</h1>
+    <label class="control-label">Garagem<strong mdTooltipShowDelay="1200" mdTooltip="Campo obrigatório">*</strong></label>
+    <app-empresa-filial [items]="empresas" (valueChange)="handleValueUpdated($event)" style="width:370px;"></app-empresa-filial>
+  </div>
+</div>

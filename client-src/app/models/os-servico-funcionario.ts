@@ -1,0 +1,34 @@
+import { StatusServicoFuncionario } from "../enum/status-servico-funcionario";
+import { FinalizarOSServico } from './finalizar-os-servico';
+import { FinalizarOSServicoFuncionario } from './finalizar-os-servico-funcionario';
+export class OSServicoFuncionario {    
+    funcionarioId: number;
+    osServicoId: number;
+    servicoId: number;
+    servico: string;
+    osDefeitoId: number;
+    defeitoId: number;
+    defeito: string;
+    complemento: string;
+    status: StatusServicoFuncionario;
+    planoDeRevisao: string;
+    grupoServicoId: number;
+    grupoServico: string;
+    tipoDeOperacaoId: number;
+    tipoDeOperacao: string;
+    emExecucao: boolean;
+    tempoExecucao: string;
+    oleoCambio: boolean;
+    oleoDiferencial: boolean;
+    oleoMotor: boolean;
+    veiculoId: number;
+    capacidadeLitrosCambio: number;
+    capacidadeLitrosDiferencial: number;
+    planoDeRevisaoId: number;
+    osId: number;
+    osServicos: FinalizarOSServico[];
+    senhaCriptografada: string;
+    finalizarOSServicoFuncionario: FinalizarOSServicoFuncionario;
+    processPlayPause: boolean;
+    process: boolean;
+}

@@ -1,0 +1,195 @@
+button:focus {
+  outline: none !important;
+}
+
+.mat-button {
+  background: $cor-azulado;
+  border-radius: 5px !important;
+  min-height: 56px;
+  color: $cor-branco !important;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: $font-Book;
+
+  &:disabled{
+    opacity: 0.4;
+    cursor:not-allowed !important;
+  }
+
+  &.button-block {
+    width: 100%;
+  }
+
+  &.cdk-keyboard-focused,
+  &.cdk-focused{
+    @include focus-buttons;
+  }
+
+
+
+  svg {
+    color: $cor-branco;
+  }
+
+  &.btn-acoes-coletivas{
+    background:none;
+    border:2px solid $cor-azulado;
+    border-radius:50px !important;
+    font-size:12px;
+    text-transform: uppercase;
+    height:44px;
+    min-height: 44px;
+
+    svg{
+      margin:0 10px;
+      color: $cor-branco;
+    }
+  }
+}
+
+.mat-mini-fab {
+  @include box-shadow(none);
+  width: 62px !important;
+  height: 62px !important;
+  background: $cor-azulado !important;
+  position: relative;
+  color: rgba($cor-escura, 0.6) !important;
+
+  &:after {
+    @include transition-padrao;
+  }
+
+  &.cdk-keyboard-focused,
+  &.cdk-focused{
+    @include focus-buttons;
+  }
+
+  .mat-button-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  svg {
+    color: $cor-branco;
+  }
+}
+
+.mat-fab {
+  @include box-shadow(none);
+  border: 3px solid $cor-azulado !important;
+  font-family: $font-Book;
+  position: relative;
+  color:$cor-azulado !important;
+
+  &.cdk-keyboard-focused{
+    @include focus-buttons;
+  }
+
+  &.fab-large{
+    &.cdk-keyboard-focused{
+      @include focus-buttons;
+    }
+  }
+
+  &.cdk-keyboard-focused,
+  &.cdk-focused{
+    @include focus-buttons;
+    svg{
+      color:#fff;
+    }
+  }
+
+  &[disabled]{
+    opacity: 0.4;
+    cursor: not-allowed !important;
+  }
+
+  > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text {
+    display: block;
+    text-transform: uppercase;
+    color: $cor-branco;
+    line-height: 1.5;
+    font-size: 14px;
+    position: absolute;
+    bottom: -56px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .mat-ripple-element {
+    background: rgba($cor-escura, .2) !important;
+  }
+}
+
+button.mat-raised-button {
+  @include box-shadow(none);
+  border-radius: 50px;
+  background: rgba($cor-branco, 0.05);
+  overflow: hidden;
+  color: $cor-branco;
+  text-transform: uppercase;
+  padding: 0 24px;
+  min-height: 42px;
+  font-size: 12px;
+
+  &.cdk-keyboard-focused,
+  &.cdk-focused{
+    @include focus-buttons;
+  }
+
+  .mat-button-wrapper {
+
+    svg{
+      color: $cor-branco;
+      margin: 0 10px 0 0;
+    }
+  }
+
+  &.btn-add{
+    font-family: $font-Book;
+    width: 100%;
+    border-radius:4px;
+    text-transform: none;
+    background: $cor-button-dark;
+  }
+}
+button.mat-raised-button.btn-fullscreen {
+  min-width:42px;
+  padding:0;
+  color:$cor-azulado;
+
+  svg{
+    color: $cor-azulado;
+    margin: 0;
+  }
+}
+
+.mat-mini-fab{
+  &.btn-close{
+    background: none !important;
+    border: 2px solid $cor-azulado;
+    color: $cor-branco !important;
+    width: 42px !important;
+    height: 42px !important;
+    z-index: 5;
+    
+    &.cdk-keyboard-focused,
+    &.cdk-focused{
+      @include focus-buttons;
+    }
+
+    svg{
+        max-height: 30px;
+        stroke-width: 4px !important;
+    }
+  }
+}
+

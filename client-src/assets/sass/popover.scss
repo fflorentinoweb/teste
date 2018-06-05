@@ -1,0 +1,20 @@
+.dx-popover-without-title>.dx-overlay-content {
+  color: #fff!important;
+  border-radius: 2px!important;
+  margin: 14px!important;
+  max-width: 250px!important;
+  border-color: rgba(97, 97, 97, .9)!important;
+  background: rgba(97, 97, 97, .9)!important;
+  .dx-popup-content {
+    padding: 4px!important;
+    .dx-template-wrapper{
+        font-size:12px;
+        text-align:center;
+    }
+  }
+}
+
+.dx-popover-without-title.dx-position-top .dx-popover-arrow:after{
+  border-color: rgba(97, 97, 97, .9)!important;
+  background: rgba(97, 97, 97, .9)!important;
+}

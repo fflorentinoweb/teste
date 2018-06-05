@@ -1,0 +1,220 @@
+*,
+::after,
+::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    height: inherit;
+    font-family: $font-Book;
+}
+
+html {
+    background: $cor-fundo;
+    /*url(/assets/img/bg-manutencao.jpg) no-repeat center;*/
+    background-size: cover;
+}
+
+*>svg {
+    transform-origin: 50% 50% 0px;
+}
+
+body {
+    background: url(/assets/img/bg-edges.png) no-repeat center bottom fixed;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $cor-azulado;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+h2 {
+    font-size: 27px;
+    text-transform: uppercase;
+    color: $cor-branco;
+    small {
+        display: block;
+        font-size: 16px;
+        margin: 0 0 6px 0;
+        color: $cor-azulado;
+    }
+}
+
+p {
+    color: $cor-branco;
+    font-size: 22px;
+    strong {
+        color: $cor-azulado;
+        font-weight: normal;
+    }
+}
+
+.row {
+    margin: 0;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.container-fluid {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    @include transition(filter linear 0.2s);
+}
+
+svg {
+    max-width: 100%;
+    max-height: 100%;
+    x: 0px;
+    y: 0px;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+.tst {
+    @include transition(all 0.3s ease-in-out);
+}
+
+.cor-azulado {
+    color: $cor-azulado !important;
+}
+
+.cor-card-execusao {
+    color: $cor-card-execusao !important;
+}
+
+.title-name {
+    color: $cor-branco;
+    font-family: $font-Book;
+    font-size: 24px;
+    svg.nc-icon {
+        margin: 0 10px 0 0;
+    }
+}
+
+.action-focused {
+    background: rgba($cor-branco, 0.1);
+    box-shadow: 0 0 0 0 rgba($cor-branco, 0.3);
+    -webkit-animation: pulse-focused-animation 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -moz-animation: pulse-focused-animation 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -ms-animation: pulse-focused-animation 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    animation: pulse-focused-animation 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+.invalid-value {
+    background-color: rgba($cor-card-defeito, 0.1);
+    color: $cor-card-defeito;
+    text-transform: uppercase;
+    padding: 0.55rem 1rem;
+    position: relative;
+    &:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .nc-icon {
+        color: $cor-card-defeito;
+        margin: 0 5px 0 0;
+        position: relative;
+        top: 2px;
+    }
+}
+
+.green-color {
+    color: $cor-card-execusao;
+}
+
+.red-color {
+    color: #eb715a!important;
+}
+
+.yellow-blink-color {
+    color: #e6da78;
+    -webkit-animation: time-pausada-animation linear 1s infinite;
+    animation: time-pausada-animation linear 1s infinite;
+}
+
+.disabled-funcionario {
+    cursor: not-allowed!important;
+}
+
+.btn-solucao {
+    width: 100%;
+    border: 0;
+    &:focus {
+        &:before {
+            color: #41505f;
+        }
+    }
+    h1 {
+        text-align: left;
+    }
+}
+
+.overlay-default {
+    background: rgba($cor-escura, 0.5);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    z-index: 55;
+    opacity: 0;
+    &.overlay-active {
+        @media screen and (max-width: $break-md) {
+            visibility: visible;
+            opacity: 1;
+            transition: opacity 0.25s ease-in-out;
+        }
+    }
+}
+
+.empresa-fial-func {
+    color: red;
+    .search-empresa-filial {
+        .dropdown {
+            .dropdown-menu {
+                .treeview-container {
+                    .treeview-item {
+                        .treeview-item {
+                            .treeview-item {
+                                .form-check {
+                                    label {
+                                        &:before {
+                                            content: 'FUNC.'
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

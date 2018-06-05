@@ -1,0 +1,33 @@
+<div class="dialog-header row align-items-center">
+    <button md-mini-fab md-dialog-close class="btn-close" mdTooltipShowDelay="1200" mdTooltip="Fechar">
+    <svg class="nc-icon  nc-icon-grid-16">
+      <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-fechar-1x">
+        <title></title>
+      </use>
+    </svg>
+  </button>
+    <h1 md-dialog-title>
+        Histórico
+    </h1>
+</div>
+
+<div md-dialog-content class="no-action scroll-historico">
+    <div class="dialog-content">
+        <div class="list-solucoes">
+            <dx-accordion #accordion [dataSource]="solucoes" [collapsible]="false" [multiple]="false" [animationDuration]="300" [selectedItems]="[solucoes[0]]" [ngClass]="{'no-arrow': solucoes.length == 1}">
+
+                <button *dxTemplate="let solucao of 'title'" class="btn-solucao">
+          <h1>{{solucao.funcionario}}</h1>
+        </button>
+                <div *dxTemplate="let solucao of 'item'">
+                    <p>Grupo: {{solucao.grupo}}</p>
+                    <p>Serviço: {{solucao.servico}}</p>
+                    <p>Tipo de operação: {{solucao.tipoDeOperacao}}</p>
+                    <p *ngIf="solucao.complemento">
+                        Informações complementares: {{solucao.complemento}}
+                    </p>
+                </div>
+            </dx-accordion>
+        </div>
+    </div>
+</div>

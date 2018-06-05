@@ -1,0 +1,170 @@
+.mat-tab-group {
+  max-width: 400px;
+  font-family: $font-Book;
+
+  .mat-tab-header {
+    border-bottom: 2px solid rgba($cor-branco, 0.1);
+    overflow: inherit;
+    margin: 0 15px;
+
+    @media screen and (max-width: $break-md) {
+      margin:0;
+    }
+
+    .mat-tab-label-container {
+      overflow: inherit;
+
+      .mat-tab-list {
+        .mat-ink-bar {
+          background: $cor-azulado;
+          bottom: -2px;
+        }
+
+        .mat-tab-labels {
+          .mat-tab-label {
+            font-family: $font-Book;
+            height: 90px;
+            color: $cor-branco;
+            opacity: 1;
+            padding: 12px 12px 0 12px;
+            -ms-flex-preferred-size: 0;
+            flex-basis: 0;
+            -webkit-box-flex: 1;
+            font-size: 16px;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+
+            @media screen and (max-width: 430px) {
+              padding: 24px 12px 0 12px;
+              height: 105px;
+            }
+
+            &:focus {
+              background: rgba($cor-escura, 0.1);
+            }
+
+            svg {
+              margin:auto;
+              display: block;
+              color: $cor-azulado;
+
+              @media screen and (max-width: 430px) {
+                width: 24px;
+                height: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .mat-tab-body-wrapper {
+    min-height: 388px;
+
+    .mat-tab-body-content {
+      padding: 30px 15px 0 15px;
+
+      @media screen and (max-width: 430px) {
+        padding: 30px 30px 0 30px;
+      }
+
+      [class*="col"] {
+        padding: 0;
+      }
+
+      .form-group{
+        margin:0 0 10px 0;
+      }
+
+      p {
+        margin: 0 0 10px 0;
+      }
+
+      .control-label {
+        text-transform: uppercase;
+        color: rgba($cor-branco, 0.5);
+        font-size:16px;
+        font-family: $font-Book;
+        line-height: 2;
+      }
+
+      .mat-button {
+        margin: 32px 0 0 0;
+        overflow: hidden;
+        position: relative;
+        @include transition-padrao;
+        background: $cor-azulado !important;
+
+        &:hover,
+        &:focus{
+          svg{
+            left: 5px;
+            @include box-shadow(0 0 0 500px $cor-branco);
+          }
+
+          .text-button{
+            left: -5px;
+            color: $cor-azulado;
+          }
+        }
+
+        &:disabled{
+          .text-button{
+            left: 0;
+            color: $cor-branco;
+          }
+
+          svg{
+            left: 0;
+            @include box-shadow(0 0 0 0 $cor-branco);
+          }
+
+          .mat-button-focus-overlay{
+            opacity: 0;
+          }
+        }
+
+        .mat-button-focus-overlay, 
+        .mat-button-ripple{
+          z-index: 2;
+        }
+
+        .text-button{
+          position: relative;
+          z-index: 1;
+          @include transition-padrao;
+          display: inline-block;
+          left: 0;
+        }
+
+        svg{
+          @include transition-padrao;
+          color: $cor-azulado;
+          background: $cor-branco;
+          border-radius: 50px;
+          margin: 0 5px 0 0;
+          position: relative;
+          z-index: 1;
+          padding: 8px;
+          left: 0;
+          max-width: 36px;
+          max-height: 36px;
+
+          @include box-shadow(0 0 0 0 $cor-branco);
+        }
+      }   
+    }
+  }
+}
+
+.mat-tab-label:focus{
+  span.text-icon{
+    span{
+      text-shadow: 0 0 10px rgba($cor-branco, 1);
+    }
+  }
+}

@@ -1,0 +1,6 @@
+<button md-fab class="fab-large row justify-content-center align-items-center" [disabled]="!emExecucao" (click)="pausar()" tabindex="4">
+    <svg class="nc-icon nc-icon-grid-48"><use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-pause-4x"/></svg>
+    <span class="text">Pausar <br />
+        <app-cronometro [tempoExecucao]="tempoExecucao" [emExecucao]="emExecucao"></app-cronometro>
+    </span> 
+</button>

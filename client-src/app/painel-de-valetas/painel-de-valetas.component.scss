@@ -1,0 +1,39 @@
+.btn-close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 14px;
+}
+
+.actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+    .btn-configuracoes {
+        background: none;
+        border: 2px solid #1db4e9;
+        border-radius: 50px !important;
+        font-size: 12px;
+        text-transform: uppercase;
+        height: 44px;
+        min-height: 44px;
+        margin: 13px 0px;
+        padding: 0 20px;
+        svg {
+            margin: 0 10px 0 0;
+        }
+    }
+    app-fullscreen {
+        display: block;
+        margin: 14px 0 14px 14px;
+    }
+}
+
+svg.color-new,
+.veiculo-number {
+    color: #fff!important
+}
+
+.veiculo-number {
+    font-size: 12px!important;
+}

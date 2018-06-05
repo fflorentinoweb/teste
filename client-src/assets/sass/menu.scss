@@ -1,0 +1,20 @@
+.mat-menu-panel{
+    min-width: 230px !important;
+
+    .mat-menu-content{
+        background: $cor-card-bg;
+        border:2px solid $cor-azulado;
+        border-radius: 5px;
+        padding: 0;
+
+        .mat-menu-item{
+            color: $cor-branco;
+            font-size: 14px;
+            border-top: 2px solid rgba($cor-card-cinza, 0.1);
+
+            &:first-child{
+                border:none;
+            }
+        }
+    }
+}

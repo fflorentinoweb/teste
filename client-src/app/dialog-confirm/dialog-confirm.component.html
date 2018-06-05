@@ -1,0 +1,35 @@
+<div class="dialog-alert">
+    <!--<div class="dialog-header row align-items-center justify-content-center">
+        <button md-mini-fab md-dialog-close class="btn-close" mdTooltipShowDelay="1200" mdTooltip="Fechar">
+            <svg class="nc-icon  nc-icon-grid-16"><use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-fechar-1x"/></svg>
+        </button>
+        
+    </div>-->
+
+    <div md-dialog-content>
+        <div class="dialog-content">
+            <div class="icon row align-items-center justify-content-center">
+                <svg class="nc-icon  nc-icon-grid-32"><use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-alert-3x"/></svg>
+            </div>
+            <p>{{ message }}</p>
+        </div>
+    </div>
+</div>
+
+<div md-dialog-actions>
+    <div class="row">
+        <div class="col-6">
+            <button md-button (click)="dialogRef.close(true)">
+                <svg class="nc-icon nc-icon-grid-24 cor-card-execusao"><use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-check-2x"/></svg>
+                Sim
+            </button>
+        </div>
+        <div class="col-6">
+            <button md-button md-dialog-close>
+                <svg class="nc-icon nc-icon-grid-16"><use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-seta-esquerda-1x"/></svg>
+                Não
+            </button>
+        </div>
+
+    </div>
+</div>

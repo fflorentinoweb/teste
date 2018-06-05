@@ -1,0 +1,130 @@
+<md-tab-group dynamicHeight="true">
+  <md-tab>
+    <ng-template md-tab-label>
+      <span class="text-icon">
+        <div>
+          <svg class="nc-icon nc-icon-grid-32"><use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-chave-3x"/></svg>
+          <span>Funcionário</span>
+        </div>
+      </span>
+    </ng-template>
+
+    <form>
+      <div class="row">
+        <div class="form-group col-12 lookup-focus">
+          <dx-lookup
+            class="form-control top-position"
+            placeholder="O.S - Prefixo"
+            [(ngModel)]="osIdMecanico"
+            name="osIdMecanico"
+            [dataSource]="listaOS"
+            [displayExpr]="displayOS"
+            valueExpr="id"
+            [searchEnabled]="true"
+            [closeOnOutsideClick]="true"
+            (onSelectionChanged)="carregarVeiculoValetaMecanico()"
+            itemTemplate="item">
+            <div *dxTemplate="let item of 'item'" class="top-position">
+              <span class="item-01">{{item.numero}}</span>
+              <span class="item-02">{{ item.tipo == 0 ? "Corretiva" : "Preventiva" }} - {{ item.veiculo.prefixo }}</span>
+            </div>
+          </dx-lookup>
+          <label class="control-label">Nº da OS*</label>
+        </div>
+        <div class="form-group col-12 lookup-focus">
+          <dx-select-box
+              class="form-control"
+              placeholder="Selecione primeiro a ordem de serviço"
+              [(ngModel)]="veiculoIdMecanico"
+              name="veiculoIdMecanico"
+              [items]="listaVeiculos"
+              [displayExpr]="displayVeiculos"
+              valueExpr="id"
+              [searchEnabled]="true"
+              [disabled]="true"></dx-select-box>
+              <label class="control-label">Prefixo*</label>
+        </div>
+        <div class="form-group col-5 col-sm-6 lookup-focus">
+          <dx-lookup
+            class="form-control valeta__"
+              [(ngModel)]="valetaIdMecanico"
+              name="valetaIdMecanico"
+              [dataSource]="listaValetas"
+              [displayExpr]="displayValetas"
+              valueExpr="id"
+              [searchEnabled]="true"
+              [closeOnOutsideClick]="true"
+              [disabled]="disabledValetaMecanico"
+              itemTemplate="item"
+              [ngClass]="{'action-focused' : !disabledValetaMecanico && !valetaIdMecanico}">
+              <div *dxTemplate="let item of 'item'">
+                <span class="item-01">{{item.descricao}}</span>
+
+              </div>
+          </dx-lookup>
+          <label class="control-label">Valeta*</label>
+        </div>
+        <div class="form-group col-7 col-sm-6 pl-4">
+          <button md-button class="button-block" [disabled]="disabledEntrarMecanico()" [ngClass]="{'action-focused' : disabledValetaMecanico && !disabledEntrarMecanico() || valetaIdMecanico}" (click)="entrarMecanico()">
+            <svg class="nc-icon nc-icon-grid-32"><use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-seta-direita-3x"/></svg>
+            <span class="text-button">Entrar</span>
+          </button>
+        </div>
+      </div>
+    </form>
+  </md-tab>
+  <md-tab tabindex="2">
+    <ng-template md-tab-label>
+      <span class="text-icon">
+        <div>
+          <svg class="nc-icon nc-icon-grid-32"><use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-volante-3x"/></svg>
+          <span>Manobrista</span>
+        </div>
+      </span>
+    </ng-template>
+    <p>
+      Informe a <strong>entrada</strong> ou a <strong>saída</strong> do veículo na valeta
+    </p>
+     <form>
+      <div class="row">
+        <div class="form-group col-12">
+          <label class="control-label">Prefixo*</label>
+          <dx-lookup
+            class="form-control"
+            [(ngModel)]="veiculoIdManobrista"
+            name="veiculoIdManobrista"
+            [dataSource]="listaVeiculos"
+            [displayExpr]="displayVeiculos"
+            valueExpr="id"
+            [searchEnabled]="true"
+            [closeOnOutsideClick]="true"
+            (onSelectionChanged)="carregarValetaManobrista()">
+          </dx-lookup>
+        </div>
+        <div class="form-group col-5 col-sm-6">
+          <label class="control-label">Valeta*</label>
+          <dx-lookup
+            class="form-control"
+            [(ngModel)]="valetaIdManobrista"
+            name="valetaIdManobrista"
+            [dataSource]="listaValetas"
+            [displayExpr]="displayValetas"
+            valueExpr="id"
+            [closeOnOutsideClick]="true"
+            [searchEnabled]="true"
+            [disabled]="disabledValetaManobrista"
+            [ngClass]="{'action-focused' : !disabledValetaManobrista && !valetaIdManobrista}">
+          </dx-lookup>
+        </div>
+        <div class="form-group col-7 col-sm-6 pl-4">
+          <button md-button class="button-block" [disabled]="disabledEntrarManobrista()" 
+          [ngClass]="{'action-focused' : disabledValetaManobrista && !disabledEntrarManobrista() || valetaIdManobrista}"
+          (click)="valetaExistenteManobrista ? retirarManobrista() : entrarManobrista()">
+            <svg class="nc-icon nc-icon-grid-32"><use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-seta-direita-3x"/></svg>
+            <span class="text-button">{{ valetaExistenteManobrista ? "Retirar" : "Entrar" }}</span>
+          </button>
+        </div>
+      </div>
+    </form>
+  </md-tab>
+</md-tab-group>

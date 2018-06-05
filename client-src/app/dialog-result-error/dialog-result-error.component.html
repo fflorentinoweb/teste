@@ -1,0 +1,22 @@
+<div class="dialog-alert">
+    <div class="dialog-header row align-items-center justify-content-center">
+        <button md-mini-fab class="btn-close" mdTooltipShowDelay="1200" mdTooltip="Fechar" (click)="OnClose()">
+      <svg class="nc-icon  nc-icon-grid-16">
+        <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-fechar-1x">
+          <title></title>
+        </use>
+      </svg>
+    </button>
+    </div>
+
+    <div md-dialog-content class="no-action">
+        <div class="dialog-content">
+            <div class="icon row align-items-center justify-content-center">
+                <svg class="nc-icon  nc-icon-grid-32">
+          <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-alert-3x" />
+        </svg>
+            </div>
+            <p [innerHTML]="message"></p>
+        </div>
+    </div>
+</div>

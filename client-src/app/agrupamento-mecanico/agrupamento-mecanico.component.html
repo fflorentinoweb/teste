@@ -1,0 +1,82 @@
+<header>
+  <app-btn-menu-gestor></app-btn-menu-gestor>
+  <div class="actions row">
+    <div class="col-auto">
+      <app-editar-grupos></app-editar-grupos>
+    </div>
+  </div>
+  <div class="page-name">
+    <p>Agrupamento de funcionários</p>
+  </div>
+</header>
+
+<form novalidate #formAgrupamentoFuncionario="ngForm">
+  <div class="content-agrupamento row justify-content-center align-items-center">
+    <div class="row">
+      <div class="col-6 form-group">
+        <label class="control-label">Garagem
+          <strong mdTooltipShowDelay="1200" mdTooltip="Campo obrigatório">*</strong>
+        </label>
+        <app-empresa-filial [items]="empresas" (valueChange)="handleValueUpdated($event, formAgrupamentoFuncionario.form)" class="empresa-filial-garem-agrupamento-mecanico"></app-empresa-filial>
+      </div>
+      <div class="col-6 form-group">
+        <label class="control-label">Grupo
+          <strong mdTooltipShowDelay="1200" mdTooltip="Campo obrigatório">*</strong>
+        </label>
+        <dx-lookup class="form-control" [dataSource]="listaGrupos" [searchEnabled]="true" [closeOnOutsideClick]="true" [displayExpr]="displayGrupoMecanicos"
+          valueExpr="id" itemTemplate="item" (onValueChanged)="atualizaSelecaoMecanicos($event)" (onOpened)="onOpened()" [disabled]="disabledGrupo">
+          <div *dxTemplate="let item of 'item'" class="top-position" #Grupos>
+            {{ item.descricao }}
+          </div>
+        </dx-lookup>
+
+        <div *ngIf="!validationGrupoValid && (validationGrupoDirty || submitted)" class="alert alert-danger">
+          <div *ngIf="!validationGrupoValid && (validationGrupoDirty || submitted)">
+            *O campo Grupo é obrigatório.
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-5 col-xl-5">
+        <label class="control-label">Todos os funcionários</label>
+        <div class="agrupamento-list" [ngClass]="{'disabled': disabledListas}">
+          <ul [dragula]='"selection-list"' [dragulaModel]='arr1' [attr.data-id]="'L1'" #list1>
+            <li *ngFor='let item of arr1; let i = index' class="row justify-content-between" [attr.data-id]="item.id" [attr.data-index]="i">
+              <span [innerHtml]='item.nome'></span>
+              <button (click)="add(item)" class="action-drag-drop">
+                <svg _ngcontent-c8="" class="nc-icon nc-icon-grid-24">
+                  <use _ngcontent-c8="" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-mais-2x"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-2 clique-arraste row justify-content-center align-items-center">
+        <p>
+          Clique ou
+          <br>arraste
+        </p>
+      </div>
+      <div class="col-12 col-md-5 col-xl-5">
+        <label class="control-label">Seleção de funcionários</label>
+        <div class="selecao-list" [ngClass]="{'isDragging': isDragging, 'disabled': disabledListas}">
+          <div class="bg-selecao-mecanico row align-items-center justify-content-center" *ngIf="arr2.length < 1">
+            <svg class="nc-icon nc-icon-grid-48 tst">
+              <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-mecanico-4x" />
+            </svg>
+          </div>
+          <ul [dragula]='"selection-list"' [dragulaModel]='arr2' [attr.data-id]="'L2'" #list2>
+            <li #testi *ngFor='let item of arr2; let i = index' class="row justify-content-between" [attr.data-id]="item.id" [attr.data-index]="i">
+              <span [innerHtml]='item.nome'></span>
+              <button (click)="remove(item)" class="action-drag-drop">
+                <svg class="nc-icon nc-icon-grid-24">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/icons/icons/nc-icons.svg#nc-bgm-menos-2x"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

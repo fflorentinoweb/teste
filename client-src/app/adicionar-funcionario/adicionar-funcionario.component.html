@@ -1,0 +1,7 @@
+<button md-mini-fab class="btn-addMecanico" [ngClass]="{'add-pulse' : !funcionarios.length > 0, 'active-mechanics-list' : listaMecanicoActive}" mdTooltipShowDelay="1200" mdTooltip="Adicionar funcionários" (click)="autenticarFuncionario()" tabindex="1">
+  <svg class="nc-icon nc-icon-grid-32 ml-1"><use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-mecanico-add-3x"/></svg>
+
+  <div class="balao" *ngIf="!funcionarios.length > 0">
+    <span><strong>+</strong> funcionários</span>
+  </div>
+</button>

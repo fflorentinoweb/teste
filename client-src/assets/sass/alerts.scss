@@ -1,0 +1,73 @@
+.alert-persona-pausado{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    border-top:1px solid $cor-alert-danger;
+    background: rgba($cor-branco, 0.05);
+
+    svg{
+        width: 40px !important;
+        margin: 0 10px 0 0;
+        color: $cor-alert-danger;
+    }
+
+    p{
+        font-size:14px;
+        color: $cor-branco;
+        font-family: $font-Book;
+        text-transform: uppercase;
+    }
+}
+
+.alert {
+    font-size: 14px;
+    font-family: $font-Book;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+
+    &.alert-danger {
+      color: $cor-card-defeito;
+
+      .nc-icon{
+        color: $cor-card-defeito;
+      }
+    }
+
+    &.alert-success{
+      color: $cor-alert-success;
+
+      .nc-icon{
+        color: $cor-alert-success;
+      }
+    }
+
+    &.invalid-value,
+    &.valid-value {
+      background-color: rgba($cor-card-defeito, 0.1);
+      // color: $cor-card-defeito;
+      text-transform: uppercase;
+      padding: 0.55rem 1rem;
+      position: relative;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      .nc-icon {
+        margin: 0 5px 0 0;
+        position: relative;
+        top: 2px;
+      }
+    }
+    &.valid-value{
+      background-color: lighten($cor-card-execusao,20%);
+      color: darken($cor-card-execusao, 10%);
+      border:1px solid darken($cor-card-execusao, 10%);
+      .nc-icon{
+      color: darken($cor-card-execusao, 10%);        
+      }
+    }
+  }

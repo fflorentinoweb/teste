@@ -1,0 +1,173 @@
+<div class="dialog-header row align-items-center">
+    <button md-mini-fab class="btn-close" mdTooltipShowDelay="1200" mdTooltip="Fechar" (click)="Close()">
+    <svg class="nc-icon  nc-icon-grid-16">
+      <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-fechar-1x">
+        <title></title>
+      </use>
+    </svg>
+  </button>
+    <h1 md-dialog-title>
+        Informe a solução
+    </h1>
+</div>
+
+<div md-dialog-content>
+    <div class="dialog-content">
+        <h6>
+            <small>{{ descricaoServicoDefeito }}</small>
+        </h6>
+        <form novalidate #formSolucao="ngForm" *ngIf="!exibeSolucoes" (change)="OnChange()">
+            <div class="form">
+                <div class="row form-group">
+                    <div class="form-group col-12">
+                        <label class="control-label">Grupo
+              <strong mdTooltipShowDelay="1200" mdTooltip="Campo obrigatório">*</strong>
+            </label>
+                        <dx-lookup class="form-control form-control-sm" [(ngModel)]="osSolucao.grupoServicoId" name="grupoServicoId" [dataSource]="listaGruposServico" [displayExpr]="displayGruposServico" valueExpr="id" (onSelectionChanged)="changedGrupoServico()" [searchEnabled]="true"
+                            [closeOnOutsideClick]="true" [disabled]="desabilitarCampos()" [ngClass]="{'has-error': !grupoServicoValid && (grupoServicoDirty || submitted),
+                                        'succeed': grupoServicoValid}" itemTemplate="item">
+                            <div *dxTemplate="let item of 'item'">
+                                <span class="item-01">{{item.codigo}}</span>
+                                <span class="item-02">{{item.descricao}}</span>
+                            </div>
+                        </dx-lookup>
+
+                        <div *ngIf="!grupoServicoValid && (grupoServicoDirty || submitted)" class="alert alert-danger">
+                            <div *ngIf="!grupoServicoValid && (grupoServicoDirty || submitted)">
+                                *O campo Grupo é obrigatório.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="form-group col-12">
+                        <label class="control-label">Serviço
+              <strong mdTooltipShowDelay="1200" mdTooltip="Campo obrigatório">*</strong>
+            </label>
+                        <dx-lookup class="form-control form-control-sm" [(ngModel)]="osSolucao.solucaoServicoId" name="solucaoServicoId" [dataSource]="listaServicos" [displayExpr]="displayServicos" valueExpr="id" (onSelectionChanged)="changedServico()" [searchEnabled]="true"
+                            [closeOnOutsideClick]="true" [disabled]="!osSolucao.grupoServicoId" [ngClass]="{'has-error': !servicoValid && osSolucao.grupoServicoId && (servicoDirty || submitted),
+                                        'succeed': servicoValid}" itemTemplate="item">
+                            <div *dxTemplate="let item of 'item'">
+                                <span class="item-01">{{item.codigo}}</span>
+                                <span class="item-02">{{item.descricao}}</span>
+                            </div>
+                        </dx-lookup>
+
+                        <div *ngIf="!servicoValid && osSolucao.grupoServicoId && (servicoDirty || submitted)" class="alert alert-danger">
+                            <div *ngIf="!servicoValid && osSolucao.grupoServicoId &&(servicoDirty || submitted)">
+                                *O campo Serviço é obrigatório.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="form-group col-12">
+                        <label class="control-label">Tipo de operação
+              <strong mdTooltipShowDelay="1200" mdTooltip="Campo obrigatório">*</strong>
+            </label>
+                        <dx-lookup class="form-control form-control-sm" [(ngModel)]="osSolucao.tipoDeOperacaoId" name="tipoDeOperacaoId" [dataSource]="listaTiposDeOperacao" [displayExpr]="displayTiposDeOperacao" (onSelectionChanged)="changedTipoDeOperacao()" valueExpr="id" [searchEnabled]="true"
+                            [disabled]="desabilitarCampos()" [closeOnOutsideClick]="true" [ngClass]="{'has-error': !tipoDeOperacaoValid && (tipoDeOperacaoDirty || submitted),
+                                        'succeed': tipoDeOperacaoValid}" itemTemplate="item">
+                            <div *dxTemplate="let item of 'item'">
+                                <span class="item-01">{{item.codigo}}</span>
+                                <span class="item-02">{{item.descricao}}</span>
+                            </div>
+                        </dx-lookup>
+
+                        <div *ngIf="!tipoDeOperacaoValid && (tipoDeOperacaoDirty || submitted)" class="alert alert-danger">
+                            <div *ngIf="!tipoDeOperacaoValid && (tipoDeOperacaoDirty || submitted)">
+                                *O campo Tipo de operação é obrigatório.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-12" *ngIf="!usuarioApontador">
+                        <label class="control-label">Informações complementares</label>
+                        <textarea [(ngModel)]="osSolucao.complemento" autosize class="form-control" placeholder="Adicione aqui informações complementares relacionadas ao {{finalizandoServico ? 'serviço' : 'defeito'}}" name="complemento" maxlength="100" required></textarea>
+
+                        <div *ngIf="!solucaoJaAdicionadaValid && submitted" class="alert alert-danger">
+                            <div *ngIf="!solucaoJaAdicionadaValid && submitted">
+                                *Solução já adicionada
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12" *ngIf="usuarioApontador">
+                      <label class="control-label">Informações complementares</label>
+                      <textarea [(ngModel)]="osSolucao.complemento" autosize class="form-control" placeholder="Adicione aqui informações complementares relacionadas ao {{finalizandoServico ? 'serviço' : 'defeito'}}" name="complemento" maxlength="100" required ></textarea>
+
+                      <div *ngIf="!solucaoJaAdicionadaValid && submitted" class="alert alert-danger">
+                          <div *ngIf="!solucaoJaAdicionadaValid && submitted">
+                              *Solução já adicionada
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+
+            <md-action-row class="row mt-3" *ngIf="!finalizandoServico">
+                <div class="col-12 col-sm-6 row justify-content-start">
+                    <button [hidden]="solucoesDoDefeito == 0" (click)="atualizarVisaoSolucoes()" md-raised-button class="btn-add">Ver soluções</button>
+                </div>
+                <div class="col-12 col-sm-6 row justify-content-end">
+                    <button md-raised-button class="btn-add" (click)="adicionarSolucao(formSolucao.form)" [disabled]="solucoesDoDefeito.length >= 3">+ Adicionar solução</button>
+                </div>
+            </md-action-row>
+        </form>
+
+        <div class="list-solucoes" *ngIf="exibeSolucoes">
+            <dx-accordion #accordion [dataSource]="solucoesDoDefeito" [collapsible]="true" [multiple]="false" [animationDuration]="300">
+
+                <button class="btn-solucao" *dxTemplate="let osSolucao of 'title'">
+          <h1>{{osSolucao.solucaoServico}}</h1>
+        </button>
+                <div *dxTemplate="let osSolucao of 'item'">
+                    <p>Grupo: {{osSolucao.grupoServico}}</p>
+                    <p>Serviço: {{osSolucao.solucaoServico}}</p>
+                    <p>Tipo de operação: {{osSolucao.tipoDeOperacao}}</p>
+                    <p *ngIf="osSolucao.complemento">
+                        Informações complementares: {{osSolucao.complemento}}
+                    </p>
+                    <div class="panel-info-action row justify-content-center">
+                        <button md-button (click)="removerSolucao(osSolucao)">
+              <svg class="nc-icon nc-icon-grid-16 mr-1">
+                <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-fechar-1x" />
+              </svg>
+              Excluir resolução
+            </button>
+                    </div>
+                </div>
+            </dx-accordion>
+
+            <md-action-row class="row mt-3">
+                <div class="col-12 col-sm-6 row justify-content-start"></div>
+                <div class="col-12 col-sm-6 row justify-content-end">
+                    <button md-raised-button class="btn-add" (click)="reiniciarFormDefeito()" [disabled]="solucoesDoDefeito.length >= 3">+ Adicionar solução</button>
+                </div>
+            </md-action-row>
+        </div>
+    </div>
+</div>
+
+<div md-dialog-actions *ngIf="finalizandoServico || exibeSolucoes">
+    <div class="row">
+        <div class="col-6">
+            <button md-button (click)="confirmar()" [disabled]="(!finalizandoServico && solucoesDoDefeito.length == 0) || !verificouTrocaDeOleo || globals.processSpinner">
+        <md-spinner *ngIf="globals.processSpinner" class="spinner-small"></md-spinner>
+        <svg *ngIf="!globals.processSpinner" class="nc-icon nc-icon-grid-24 cor-card-execusao">
+          <use href="/assets/icons/icons/nc-icons.svg#nc-bgm-check-2x" />
+        </svg>
+        <span *ngIf="!globals.processSpinner">{{displayStatus(trocaDeOleo)}}</span>
+        <span *ngIf="globals.processSpinner">Carregando</span>
+      </button>
+        </div>
+        <div class="col-6">
+            <button md-button (click)="Close()">
+        <svg class="nc-icon nc-icon-grid-16">
+          <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-seta-esquerda-1x" />
+        </svg>
+        Cancelar
+      </button>
+        </div>
+    </div>
+</div>

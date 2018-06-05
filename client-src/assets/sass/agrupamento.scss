@@ -1,0 +1,354 @@
+
+.tabs-agrupamento {
+	.mat-tab-header {
+		.mat-tab-label-container {
+			.mat-tab-list {
+				.mat-tab-labels {
+					.mat-tab-label {
+						font-size: 16px;
+						@media screen and (max-width: $break-sm) {
+							min-width: auto;
+							line-height: 1.5;
+							padding: 12px 10px 0 10px!important;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.mat-tab-header,
+	.mat-tab-label-container {
+		width: 533px !important;
+		@media screen and (max-width: $break-sm) {
+			width: 100% !important;
+		}
+	}
+	.mat-tab-body-wrapper .mat-tab-body-content {
+		height: auto !important;
+		padding-bottom: 40px;
+	}
+}
+.content-agrupamento {
+	height: calc(100vh - 72px);
+	width: 765px;
+	margin:0 auto;
+
+	.row{
+		width:100%;
+		.col-6{
+			margin: 0 0 30px 0!important;
+			strong{
+				color: $cor-branco !important
+			}
+		}
+	}
+
+	.col-12{
+		&.no-pad{
+			padding:0!important;
+		}
+	}
+	
+	@media screen and (max-width: $break-md) {
+		width: 300px;
+		margin-top:25px;
+	}
+
+	@media screen and (max-width: $break-sm) {
+		width: 100%;
+	}
+
+	dx-lookup {
+		width: 100%;
+		margin:0;
+		&.disabled{
+			.dx-lookup-field{
+				cursor: not-allowed
+			}
+		}
+		@media screen and (max-width: $break-sm) {
+			width: 100%;
+		}
+	}
+	.dx-lookup-empty {
+		.dx-lookup-field {
+			font-size: 18px;
+		}
+	}
+	.agrupamento-list,
+	.selecao-list {
+		border-radius: 8px;
+		width: 100%;
+		height: 295px;
+		overflow-y: auto;
+		&.disabled{
+			cursor:not-allowed
+		}
+		@media screen and (max-width: $break-md) {
+			margin-bottom: 40px;
+		}
+		overflow-x: hidden;
+	}
+	.agrupamento-list {
+		background: rgba($cor-branco, 0.1);
+		position: relative;
+	}
+	.agrupamento-list,
+	.selecao-list {
+		ul {
+			list-style: none;
+			min-height: 100%;
+			li {
+				border-bottom: 1px solid $cor-fundo;
+				cursor: -webkit-grab;
+				font-family: $font-Book;
+				color: $cor-branco;
+				display: flex;
+				align-items: center;
+				min-height: 40px;
+				position: relative!important;	
+				padding-right: 15px;	
+				line-height: 1.1;				
+				&.gu-transit {
+					border: 1px solid #fff;
+				}
+				&:hover {
+					button {
+						@include transition-padrao;
+						opacity: 1;
+					}
+				}
+				span {
+					font-size: 14px;
+					margin: 0 20px;
+				}
+				button {
+					opacity: 0;
+					@include transition-padrao;
+					&:hover,
+					&:focus {
+						@include box-shadow(0 0 0 5px rgba($cor-branco, 0.02), 0 0 0 10px rgba($cor-branco, 0.02));
+					}
+					@media screen and (max-width: $break-md) {
+						opacity: 1 !important;
+					}
+				}
+				.action-drag-drop {
+					border: 0;
+					border-radius: 6px;
+					background: #464f56;
+					cursor: pointer;
+					width: 23px;
+					height: 23px;
+					margin: 0 20px 0 0;
+					position: absolute;
+					right: -5px;
+					top: 8px;
+					svg {
+						color: $cor-branco;
+					}
+				}
+			}
+		}
+	}
+	.selecao-list {
+		position: relative;
+		border: 2px dashed rgba($cor-branco, 0.1);
+
+		&.isDragging {
+			border-color: rgba($cor-azulado, 1);
+			@include transition-padrao;
+			@include box-shadow(0 0 0 10px rgba($cor-branco, 0.01), 0 0 0 20px rgba($cor-branco, 0.01));
+		}
+		ul {
+			li {
+				border-bottom: 1px solid rgba($cor-branco, 0.1);
+			}
+		}
+	}
+	p {
+		font-family: $font-Book;
+		font-size: 13px;
+		text-transform: uppercase;
+		color: #fff;
+		text-align: center;
+	}
+}
+
+.content-registro {
+	width:100%;
+	height: calc(100vh - 72px);
+	overflow-y:auto;
+	.row{
+		max-width: 1185px;
+		margin:auto!important;
+		padding:40px 0;
+	}
+	.col-xl-4,
+	.col-md-4 {
+		padding-right: 15px !important;
+		padding-left: 15px !important;
+		padding-bottom: 30px;
+		@media screen and (max-width: $break-md){
+			padding-bottom: 15px;
+			&:last-child{
+				padding-bottom: 0;
+			}
+		} 
+	}
+	.dx-widget {
+		@media screen and (max-width: $break-md) {
+			margin-bottom: 40px;
+		}
+	}
+	.dx-datagrid {
+		border-radius: 6px;
+		background: $cor-registro-presenca-bg;
+	
+		.dx-datagrid-headers {
+			border-bottom: initial !important;
+		}
+		.dx-column-lines > td {
+			border-color: #353e47 !important;
+			cursor: pointer;
+		}
+		.dx-datagrid-action {
+			font-family: $font-Medium;
+			color: $cor-branco;
+			text-align: center !important;
+			float: none !important;
+		}
+		.dx-datagrid-rowsview {
+			border: 0;
+			overflow: auto;
+			height: 330px!important;
+			.dx-row {
+				border-color: #353e47;
+				color: $cor-branco;
+			}
+		}
+	}
+}
+
+.content-agrupamento,
+.content-registro {
+	@media screen and (max-height: 650px) {
+		margin-top: 0 !important;
+	}
+	@media screen and (max-width:$break-md){
+		margin-top:5px!important;
+	}
+}
+
+.clique-arraste {
+	@media screen and (max-width: $break-md) {
+		display: none;
+	}
+}
+
+li.gu-mirror {
+	background: rgba($cor-branco, 0.1);
+	cursor: -webkit-grab;
+	font-family: $font-Book;
+	color: $cor-branco;
+	display: flex;
+	align-items: center;
+	min-height: 40px;
+	padding: 0 10px;
+	button {
+		display: none;
+	}
+
+.content-agrupamento {
+  max-width: 775px;
+  margin: 50px auto 0 auto;
+
+  dx-lookup,
+  .agrupamento-list,
+  .selecao-list {
+    width: 300px;
+  }
+  .agrupamento-list,
+  .selecao-list {
+    border-radius: 8px;
+    height: 295px;
+    overflow-y: auto;
+  }
+  .agrupamento-list {
+    background: rgba($cor-branco, 0.1);
+  }
+  .agrupamento-list,
+  .selecao-list {
+    ul {
+      list-style: none;
+      min-height: 100%;
+      li {
+        border-bottom: 1px solid $cor-fundo;
+        cursor: -webkit-grab;
+        font-family: $font-Book;
+        color: #999;
+        display: flex;
+        align-items: center;
+				min-height: 40px;
+				position: relative!important;
+				padding-right:15px;
+				line-height: 1.1;
+        span {
+          font-size: 14px;
+          margin: 0 20px;
+        }
+      }
+    }
+  }
+  .selecao-list {
+    border: 2px dashed rgba($cor-branco, 0.1);
+  }
+
+  p {
+    font-family: $font-Book;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #999;
+  }
+}
+
+.content-registro {
+  max-width: 1185px;
+  margin: 50px auto 0 auto;
+
+  .col-4 {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+
+  .dx-datagrid {
+    border-radius: 6px;
+    background: $cor-registro-presenca-bg;
+    max-height: 330px;
+    overflow-y: auto;
+
+    .dx-datagrid-headers{
+      border-bottom:initial!important; 
+    }
+
+    .dx-column-lines > td{
+      border-color: #353e47!important;
+    }
+
+    .dx-datagrid-action {
+      font-family: $font-Medium;
+      color: $cor-branco;
+      text-align: center!important;
+      float:none!important;
+    }
+    .dx-datagrid-rowsview {
+      border: 0;
+      .dx-row{
+        border-color: #353e47;
+        color: $cor-branco;
+      }
+    }
+  }
+}
+}

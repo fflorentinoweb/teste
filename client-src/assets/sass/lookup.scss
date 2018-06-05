@@ -1,0 +1,213 @@
+.dx-lookup-popup-wrapper {
+	&.dx-overlay-modal {
+		.dx-popup-content {
+			margin: 0;
+		}
+	}
+
+	.dx-popup-content {
+		border-radius: 6px;
+		@include box-shadow(0 0 0 10px rgba($cor-branco, 0.01), 0 0 0 20px rgba($cor-branco, 0.01));
+		height: inherit !important;
+		margin: -66px 0 0 0;
+	}
+
+	.dx-overlay-content {
+		background-color: $cor-component-lookup-item;
+		border: 0;
+
+		.dx-popover-arrow {
+			&:after {
+				display: none;
+			}
+		}
+
+		.dx-searchbox {
+			.dx-icon-search {
+				font-size: 18px;
+				&:before {
+					color: $cor-branco;
+				}
+			}
+		}
+
+		.dx-texteditor {
+			border: 0;
+			background: transparent;
+
+			.dx-icon-clear {
+				&:before {
+					content: '\f00a';
+				}
+			}
+		}
+
+		.dx-list {
+			background: $cor-component-lookup-item;
+
+			.dx-scrollable-content {
+				max-height: 207px;
+				height: 100%;
+
+				@media screen and (max-width: $break-md) {
+					max-height: 100%;
+				}
+
+				@media screen and (max-height: 760px) {
+					max-height: 156px;
+				}
+				@media screen and (max-height: 660px) {
+					max-height: 104px;
+				}
+			}
+		}
+
+		.dx-list-item-content {
+			padding-left: 20px;
+		}
+
+		.dx-searchbox .dx-texteditor-input,
+		.dx-searchbox .dx-placeholder:before {
+			padding-left: 44px;
+		}
+
+		.dx-list .dx-empty-message,
+		.dx-list-item.dx-list-item-selected,
+		.dx-list-item.dx-state-hover,
+		.dx-texteditor,
+		.dx-texteditor .dx-icon-clear:before,
+		.dx-texteditor .dx-placeholder,
+		.dx-list:not(.dx-list-select-decorator-enabled) .dx-list-item.dx-list-item-selected {
+			color: $cor-branco;
+		}
+
+		.dx-list-item.dx-list-item-selected,
+		.dx-list-item.dx-state-hover,
+		.dx-list:not(.dx-list-select-decorator-enabled) .dx-list-item.dx-list-item-selected {
+			background: $cor-component-lookup-item-active;
+		}
+
+		.dx-scrollable-scroll-content {
+			background-color: $cor-component-lookup-scrollbar;
+			border-radius: 6px;
+			-moz-border-radius: 6px;
+			-webkit-border-radius: 6px;
+			-ms-border-radius: 6px;
+		}
+
+		.dx-scrollbar-vertical .dx-scrollable-scroll {
+			width: 12px;
+			margin-top: -16px;
+			top: 13px;
+		}
+
+		.dx-scrollbar-vertical.dx-scrollbar-hoverable {
+			background-color: transparent;
+			margin: 4px 4px 0 0;
+		}
+
+		.dx-scrollbar-vertical.dx-scrollbar-hoverable.dx-state-hover {
+			width: 12px;
+		}
+	}
+
+	.dx-lookup-search-wrapper {
+		background-color: $cor-component-lookup-header;
+		border-radius: 6px 6px 0 0;
+		-moz-border-radius: 6px 6px 0 0;
+		-webkit-border-radius: 6px 6px 0 0;
+		padding: 4px 10px;
+		.dx-texteditor-input {
+			background-color: $cor-component-lookup-header;
+			color: $cor-branco;
+		}
+		.dx-texteditor-input,
+		.dx-placeholder {
+			font-size: 24px;
+		}
+	}
+
+	.dx-list-item {
+		background-color: $cor-component-lookup-item;
+		border-bottom: 1px solid $cor-component-lookup-scrollbar;
+		color: $cor-branco;
+		padding: 5px 0;
+		&:last-of-type {
+			border: 0;
+		}
+	}
+
+	.item-01 {
+		font-size: 16px;
+		margin: 0 20px 0 0;
+	}
+	.item-02 {
+		font-size: 14px;
+	}
+
+	.dx-popup-bottom.dx-toolbar {
+		display: none;
+	}
+}
+
+.dx-overlay-wrapper {
+	background: rgba(0, 0, 0, 0.4);
+}
+
+.dx-texteditor,
+.dx-texteditor-input {
+	border-radius: 8px;
+	font-family: $font-Book !important;
+}
+
+.dx-lookup-arrow {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	top: 50%;
+	margin-top: -16px;
+	right: 10px;
+	&:before {
+		top: 0 !important;
+		z-index: 66;
+	}
+}
+
+.dx-state-focused {
+	.dx-lookup-field-wrapper {
+		.dx-lookup-arrow {
+			&:after {
+				width: 32px !important;
+				height: 32px !important;
+				background: rgba(#000, 0.2);
+				border-radius: 50%;
+				@include box-shadow(50%);
+				content: '';
+				position: absolute;
+				z-index: 55;
+			}
+		}
+	}
+}
+
+.form-group {
+	&.lookup-focus {
+		display: flex;
+		flex-flow: column-reverse;
+	}
+	.dx-lookup {
+		&.dx-state-focused {
+			background: rgba($cor-branco, 0.2);
+		}
+		&.dx-state-focused ~ label {
+			color: $cor-branco !important;
+		}
+
+		&:focus {
+			background: rgba($cor-branco, 0.2);
+		}
+		&:focus ~ label {
+			color: $cor-branco !important;
+		}
+	}
+}

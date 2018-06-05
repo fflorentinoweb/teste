@@ -1,0 +1,299 @@
+.dialog-open {
+    background: none;
+    @media screen and (min-width: $break-md) {
+        .container-fluid {
+            filter: blur(16px);
+        }
+        footer {
+            filter: blur(10px);
+        }
+    }
+    .cdk-overlay-container {
+        overflow: auto;
+        pointer-events: inherit;
+    }
+    .cdk-overlay-pane-alert-confirm {
+        height: 100%;
+        position: fixed !important;
+        .mat-dialog-container {
+            display: flex;
+            align-items: center;
+        }
+        @media screen and (max-width: $break-sm) {
+            width: 100% !important;
+        }
+    }
+    /* Cards Header */
+    header {
+        .title-name {
+            span {
+                display: inline-block !important;
+                top: 28px !important;
+                left: 30% !important;
+                transform: translate(-30%, 0) !important;
+                margin: 0 0 0 50px !important;
+            }
+            svg {
+                width: 32px !important;
+                height: 32px !important;
+                margin: 0 10px 0 0 !important;
+                left: 30% !important;
+                top: 20px !important;
+                transform: translate(-30%, 0) !important;
+            }
+        }
+    }
+}
+
+.menu-open {
+    .container-fluid {
+        filter: blur(16px);
+    }
+    footer {
+        filter: blur(10px);
+    }
+}
+
+.cdk-overlay-container {
+    @media screen and (max-width: $break-md) {
+        .cdk-overlay-dark-backdrop {
+            opacity: 1;
+        }
+    }
+    @media screen and (max-width: $break-sm) {
+        .cdk-global-overlay-wrapper {
+            align-items: start !important;
+        }
+    }
+    .cdk-overlay-backdrop {
+        position: fixed;
+    }
+    .cdk-overlay-pane {
+        margin: auto;
+    }
+}
+
+.mat-dialog-container {
+    background: none;
+    padding: 0 !important;
+    border-radius: 3px !important;
+    @include box-shadow(none);
+    overflow: inherit !important;
+    max-width: inherit !important;
+    app-dialog-confirm {
+        width: 100%;
+    }
+    .dialog-header {
+        min-height: 66px;
+        border-bottom: 2px solid rgba($cor-branco, 0.1);
+        padding: 15px 30px;
+        position: relative;
+        background: $cor-dialog-bg;
+        box-sizing: border-box;
+        .mat-mini-fab {
+            position: absolute;
+            top: 12px;
+            right: 15px;
+        }
+        .mat-dialog-title {
+            text-align: left;
+            color: $cor-branco;
+            font-size: 18px;
+            font-family: $font-Book;
+            width: 100%;
+            margin: 0;
+            padding: 0 35px 0 0;
+            small {
+                display: block;
+                color: $cor-azulado;
+                line-height: 1.3;
+                font-size: 14px;
+                padding: 0 100px 0 0;
+            }
+        }
+    }
+    .mat-dialog-content {
+        margin: 0;
+        padding: 10px 30px 36px 30px;
+        max-height: inherit;
+        overflow: inherit;
+        background: $cor-dialog-bg;
+        .row {
+            margin: 0 -15px;
+            .row {
+                margin: 0;
+            }
+        }
+        .control-label {
+            color: $cor-azulado;
+            text-transform: uppercase;
+            display: block;
+            font-size: 14px;
+            margin: 15px 0 5px;
+            strong {
+                color: $cor-branco;
+            }
+        }
+        .mat-radio-button {
+            display: flex;
+            &.mat-radio-disabled {
+                cursor: not-allowed;
+                opacity: 0.4;
+                .mat-radio-label {
+                    cursor: not-allowed;
+                }
+            }
+            &.mat-accent {
+                .mat-radio-inner-circle {
+                    background-color: $cor-componente-form-active;
+                }
+            }
+            &.mat-radio-checked {
+                .mat-radio-outer-circle {
+                    border-color: $cor-azulado !important;
+                }
+            }
+            .mat-radio-label-content {
+                text-transform: uppercase;
+                font-size: 14px;
+                font-family: $font-Book;
+                color: $cor-branco;
+            }
+            .mat-radio-container {
+                .mat-radio-outer-circle {
+                    border-color: $cor-componente-form;
+                }
+            }
+        }
+        .mat-checkbox {
+            .mat-checkbox-label {
+                text-transform: uppercase;
+                font-size: 14px;
+                line-height: 2;
+                font-family: $font-Book;
+            }
+            .mat-checkbox-background {
+                background: $cor-componente-form;
+            }
+        }
+        .list-solucoes {
+            margin: 10px 0 0 0;
+            p {
+                font-size: 16px!important;
+                margin: 0 0 15px 0
+            }
+        }
+    }
+    .mat-dialog-actions {
+        margin: 0 !important;
+        padding: 1px 0;
+        .row {
+            width: 100%;
+            flex-direction: row-reverse;
+            [class*="col"] {
+                &:first-of-type {
+                    padding: 0;
+                }
+                &:nth-child(2) {
+                    padding: 0 1px 0 0;
+                }
+            }
+        }
+        .mat-button {
+            border-radius: 0 !important;
+            width: 100%;
+            background: $cor-dialog-bg;
+            text-transform: none;
+            font-size: 16px;
+            &.cdk-focused,
+            &.cdk-keyboard-focused {
+                @include transition-padrao;
+                background-color: lighten($cor-card-bg, 12%)!important;
+                box-shadow: none!important;
+            }
+            .mat-button-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            svg {
+                margin: 0 10px;
+            }
+        }
+    }
+    .dialog-alert {
+        .dialog-header {
+            padding: 40px 15px 10px 15px;
+            border: none;
+        }
+        .mat-dialog-content {
+            padding: 40px 30px 40px 30px;
+            .icon {
+                width: 75px;
+                height: 75px;
+                border: 2px solid $cor-azulado;
+                border-radius: 50px;
+                margin: 0 auto 15px auto;
+                svg {
+                    color: $cor-azulado;
+                    stroke-width: 3px !important;
+                }
+            }
+            p {
+                font-size: 18px;
+                text-align: center;
+            }
+            @media screen and (max-width: $break-md) {
+                .icon {
+                    float: left;
+                    margin: 0 20px 0 0;
+                }
+                p {
+                    text-align: left;
+                    font-size: 16px;
+                    height: 75px;
+                    margin: 0;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+.dx-lookup-popup-search {
+    .dx-popup-title {
+        display: none;
+    }
+}
+
+.spinner-small {
+    width: 43px !important;
+    height: 24px !important;
+    margin-right: 10px;
+}
+
+.mat-progress-spinner path,
+.mat-spinner path {
+    stroke: $cor-azulado;
+}
+
+.transition-animate-play-pause {
+    &.play-play {
+        transform: scale(1);
+        opacity: 0;
+        -webkit-animation: animate-key-play 2s linear;
+        animation: animate-key-play 2s linear;
+    }
+    &.pause-pause {
+        transform: scale(1);
+        opacity: 0;
+        -webkit-animation: animate-key-pause 2s linear;
+        animation: animate-key-pause 2s linear;
+    }
+}
+
+.scroll-historico {
+    max-height: 500px!important;
+    overflow-y: auto!important;
+}

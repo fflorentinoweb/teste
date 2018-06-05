@@ -1,0 +1,107 @@
+.btn-addMecanico {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    left: 0;
+    margin: 25px 30px;
+    z-index:70;
+
+    &.cdk-keyboard-focused,
+    &.cdk-focused{
+        background-color: #1db4e9!important;
+        svg{
+            color:#fff!important;
+        }
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: inherit;
+            border-radius: inherit;
+
+            -webkit-animation: pulse-animation 2s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+            animation: pulse-animation 2s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+            z-index: -1;
+        } 
+    }
+
+    svg{
+        color: #2e3740;
+    }
+
+    @media screen and (max-width: 767px) {
+      bottom:20px;
+      right:20px;
+      top:inherit;
+      left:inherit;
+      margin: 0;
+      position: fixed;
+      transition:all .3s cubic-bezier(0.9, 0.6, 0, 1.13) !important;
+
+        &.active-mechanics-list{
+            bottom: calc(50vh - 31px);
+        }
+    }
+
+    &.add-pulse{
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: inherit;
+            border-radius: inherit;
+
+            -webkit-animation: pulse-animation 2s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+            animation: pulse-animation 2s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+            z-index: -1;
+        }
+    }
+
+    .balao{
+        position: absolute;
+        top: 50%;
+        right: -160px;
+        transform: translate(0,-50%);
+
+        -webkit-animation: balao 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+        animation: balao 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+
+        span{
+            background: #3c444d;
+            border-radius: 50px;
+            width: 120px;
+            height: 32px;
+            color: #fff;
+            text-transform: uppercase;
+            position: relative;
+            padding: 8px 15px;
+            font-size: 14px;
+
+            strong{
+                color: #1db4e9;
+            }
+
+            &:after{
+                display: block;
+                content: "";
+                width: 0;
+                height: 0;
+                position: absolute;
+                top: 50%;
+                left: -14px;
+                border-top: 4px solid transparent;
+                border-right: 15px solid #3c444d;
+                border-bottom: 4px solid transparent;
+                transform: translate(0,-50%);
+            }
+        }
+    }
+}

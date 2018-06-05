@@ -1,0 +1,82 @@
+.popup{
+    &.dx-overlay-shader{
+        background:none;
+    }
+
+    .dx-overlay-content{
+        background:none !important;
+        border:none !important;
+    }
+
+    .dx-popup-content{
+        padding:0;
+        background:$cor-treeview-bg;
+    }
+
+    .dx-textbox{
+        background:none;
+        border:none;
+        position:relative;
+
+        &:before{
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            display: block;
+            content: "";
+            width: 100%;
+            height: 8px;
+            @include linear-gradient(rgba(0, 0, 0, 0.08), transparent);
+        }
+
+        .dx-texteditor-container{
+            padding:0 20px;
+        }
+
+        .dx-icon-search{
+            font-size: 18px;
+            padding: 0;
+            display: flex;
+            width: 18px;
+            align-items: center;
+
+            &:before{
+                color: $cor-branco;
+            }
+        }
+
+        .dx-placeholder{
+            font-size:18px;
+            font-family: $font-Book;
+
+            &:before{
+                padding-left:50px;
+            }
+        }
+
+        .dx-texteditor-input{
+            background:none;
+            border:none;
+            color: $cor-branco;
+            padding:22px 30px;
+            font-size:24px;
+            font-family: $font-Book;
+        }
+
+        .dx-texteditor-buttons-container{
+            right:10px;
+
+            .dx-clear-button-area{
+                .dx-icon-clear{
+                    &:before{
+                        content: "\f00a";
+                        font-size:16px;
+                        color: $cor-branco;
+                    }
+                }
+            }
+        }
+    }
+
+    @import 'assets/sass/treeview';
+}

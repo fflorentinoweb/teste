@@ -1,0 +1,48 @@
+<form novalidate #formConfiguracoesRegistroDePresenca="ngForm" (submit)="gravar()">
+    <div class="dialog-header row align-items-center">
+        <button md-mini-fab type="button" (click)="Close()" class="btn-close" mdTooltipShowDelay="1200" mdTooltip="Fechar" *ngIf="configuracoesConteudo.garagemId">
+      <svg class="nc-icon  nc-icon-grid-16">
+        <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-fechar-1x">
+          <title></title>
+        </use>
+      </svg>
+    </button>
+        <h1 md-dialog-title>
+            Configurações
+        </h1>
+    </div>
+
+    <div md-dialog-content>
+        <div class="dialog-content">
+            <div class="row form-group">
+                <div class="col-12">
+                    <label class="control-label">Garagem
+            <strong mdTooltipShowDelay="1200" mdTooltip="Campo obrigatório">*</strong>
+          </label>
+                    <app-empresa-filial [items]="empresas" [value]="configuracoesConteudo.garagemId" (valueChange)="handleValueUpdated($event)">
+                    </app-empresa-filial>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div md-dialog-actions>
+        <div class="row">
+            <div class="col-6">
+                <button md-button type="submit">
+          <svg class="nc-icon nc-icon-grid-24 cor-card-execusao">
+            <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-check-2x" />
+          </svg>
+          Confirmar
+        </button>
+            </div>
+            <div class="col-6">
+                <button md-button type="button" (click)="Close()">
+          <svg class="nc-icon nc-icon-grid-16">
+            <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-seta-esquerda-1x" />
+          </svg>
+          Cancelar
+        </button>
+            </div>
+        </div>
+    </div>
+</form>

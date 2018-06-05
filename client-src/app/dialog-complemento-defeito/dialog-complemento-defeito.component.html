@@ -1,0 +1,24 @@
+<div class="dialog-header row align-items-center">
+    <button md-mini-fab md-dialog-close class="btn-close" mdTooltipShowDelay="1200" mdTooltip="Fechar">
+    <svg class="nc-icon  nc-icon-grid-16">
+      <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-fechar-1x">
+        <title></title>
+      </use>
+    </svg>
+  </button>
+    <h1 md-dialog-title>
+        {{ data.defeito }}
+    </h1>
+</div>
+
+<div md-dialog-content>
+    <div class="dialog-content">
+        <form novalidate #formConfiguracoesRegistroDePresenca="ngForm">
+            <div class="row form-group">
+                <div class="col-12">
+                    <p>{{ data.complemento }}</p>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

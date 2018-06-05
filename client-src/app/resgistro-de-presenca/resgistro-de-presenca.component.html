@@ -1,0 +1,42 @@
+<header>
+  <app-btn-menu-gestor></app-btn-menu-gestor>      
+  <div class="actions row">
+    <div class="col-auto">
+      <button md-button class="btn-configuracoes" (click)="configuracoes()">
+        <svg class="nc-icon nc-icon-grid-24">
+          <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-engrenagem-24x24" />
+        </svg>
+        <span class="text-button">Configurações</span>
+      </button>
+    </div>
+    <!-- <div class="col-auto">
+      <app-fullscreen></app-fullscreen>
+    </div> -->
+  </div>
+  <div class="page-name">
+    <p>Consulta de disponibilidade dos funcionários</p>
+  </div>
+</header>
+<div class="content-registro row justify-content-center align-items-center">
+  <div class="row">
+    <div class="col-sm-12 col-md-4 col-xl-4" *ngFor="let item of listaDeFuncionarios">
+      <label class="control-label">{{item.grupo}}</label>
+      <dx-data-grid id="gridContainer" [dataSource]="item.funcionarios" [allowColumnReordering]="false" [allowColumnResizing]="true">
+        <dxi-column dataField="Matricula" caption="Matrícula" class="matricula" alignment="center" cellTemplate="diffCellTemplate"
+          [width]="83"></dxi-column>
+        <dxi-column dataField="Nome" alignment="left" cellTemplate="diffCellTemplate2"></dxi-column>
+        <dxi-column dataField="Situacao" caption="Situação" alignment="center" cellTemplate="diffCellTemplate3" [width]="83">
+          <div *dxTemplate="let d of 'diffCellTemplate'" (click)="OnClick(d)" [ngClass]="{'green-color': d.data.situacao == 'Disponível', 'red-color': d.data.situacao == 'Ausente', 'disabled-funcionario':d.data.situacao == 'Disponível' || d.data.situacao == 'Ausente'}">
+            {{ d.data.matricula }}
+          </div>
+          <div *dxTemplate="let d of 'diffCellTemplate2'" (click)="OnClick(d)" [ngClass]="{'green-color': d.data.situacao == 'Disponível', 'red-color': d.data.situacao == 'Ausente', 'disabled-funcionario':d.data.situacao == 'Disponível' || d.data.situacao == 'Ausente'}">
+            <span>{{ d.data.nome }}</span>
+          </div>
+          <div *dxTemplate="let d of 'diffCellTemplate3'" (click)="OnClick(d)" [ngClass]="{'green-color': d.data.situacao == 'Disponível', 'red-color': d.data.situacao == 'Ausente', 'disabled-funcionario':d.data.situacao == 'Disponível' || d.data.situacao == 'Ausente'}">
+            <span *ngIf="d.data.situacao == 'Disponível' || d.data.situacao == 'Ausente' || d.data.pausado" [ngClass]="{'yellow-blink-color': d.data.pausado}">{{ d.data.situacao }}</span>
+            <app-cronometro #cronometro [tempoExecucao]="d.data.situacao" [emExecucao]="d.data.situacao" *ngIf="d.data.situacao != 'Disponível' && d.data.situacao != 'Ausente' && !d.data.pausado"></app-cronometro>            
+          </div>
+        </dxi-column>
+      </dx-data-grid>
+    </div>
+  </div>

@@ -1,0 +1,18 @@
+.mat-fab {
+  background: none;
+
+  &.fab-large{
+    width: 168px;
+    height: 168px;
+
+    @media screen and (max-width: 767px) {
+      width: 162px;
+      height: 162px;
+    }
+
+    @media screen and (max-width: 575px){
+      width: 130px;
+      height: 130px;
+    }
+  }
+}

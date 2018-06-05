@@ -1,0 +1,246 @@
+<header *ngIf="servicosSelecionados.length == 0">
+    <div class="row">
+        <button md-mini-fab class="btn-close" (click)="backClicked()" mdTooltipShowDelay="1200" mdTooltip="Voltar" tabindex="3">
+      <svg class="nc-icon nc-icon-grid-16">
+        <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-seta-esquerda-1x" />
+      </svg>
+    </button>
+        <h6 class="title-name tst" [scrollimate]="scrollimateOptions.myScrollimation" [ngClass]="{'servicos-selecionados ' : servicosSelecionados.length > 0}">
+            <svg class="nc-icon nc-icon-grid-32 tst">
+        <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-mecanico-3x" />
+      </svg>
+            <span class="tst">{{nomeFuncionario}}</span>
+        </h6>
+        <div class="content-btn-tipo-visualizacao" mdTooltipShowDelay="100" mdTooltip="Alternar modo de visualização" [ngClass]="{'position-tipo-visualizacao': !hideAcoes}">
+            <button md-button class="btn-tipo-visualizacao" (click)="AlternarVisualizacao()">
+      <svg class="nc-icon nc-icon-grid-24" *ngIf="cardsParaLista && windowSize > 991">
+        <use href="/assets/icons/icons//nc-icons.svg#nc-bgm-card-1x">
+          <title></title>
+        </use>
+      </svg>
+      <svg class="nc-icon nc-icon-grid-24 tst" *ngIf="!cardsParaLista && windowSize > 991">
+        <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-lista-1-3x">
+          <title></title>
+        </use>
+      </svg>
+    </button>
+        </div>
+        <app-acoes-coletivas [servicoEDefeitosEmExecucao]="servicos" [servicoEDefeitosEmExecucaoParalelo]="servicosParalelo" (hideBotes)="handleBotoes($event)" (servicosAtualizados)="obterServicosParaFuncionario()" (servicosFinalizados)="servicosFinalizados()"
+            (statusDisabledFinalizado)="handleValue($event)" [hidden]="hideAcoes"></app-acoes-coletivas>
+    </div>
+</header>
+<div class="card-action-top row align-items-center justify-content-center" [ngClass]="{'has-card-action-top' : servicosSelecionados.length > 0}" (hideBotes)="handleBotoes($event)">
+    <div class="row justify-content-center align-items-center actions">
+        <button md-mini-fab class="btn-close" (click)="limparSelecao()" mdTooltipShowDelay="1200" mdTooltip="Fechar" [disabled]="servicosSelecionados.length == 0">
+      <svg class="nc-icon  nc-icon-grid-16">
+        <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-fechar-1x">
+          <title></title>
+        </use>
+      </svg>
+    </button>
+        <div class="col-auto row justify-content-center align-items-center">
+            <span class="qts-checkeds">{{servicosSelecionados.length}} Selecionados</span>
+        </div>
+        <div class="col-auto row align-items-center">
+            <button md-button (click)="iniciarTodosSelecionados()" class="green-play" [disabled]="servicosSelecionados.length == 0">
+        <svg class="nc-icon nc-icon-grid-16">
+          <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-play-1x" />
+        </svg>
+        <span class="text-button">Iniciar todos</span>
+      </button>
+        </div>
+        <div class="col-auto row align-items-center">
+            <button md-button (click)="pausarTodosSelecionados()" class="yellow-pause" [disabled]="servicosSelecionados.length == 0 || hideBotes">
+        <svg class="nc-icon nc-icon-grid-16">
+          <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-pause-1x" />
+        </svg>
+        <span class="text-button">Pausar todos</span>
+      </button>
+        </div>
+        <div class="col-auto row align-items-center">
+            <button md-button (click)="finalizarTodosSelecionados()" class="red-finalizar" [disabled]="servicosSelecionados.length == 0 || hideBotes">
+        <svg class="nc-icon nc-icon-grid-16">
+          <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-encerrar-1x" />
+        </svg>
+        <span class="text-button">Finalizar todos</span>
+      </button>
+        </div>
+        <div class="col-auto row align-items-center">
+            <button md-button (click)="desfazerTodosSelecionados()" class="color-desfazer" [disabled]="servicosSelecionados.length == 0 || hideBotes">
+        <svg class="nc-icon nc-icon-grid-16">
+          <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-retorno-1x" />
+        </svg>
+        <span class="text-button">Desfazer todos</span>
+      </button>
+        </div>
+    </div>
+</div>
+<section class="row justify-content-center align-items-center">
+    <div class="card-container row justify-content-center" [ngClass]="{'lista-container': cardsParaLista && windowSize > 991}">
+        <md-card class="col-12 col-md-6 col-lg-4" [ngClass]="{'lista': cardsParaLista && windowSize > 991}" *ngFor="let servico of servicos | orderBy: ['-emExecucao', 'status', 'grupoServico']; let i=index">
+            <div class="card-box draw meet" [ngClass]="{'has-card-checked pulse animated' : servico.stateCheck && !cardsParaLista, 'has-card-checked2 animated' : servico.stateCheck && cardsParaLista && windowSize > 991}">
+                <md-spinner *ngIf="servico.process" class="spinner-md"></md-spinner>
+                <md-card-header>
+                    <div class="card-action-header">
+                        <span class="historico" *ngIf="(servico.existeSolucao || servico.status == 1) && servico.status != 1 && !cardsParaLista && windowSize > 991 && !servicosrevogado[i]" (click)="consultarSolucao(servico)">Histórico</span>
+                        <md-checkbox *ngIf="servico.status == 0" [(ngModel)]="servico.stateCheck" (change)="atualizarSelecao(servico, $event)" mdTooltipShowDelay="1200" mdTooltip="Selecionar" tabindex="-1"></md-checkbox>
+                        <button class="mr-3 btn-revogar" md-button *ngIf="servico.status == 1 && botaoRegovar && !cardsParaLista && windowSize > 991" (click)="revogar(servico, cronometro, i)">
+              <svg class="nc-icon nc-icon-grid-24">
+                <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-revogar-1x" />
+              </svg>
+              <span>Reabrir</span>
+            </button>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="tag col-auto">
+                            <span [ngClass]="{'card-finalizado' : servico.status == 1,
+                'card-aberto' : !servico.emExecucao && !servico.tempoExecucao && servico.status == 0,
+                'card-execusao' : servico.emExecucao && servico.status == 0,
+                'card-pausada' : !servico.emExecucao && servico.tempoExecucao && servico.status == 0}">{{displayStatus(servico)}}</span>
+                        </div>
+                        <div class="col-auto row ml-3 timer" [ngClass]="{'timer-pausado' : !servico.emExecucao && servico.tempoExecucao && servico.status == 0, 'timer-aberto': !servico.emExecucao && !servico.tempoExecucao && servico.status == 0, 'timer-finalizado': servico.status == 1}">
+                            <div class="col-auto row align-items-center">
+                                <span class="time">
+                  <app-cronometro #cronometro [tempoExecucao]="servico.tempoExecucao" [emExecucao]="servico.emExecucao"></app-cronometro>
+                </span>
+                            </div>
+                        </div>
+                        <div class="col-auto row ml-3" [ngClass]="{'margin-execucao': cardsParaLista && windowSize > 991}">
+                            <button id="popoverAct{{[i]}}" class="funcionarios-em-execucao" [hidden]="servico.status == 1 || servico.nomesFuncionariosExecucao.length == 0" [ngClass]="{'execucao-lista': cardsParaLista && windowSize > 991}" (mouseenter)="onMouseenterPopover($event, i)"
+                                (mouseleave)="onMouseleavePopover($event, i)"></button>
+                            <dx-popover target="#popoverAct{{[i]}}" position="top" [width]="300" [(visible)]="mylistPopoverVisible[i]">
+                                <div *dxTemplate="let data = model of 'content'">
+                                    Este {{ servico.servico ? 'serviço' : 'defeito' }} está em execução por: {{ servico.nomesFuncionariosExecucao }}
+                                </div>
+                            </dx-popover>
+                        </div>
+                        <div class="col-auto p-0 grupo-margin" *ngIf="cardsParaLista && windowSize > 991">
+                            <svg class="nc-icon nc-icon-grid-16" [ngClass]="{'card-defeito' : !servico.servico}">
+                <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-chave-1x" />
+              </svg>
+                        </div>
+                        <div class="col-2 row p-0" *ngIf="cardsParaLista && windowSize > 991">
+                            <p class="grupo-name" mdTooltipShowDelay="100" mdTooltip="{{servico.grupoServico}}">Grupo: {{servico.grupoServico}}</p>
+                        </div>
+                        <div class="col-7 col-lg-5 col-xl-7" *ngIf="cardsParaLista && windowSize > 991">
+                            <div class="row">
+                                <div class="col-4">
+                                    <h6 class="title-card" [ngClass]="{'card-defeito' : !servico.servico}" mdTooltipShowDelay="100" mdTooltip="{{servico.servico ? servico.servico : servico.defeito }}">
+                                        <span>{{ servico.servico ? "Serviço:" : "Defeito:" }}</span>
+                                        <small>{{ servico.servico ? servico.servico : servico.defeito }}</small>
+                                    </h6>
+                                </div>
+                                <div class="col-8" *ngIf="servico.complemento">
+                                    <p class="complemento-name" mdTooltipShowDelay="100" mdTooltip="{{servico.complemento}}">Complemento: {{servico.complemento}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </md-card-header>
+                <md-card-content *ngIf="!cardsParaLista">
+                    <div class="descricao row align-items-center">
+                        <h6 class="title-card" [ngClass]="{'card-defeito' : !servico.servico}">
+                            {{ servico.servico ? "Serviço:" : "Defeito:" }}
+                            <small>{{ servico.servico ? servico.servico : servico.defeito }}</small>
+                        </h6>
+                    </div>
+                    <ul>
+                        <li *ngIf="servico.servico && servico.planoDeRevisao" class="row align-items-center">
+                            <div class="col-auto p-0 row">
+                                <svg class="nc-icon nc-icon-grid-16" [ngClass]="{'card-defeito' : !servico.servico}">
+                  <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-chave-1x" />
+                </svg>
+                            </div>
+                            <div class="col-auto row p-0">
+                                <p>Plano: {{servico.planoDeRevisao}}</p>
+                            </div>
+                        </li>
+                        <li class="row align-items-center" *ngIf="servico.grupoServico">
+                            <div class="col-auto p-0 row">
+                                <svg class="nc-icon nc-icon-grid-16" [ngClass]="{'card-defeito' : !servico.servico}">
+                  <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-chave-1x" />
+                </svg>
+                            </div>
+                            <div class="col-auto row p-0">
+                                <p>Grupo: {{servico.grupoServico}}</p>
+                            </div>
+                        </li>
+                        <li class="row align-items-top" *ngIf="!servico.servico && servico.complemento">
+                            <div class="col-auto p-0 row">
+                                <svg class="nc-icon nc-icon-grid-16" [ngClass]="{'card-defeito' : !servico.servico}">
+                  <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-chave-1x" />
+                </svg>
+                            </div>
+                            <div class="col-auto row p-0">
+                                <p class="complemento" *ngIf="servico.complemento.length <= 100">Complemento: {{servico.complemento | slice:0:100}}</p>
+                                <p class="complemento" *ngIf="servico.complemento.length > 100">Complemento: {{servico.complemento | slice:0:100}}
+                                    <span class="reticencia">...</span>
+                                    <a href="javascript:void(0)" (click)="VerMaisComplemento(servico)" class="ver-mais">Ver mais</a>
+                                </p>
+                            </div>
+
+                        </li>
+                        <li *ngIf="servico.servico && servico.tipoDeOperacao" class="row align-items-center">
+                            <div class="col-auto p-0 row">
+                                <svg class="nc-icon nc-icon-grid-16" [ngClass]="{'card-defeito' : !servico.servico}">
+                  <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-chave-1x" />
+                </svg>
+                            </div>
+                            <div class="col-auto row p-0">
+                                <p>Tipo de Operação: {{servico.tipoDeOperacao}}</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="transition-animate-play-pause" [ngClass]="{'animate-key-play' : servico.emExecucao && servico.status != 1 && servico.tempoExecucao, 'animate-key-pause' : !servico.emExecucao && servico.status != 1 && servico.tempoExecucao,
+                                                                      'show-transition': showTransition}">
+                        <div class="icon">
+                            <svg class="nc-icon nc-icon-grid-24" style="margin: 0 0 0 10px;" *ngIf="servico.emExecucao">
+                <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-play-2x" />
+              </svg>
+                            <svg class="nc-icon nc-icon-grid-24" *ngIf="!servico.emExecucao">
+                <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-pause-2x" />
+              </svg>
+                        </div>
+                    </div>
+                </md-card-content>
+                <md-card-actions [ngClass]="{'fadeOutUp' : servicosSelecionados.length > 0}" *ngIf="!cardsParaLista">
+                    <div class="row" [hidden]="servico.status == 1">
+                        <div [ngClass]="{'col-12' : !servico.emExecucao && !servico.tempoExecucao && servico.status == 0, 'col-4' : servico.emExecucao || servico.tempoExecucao || servico.status != 0}">
+                            <button md-button [ngClass]="{'btn-play' : !servico.emExecucao, 'btn-pause' : servico.emExecucao}" (click)="servico.emExecucao ? pausar(servico, cronometro) : iniciar(servico, cronometro)" [disabled]="servico.status == 1 || servico.processPlayPause || servico.process || servicosSelecionados.length > 0">
+                <md-spinner *ngIf="servico.processPlayPause" class="spinner-small"></md-spinner>
+                <svg class="nc-icon nc-icon-grid-24" *ngIf="!servico.processPlayPause">
+                  <use *ngIf="!servico.emExecucao" xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-play-2x" />
+                  <use *ngIf="servico.emExecucao" xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-pause-2x" />
+                </svg>
+                {{servico.emExecucao ? "Pausar" : "Iniciar"}}
+              </button>
+                        </div>
+
+                        <div class="col-4 pl-1 pr-1" *ngIf="servico.emExecucao || servico.tempoExecucao || servico.status != 0">
+                            <button md-button class="btn-finalizar" (click)="finalizar(servico, cronometro)" [disabled]="servico.status == 1 || (!servico.emExecucao && !servico.tempoExecucao) || servico.process || servicosSelecionados.length > 0">
+                <svg class="nc-icon nc-icon-grid-24">
+                  <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-encerrar-2x" />
+                </svg>
+                Finalizar
+              </button>
+                        </div>
+                        <div class="col-4" *ngIf="servico.emExecucao || servico.tempoExecucao || servico.status != 0">
+                            <button md-button class="btn-desfazer" (click)="desfazer(servico)" [disabled]="servico.status == 1 || (!servico.emExecucao && !servico.tempoExecucao) || servico.process || servicosSelecionados.length > 0">
+                <svg class="nc-icon nc-icon-grid-24">
+                  <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-retorno-2x" />
+                </svg>
+                Desfazer
+              </button>
+                        </div>
+
+                    </div>
+                    <div class="row" *ngIf="!servico.status != 1">
+                        <div class="col-12">
+                            <button md-button (click)="consultarSolucao(servico)">Ver detalhes</button>
+                        </div>
+                    </div>
+                </md-card-actions>
+            </div>
+        </md-card>
+    </div>
+</section>

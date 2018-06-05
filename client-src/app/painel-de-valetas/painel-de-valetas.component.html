@@ -1,0 +1,96 @@
+<app-btn-menu-gestor></app-btn-menu-gestor>
+<div class="actions row">
+    <div class="col-auto">
+        <button md-button class="btn-configuracoes" (click)="configuracoes()">
+      <svg class="nc-icon nc-icon-grid-24"><use xlink:href="/assets/icons/icons/nc-icons.svg#nc-engrenagem-24x24"/></svg>
+      <span class="text-button">Configurações</span>
+    </button>
+        <!-- <button md-icon-button (click)="configuracoes()" class="btn-configuracoes-mobile">
+      <md-icon>more_vert</md-icon>
+    </button> -->
+    </div>
+    <div class="col-auto">
+        <app-fullscreen></app-fullscreen>
+    </div>
+</div>
+
+<md-tab-group class="tabs-valeta" [selectedIndex]="selectedIndex" (selectChange)="onTabClick($event.index)">
+    <md-tab label="Valetas Físicas" [disabled]="!requestComplete || valetasFisicas.length == 0">
+        <md-spinner *ngIf="!requestComplete"></md-spinner>
+        <p *ngIf="valetasFisicas.length == 0 && requestComplete" style="text-align:center;">Não existem veículos nessa valeta</p>
+        <!-- <p *ngIf="changeFrase" style="text-align:center;">Não existem valetas cadastradas</p> -->
+        <div class="grid list-valetas valetas-fisicas" *ngIf="showValetasFisicas" [@listAnimation]="valetasFisicas.length" (@listAnimation.done)="onDoneAnimation($event)" #movevaletafisica>
+            <div class="item-grid grid-{{item.osVeiculo.length}}" #itemsvaletafisica *ngFor="let item of valetasFisicas">
+                <div class="item-valeta">
+                    <span class="item-valeta-number">{{item.codigo}}</span>
+                    <div class="item-valeta-veiculos row justify-content-center" *ngIf="item.osVeiculo.length > 0; else elseOsVeiculo">
+                        <div class="col-auto veiculo" *ngFor="let veiculo of item.osVeiculo">
+                            <div class="box-veiculo" [ngClass]="{'veiculo-atrasado' : veiculo.status == 0,
+                                                    'veiculo-finalizado' : veiculo.status == 1,
+                                                    'veiculo-alocado' : veiculo.status == 2,
+                                                    'veiculo-execucao' : veiculo.status == 3}">
+                                <span class="veiculo-number">{{displayStatus(item, veiculo)}}</span>
+                                <ng-template #elseVeiculo>
+                                    <span class="veiculo-number">#</span>
+                                </ng-template>
+                                <svg class="nc-icon nc-icon-grid-48 color-new"><use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-bus-4x"/></svg>
+                            </div>
+                            <span class="veiculo-status" *ngIf="veiculo.prefixo; else elseVeiculo">{{veiculo.prefixo | leadingZeros}}</span>
+                        </div>
+                    </div>
+                    <ng-template #elseOsVeiculo>
+                        <div class="col-auto veiculo">
+                            <div class="box-veiculo-livre box-veiculo">
+                            </div>
+                            <span class="veiculo-status">Livre</span>
+                        </div>
+                    </ng-template>
+                </div>
+            </div>
+        </div>
+    </md-tab>
+    <md-tab label="Valetas Virtuais" [disabled]="!requestComplete || valetasVirtuais.length == 0">
+        <md-spinner *ngIf="!requestComplete"></md-spinner>
+        <p *ngIf="valetasVirtuais.length == 0 && requestComplete && !changeFrase" style="text-align:center;">Não existem veículos nessa valeta</p>
+        <p *ngIf="changeFrase" style="text-align:center;">Não existem valetas cadastradas</p>
+        <div class="grid list-valetas valetas-virtuais" *ngIf="showValetasVirtuais" [@listAnimation]="valetasVirtuais.length" (@listAnimation.done)="onDoneAnimation($event)" #movevaletavirtual>
+            <div class="item-grid grid-{{item.osVeiculo.length}}" #itemsvaletavirtual *ngFor="let item of valetasVirtuais">
+                <div class="item-valeta">
+                    <span class="item-valeta-number">{{item.codigo}}</span>
+                    <div class="item-valeta-veiculos row justify-content-center" *ngIf="item.osVeiculo.length > 0; else elseOsVeiculo">
+                        <div class="col-auto veiculo" *ngFor="let veiculo of item.osVeiculo">
+                            <div class="box-veiculo" [ngClass]="{'veiculo-atrasado' : veiculo.status == 0,
+                                                    'veiculo-finalizado' : veiculo.status == 1,
+                                                    'veiculo-alocado' : veiculo.status == 2,
+                                                    'veiculo-execucao' : veiculo.status == 3}">
+                                <span class="veiculo-number" *ngIf="veiculo.prefixo; else elseVeiculo">{{displayStatus(item, veiculo)}}</span>
+                                <ng-template #elseVeiculo>
+                                    <span class="veiculo-number">#</span>
+                                </ng-template>
+                                <!-- <svg class="teste nc-icon nc-icon-grid-48"><use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-busglyph-4x"/></svg> -->
+                                                             
+                               <figure>
+                                 <img src="/assets/icons/icons/bgm-busblue-4x.svg" *ngIf="veiculo.status === 3">
+                                 <img src="/assets/icons/icons/bgm-busgreen-4x.svg" *ngIf="veiculo.status === 1">
+                                 <img src="/assets/icons/icons/bgm-busred-4x.svg" *ngIf="veiculo.status === 0">
+                                 <img src="/assets/icons/icons/bgm-busyellow-4x.svg" *ngIf="veiculo.status === 2">
+                               </figure>
+                               
+                               
+                               
+                                </div>
+                            <span class="veiculo-status">{{veiculo.prefixo | leadingZeros}}</span>
+                        </div>
+                    </div>
+                    <ng-template #elseOsVeiculo>
+                        <div class="col-auto veiculo">
+                            <div class="box-veiculo-livre box-veiculo">
+                            </div>
+                            <span class="veiculo-status">Livre</span>
+                        </div>
+                    </ng-template>
+                </div>
+            </div>
+        </div>
+    </md-tab>
+</md-tab-group>

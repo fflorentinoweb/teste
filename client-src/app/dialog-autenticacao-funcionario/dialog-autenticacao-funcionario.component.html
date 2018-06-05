@@ -1,0 +1,116 @@
+<form novalidate (ngSubmit)="confirmar(formAutenticacaoFuncionario.form)" #formAutenticacaoFuncionario="ngForm" (change)="OnChange()">
+  <div class="dialog-header row align-items-center">
+    <button md-mini-fab class="btn-close" mdTooltipShowDelay="1200" mdTooltip="Fechar" type="button" (click)="Close()">
+      <svg class="nc-icon  nc-icon-grid-16">
+        <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-fechar-1x">
+          <title></title>
+        </use>
+      </svg>
+    </button>
+    <h1 md-dialog-title>
+      Identifique-se abaixo
+    </h1>
+  </div>
+
+  <div md-dialog-content>
+    <div class="dialog-content">
+      <div class="row form-group">
+        <div class="col-12 col-sm-12">
+
+          <div *ngIf="authValido" class="alert alert-danger invalid-value" role="alert">
+            <div *ngIf="authValido">
+              <svg class="nc-icon  nc-icon-grid-16">
+                <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-alert-1x" />
+              </svg> Usuário e/ou Senha inválido(s)
+            </div>
+          </div>
+
+          <div *ngIf="matriculaInvalida" class="alert alert-danger invalid-value" role="alert">
+            <div *ngIf="matriculaInvalida">
+              <svg class="nc-icon  nc-icon-grid-16">
+                <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-alert-1x" />
+              </svg> Matricula inválida
+            </div>
+          </div>
+
+            <label class="control-label">Matricula
+              <strong mdTooltipShowDelay="1200" mdTooltip="Campo obrigatório">*</strong>
+            </label>
+            <input #myInputMatricula class="form-control" (keypress)="onKeyPress()" (input)="verificarMultiEmpresa()" type="text" name="matricula"
+              [disabled]="!habilitarMatricula" maxlength="15" pattern="[a-zA-Z0-9]+" [ngClass]="{'has-error': matricula.invalid && (matricula.dirty || submitted) || authValido,
+                                  'succeed': !matricula.invalid && !authValido}" #matricula="ngModel" [(ngModel)]="autenticacaoFuncionario.matricula"
+              required>
+            <div *ngIf="matricula.invalid && (matricula.dirty || submitted)" class="alert alert-danger">
+              <div *ngIf="matricula.errors.required">
+                *O campo Matricula é obrigatório.
+              </div>
+              <div *ngIf="matricula.errors.pattern">
+                *Não são permitidos caracteres especiais.
+              </div>
+            </div>
+
+
+        </div>
+      </div>
+      <div class="row form-group" *ngIf="isVisibleFuncionario">
+        <div class="col-12">
+          <label class="control-label">Funcionário
+            <strong mdTooltipShowDelay="1200" mdTooltip="Campo obrigatório">*</strong>
+          </label>
+          <app-empresa-filial [items]="empresas" [value]="autenticacaoFuncionario.usuarioId" [dropdownDisabled]="dropdownDisabled"
+            (valueChange)="handleValueUpdated($event)" [ngClass]="{ 'has-error': !autenticacaoFuncionario.usuarioId && submitted, 'succeed' : autenticacaoFuncionario.usuarioId }"
+            class="empresa-fial-func">
+          </app-empresa-filial>
+
+          <div *ngIf="!autenticacaoFuncionario.usuarioId && submitted" class="alert alert-danger">
+            <div>
+              *O campo Funcionário é obrigatório.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row form-group" [hidden]="usuarioApontador">
+        <div class="col-12 col-sm-12">
+          <label class="control-label">Senha
+            <strong mdTooltipShowDelay="1200" mdTooltip="Campo obrigatório">*</strong>
+          </label>
+          <input #myInputSenha myActiveCapsLock class="form-control" (keypress)="onKeyPress()" type="password" name="senha" maxlength="32"
+            [ngClass]="{'has-error': senha.invalid && (senha.dirty || submitted) || authValido, 'succeed': !senha.invalid && !authValido}"
+            #senha="ngModel" [(ngModel)]="autenticacaoFuncionario.senha" (capsLock)="capsLockEvent($event)" [required]="GetRequiredSenha()">
+          <div *ngIf="senha.invalid && (senha.dirty || submitted)" class="alert alert-danger">
+            <div *ngIf="senha.errors.required">
+              *O campo Senha é obrigatório.
+            </div>
+          </div>
+          <div class="alert alert-danger" [hidden]="!ativouCapsLock">
+            <span>ATENÇÃO: Capslock está ligado</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div md-dialog-actions>
+    <div class="row">
+      <div class="col-6">
+        <button md-button type="submit" [disabled]="globals.processSpinner">
+          <md-spinner *ngIf="globals.processSpinner" class="spinner-small"></md-spinner>
+          <svg *ngIf="!globals.processSpinner" class="nc-icon nc-icon-grid-24 cor-card-execusao">
+            <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-check-2x" />
+          </svg>
+          Confirmar
+        </button>
+      </div>
+      <div class="col-6">
+        <button md-button (click)="Close()" type="button">
+          <svg class="nc-icon nc-icon-grid-16">
+            <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-seta-esquerda-1x" />
+          </svg>
+          Cancelar
+        </button>
+      </div>
+    </div>
+  </div>
+</form>

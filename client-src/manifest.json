@@ -1,0 +1,24 @@
+{
+  "name": "Manu 360",
+  "short_name": "Manu 360",
+  "description":"Registrar seus serviços agora ficou fácil",
+  "theme_color": "#2e3740",
+  "background_color": "#2e3740",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "Scope": "/",
+  "start_url": "./?utm_source=web_app_manifest",
+  "icons": [
+    {
+      "src": "assets/manifest/icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/manifest/icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "splash_pages": null
+}

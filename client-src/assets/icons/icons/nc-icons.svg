@@ -1,0 +1,1643 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="nc-bgm-bus-1x" viewBox="0 0 16 16">
+    <title>bgm bus 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-bus-1x</title>
+        <circle class="cls-1" cx="3.505" cy="11.5" r="1.5" fill="currentColor"/>
+        <circle class="cls-1" cx="12.499" cy="11.5" r="1.5" fill="currentColor"/>
+        <path class="cls-1" fill="currentColor" d="M1 7H15V8H1z"/>
+        <path class="cls-1" fill="currentColor" d="M11 4H12V7H11z"/>
+        <path class="cls-1" fill="currentColor" d="M4 11H12V12H4z"/>
+        <path class="cls-1" d="M14.566 12h-1.189v-1h1.19a.476.476 0 0 0 .433-.5v-6a.477.477 0 0 0-.434-.5H1.434A.477.477 0 0 0 1 4.5v6a.476.476 0 0 0 .434.5h1.072v1H1.434A1.47 1.47 0 0 1 0 10.5v-6A1.47 1.47 0 0 1 1.434 3h13.132A1.47 1.47 0 0 1 16 4.5v6a1.47 1.47 0 0 1-1.434 1.5z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-revogar-4x" viewBox="0 0 48 48">
+    <title>bgm revogar 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-revogar-4x</title>
+        <path class="cls-1" d="M2.867 23.405a1 1 0 0 1-1-1A22.091 22.091 0 0 1 23.934.34c7.95 0 15.035 4.707 18.952 12.593a1 1 0 1 1-1.791.89c-3.572-7.19-9.988-11.483-17.161-11.483A20.09 20.09 0 0 0 3.867 22.405a1 1 0 0 1-1 1z" fill="currentColor"/>
+        <path class="cls-1" d="M41.99 14.377H29.952a1 1 0 1 1 0-2H40.99V1.339a1 1 0 0 1 2 0v12.038a1 1 0 0 1-1 1z" fill="currentColor"/>
+        <path class="cls-1" d="M23.934 47.481c-7.95 0-15.036-4.708-18.953-12.592a1 1 0 0 1 1.791-.89c3.572 7.19 9.988 11.482 17.162 11.482A20.09 20.09 0 0 0 44 25.415a1 1 0 0 1 2 0 22.092 22.092 0 0 1-22.066 22.066z" fill="currentColor"/>
+        <path class="cls-1" d="M5.876 47.481a1 1 0 0 1-1-1V34.443a1 1 0 0 1 1-1h12.039a1 1 0 0 1 0 2H6.876v11.038a1 1 0 0 1-1 1z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-bus-2x" viewBox="0 0 24 24">
+    <title>bgm bus 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-bus-2x</title>
+        <circle class="cls-1" cx="5" cy="17.611" r="2" fill="currentColor"/>
+        <circle class="cls-1" cx="19" cy="17.611" r="2" fill="currentColor"/>
+        <path class="cls-1" fill="currentColor" d="M1 11H23V12H1z"/>
+        <path class="cls-1" d="M22.063 18.11H20.51v-1h1.552a.98.98 0 0 0 .925-1.025V6.927a.98.98 0 0 0-.924-1.026H2.018a.98.98 0 0 0-.924 1.026v9.158a.98.98 0 0 0 .924 1.025h1.373v1H2.019a1.979 1.979 0 0 1-1.924-2.025V6.927a1.98 1.98 0 0 1 1.924-2.026h20.043a1.98 1.98 0 0 1 1.925 2.026v9.158a1.979 1.979 0 0 1-1.924 2.025z" fill="currentColor"/>
+        <path class="cls-1" fill="currentColor" d="M7 17H17V18H7z"/>
+        <path class="cls-1" fill="currentColor" d="M17 6H18V11H17z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-revogar-3x" viewBox="0 0 32 32">
+    <title>bgm revogar 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-revogar-3x</title>
+        <path class="cls-1" d="M1.92 15.994a1 1 0 0 1-1-1A15.096 15.096 0 0 1 16-.084c5.441 0 10.287 3.214 12.963 8.6a1 1 0 1 1-1.791.89c-2.33-4.69-6.507-7.49-11.172-7.49A13.094 13.094 0 0 0 2.92 14.994a1 1 0 0 1-1 1z" fill="currentColor"/>
+        <path class="cls-1" d="M28.067 9.96h-8.045a1 1 0 0 1 0-2h7.045V.916a1 1 0 0 1 2 0V8.96a1 1 0 0 1-1 1z" fill="currentColor"/>
+        <path class="cls-1" d="M16 32.084c-5.441 0-10.288-3.215-12.963-8.6a1 1 0 1 1 1.791-.89c2.33 4.69 6.507 7.49 11.172 7.49a13.094 13.094 0 0 0 13.08-13.078 1 1 0 0 1 2 0A15.096 15.096 0 0 1 16 32.084z" fill="currentColor"/>
+        <path class="cls-1" d="M3.933 32.084a1 1 0 0 1-1-1v-8.045a1 1 0 0 1 1-1h8.045a1 1 0 0 1 0 2H4.933v7.045a1 1 0 0 1-1 1z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-bus-3x" viewBox="0 0 32 32">
+    <title>bgm bus 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-bus-3x</title>
+        <path class="cls-1" d="M7.016 26.941a3 3 0 1 1 3-3 3.003 3.003 0 0 1-3 3zm0-4a1 1 0 1 0 1 1 1 1 0 0 0-1-1z" fill="currentColor"/>
+        <path class="cls-1" d="M24 26.941a3 3 0 1 1 3-3 3.003 3.003 0 0 1-3 3zm0-4a1 1 0 1 0 1 1 1 1 0 0 0-1-1z" fill="currentColor"/>
+        <path class="cls-1" fill="currentColor" d="M2 15H30V17H2z"/>
+        <path class="cls-1" fill="currentColor" d="M21 8H23V15H21z"/>
+        <path class="cls-1" fill="currentColor" d="M8 23H23V25H8z"/>
+        <path class="cls-1" fill="currentColor" d="M31 15H32V21H31z"/>
+        <path class="cls-1" d="M28.073 24.941H25v-2h3.073a.975.975 0 0 0 .927-.993V9.993A.963.963 0 0 0 28.073 9H3.023a.963.963 0 0 0-.927.993v11.955a.975.975 0 0 0 .926.993h2.994v2H3.022a2.964 2.964 0 0 1-2.926-2.993V9.993A2.963 2.963 0 0 1 3.022 7h25.051A2.963 2.963 0 0 1 31 9.993v11.955a2.964 2.964 0 0 1-2.927 2.993z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-revogar-2x" viewBox="0 0 24 24">
+    <title>bgm revogar 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-revogar-2x</title>
+        <path class="cls-1" d="M1.389 11.843a.5.5 0 0 1-.5-.5A10.87 10.87 0 0 1 11.745.486a10.457 10.457 0 0 1 9.326 6.196.5.5 0 0 1-.896.445 9.475 9.475 0 0 0-8.43-5.64 9.868 9.868 0 0 0-9.856 9.856.5.5 0 0 1-.5.5z" fill="currentColor"/>
+        <path class="cls-1" d="M20.623 7.405h-5.918a.5.5 0 0 1 0-1h5.418V.986a.5.5 0 1 1 1 0v5.919a.5.5 0 0 1-.5.5z" fill="currentColor"/>
+        <path class="cls-1" d="M11.745 23.68a10.456 10.456 0 0 1-9.325-6.196.5.5 0 0 1 .896-.445 9.473 9.473 0 0 0 8.43 5.64 9.868 9.868 0 0 0 9.857-9.856.5.5 0 0 1 1 0A10.87 10.87 0 0 1 11.745 23.68z" fill="currentColor"/>
+        <path class="cls-1" d="M2.868 23.68a.5.5 0 0 1-.5-.5v-5.918a.5.5 0 0 1 .5-.5h5.918a.5.5 0 0 1 0 1H3.368v5.418a.5.5 0 0 1-.5.5z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-bus-4x" viewBox="0 0 48 48">
+    <title>bgm bus 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-bus-4x</title>
+        <path class="cls-1" d="M9 39.88a4 4 0 1 1 4-4 4.004 4.004 0 0 1-4 4zm0-6a2 2 0 1 0 2 2 2.002 2.002 0 0 0-2-2z" fill="currentColor"/>
+        <path class="cls-1" d="M38 39.88a4 4 0 1 1 4-4 4.004 4.004 0 0 1-4 4zm0-6a2 2 0 1 0 2 2 2.003 2.003 0 0 0-2-2z" fill="currentColor"/>
+        <path class="cls-1" fill="currentColor" d="M45.898 22.126H47.898V30.503H45.898z"/>
+        <path class="cls-1" d="M42.066 36.88h-1v-2h1A2.103 2.103 0 0 0 44 32.647V13.235A2.103 2.103 0 0 0 42.066 11H3.933A2.103 2.103 0 0 0 2 13.235v19.41a2.103 2.103 0 0 0 1.933 2.236H7v2H3.933A4.097 4.097 0 0 1 0 32.646V13.235A4.097 4.097 0 0 1 3.933 9h38.133A4.097 4.097 0 0 1 46 13.235v19.41a4.098 4.098 0 0 1-3.934 4.236z" fill="currentColor"/>
+        <path class="cls-1" fill="currentColor" d="M11.613 34.881H35.727999999999994V36.881H11.613z"/>
+        <path class="cls-1" fill="currentColor" d="M2 22H44V24H2z"/>
+        <path class="cls-1" fill="currentColor" d="M33 11H35V22H33z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-revogar-1x" viewBox="0 0 16 16">
+    <title>bgm revogar 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-revogar-1x</title>
+        <path class="cls-1" d="M1 8a.5.5 0 0 1-.5-.5A7.508 7.508 0 0 1 8 0a7.225 7.225 0 0 1 6.448 4.277.5.5 0 0 1-.896.446A6.244 6.244 0 0 0 8 1a6.508 6.508 0 0 0-6.5 6.5.5.5 0 0 1-.5.5z" fill="currentColor"/>
+        <path class="cls-1" d="M14 5h-4a.5.5 0 0 1 0-1h3.5V.5a.5.5 0 0 1 1 0v4a.5.5 0 0 1-.5.5z" fill="currentColor"/>
+        <path class="cls-1" d="M8 16a7.224 7.224 0 0 1-6.448-4.277.5.5 0 1 1 .896-.446A6.243 6.243 0 0 0 8 15a6.508 6.508 0 0 0 6.5-6.5.5.5 0 0 1 1 0A7.508 7.508 0 0 1 8 16z" fill="currentColor"/>
+        <path class="cls-1" d="M2 16a.5.5 0 0 1-.5-.5v-4A.5.5 0 0 1 2 11h4a.5.5 0 0 1 0 1H2.5v3.5a.5.5 0 0 1-.5.5z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-chave-1x" viewBox="0 0 16 16">
+    <title>bgm chave 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-chave-1x</title>
+        <path class="cls-1" d="M12.993 15.914a2.793 2.793 0 0 1-2.025-.945l-5.456-6.16a.517.517 0 0 0-.468-.186 4.377 4.377 0 0 1-1.6-.019 4.31 4.31 0 0 1-3.29-3.042 5.082 5.082 0 0 1-.072-1.82.705.705 0 0 1 .458-.63.7.7 0 0 1 .728.219l.425.361a1.468 1.468 0 0 0 1.943-.039 1.458 1.458 0 0 0 .206-1.862l-.35-.438A.796.796 0 0 1 3.16.54a.607.607 0 0 1 .523-.405A4.755 4.755 0 0 1 4.725.091a4.35 4.35 0 0 1 3.908 4.33 4.01 4.01 0 0 1-.052.632.559.559 0 0 0 .178.511l6.155 5.45a2.727 2.727 0 0 1 .949 1.988 2.818 2.818 0 0 1-.818 2.093 2.764 2.764 0 0 1-1.974.82h-.078zM4.633 1.178a2.46 2.46 0 0 1-.329 3.221 2.469 2.469 0 0 1-3.273.043 4.087 4.087 0 0 0 .093.879 3.295 3.295 0 0 0 2.515 2.303 3.428 3.428 0 0 0 1.238.013 1.531 1.531 0 0 1 1.384.508l5.454 6.159a1.805 1.805 0 0 0 1.305.611 1.802 1.802 0 0 0 1.844-1.876 1.742 1.742 0 0 0-.607-1.271l-6.16-5.455a1.554 1.554 0 0 1-.504-1.418 3.094 3.094 0 0 0 .04-.483 3.334 3.334 0 0 0-2.984-3.324l-.092-.005zM.92 3.7z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-card-1x" viewBox="0 0 16 16">
+    <title>bgm card 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-card-1x</title>
+        <path class="cls-1" d="M6.5 7h-6a.5.5 0 0 1-.5-.5v-6A.5.5 0 0 1 .5 0h6a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-.5.5zM1 6h5V1H1z" fill="currentColor"/>
+        <path class="cls-1" d="M15.5 7h-6a.5.5 0 0 1-.5-.5v-6a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-.5.5zM10 6h5V1h-5z" fill="currentColor"/>
+        <path class="cls-1" d="M6.5 16h-6a.5.5 0 0 1-.5-.5v-6A.5.5 0 0 1 .5 9h6a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-.5.5zM1 15h5v-5H1z" fill="currentColor"/>
+        <path class="cls-1" d="M15.5 16h-6a.5.5 0 0 1-.5-.5v-6a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-.5.5zM10 15h5v-5h-5z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-chave-2x" viewBox="0 0 24 24">
+    <title>bgm chave 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-chave-2x</title>
+        <path class="cls-1" d="M19.794 24.062a4.057 4.057 0 0 1-2.934-1.37L7.99 12.673a6.608 6.608 0 0 1-2.92.087A6.391 6.391 0 0 1 .197 8.267 7.57 7.57 0 0 1 .09 5.548a1.002 1.002 0 0 1 .68-.81.987.987 0 0 1 1.019.242L3.94 7.133 7.025 4.05 4.872 1.898A1.002 1.002 0 0 1 5.429.2 7.06 7.06 0 0 1 6.975.135a6.451 6.451 0 0 1 5.794 6.424 6.29 6.29 0 0 1-.201 1.54l10.01 8.865a3.946 3.946 0 0 1 1.374 2.876 4.089 4.089 0 0 1-1.187 3.034 4.008 4.008 0 0 1-2.858 1.188h-.113zM5.58 1.192l2.153 2.152a1.002 1.002 0 0 1-.001 1.412L4.648 7.84a1.002 1.002 0 0 1-1.414 0l-2.15-2.152-.004.005a6.55 6.55 0 0 0 .086 2.33 5.375 5.375 0 0 0 4.1 3.756 5.72 5.72 0 0 0 2.752-.15l.305-.089 9.283 10.485a3.066 3.066 0 0 0 2.215 1.036 2.988 2.988 0 0 0 2.237-.895 3.087 3.087 0 0 0 .895-2.29 2.964 2.964 0 0 0-1.032-2.16L11.432 8.43l.092-.306a5.511 5.511 0 0 0 .245-1.574A5.435 5.435 0 0 0 6.9 1.132a6.396 6.396 0 0 0-.396-.013 5.926 5.926 0 0 0-.923.072z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-card-2x" viewBox="0 0 24 24">
+    <title>bgm card 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-card-2x</title>
+        <path class="cls-1" d="M9.501 10.001H.499a.5.5 0 0 1-.5-.5V.499a.5.5 0 0 1 .5-.5h9.002a.5.5 0 0 1 .5.5v9.002a.5.5 0 0 1-.5.5zm-8.502-1h8.002V.999H.999z" fill="currentColor"/>
+        <path class="cls-1" d="M23.501 10.001h-9.002a.5.5 0 0 1-.5-.5V.499a.5.5 0 0 1 .5-.5h9.002a.5.5 0 0 1 .5.5v9.002a.5.5 0 0 1-.5.5zm-8.502-1h8.002V.999h-8.002z" fill="currentColor"/>
+        <path class="cls-1" d="M9.501 24.001H.499a.5.5 0 0 1-.5-.5v-9.002a.5.5 0 0 1 .5-.5h9.002a.5.5 0 0 1 .5.5v9.002a.5.5 0 0 1-.5.5zm-8.502-1h8.002v-8.002H.999z" fill="currentColor"/>
+        <path class="cls-1" d="M23.501 24.001h-9.002a.5.5 0 0 1-.5-.5v-9.002a.5.5 0 0 1 .5-.5h9.002a.5.5 0 0 1 .5.5v9.002a.5.5 0 0 1-.5.5zm-8.502-1h8.002v-8.002h-8.002z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-chave-3x" viewBox="0 0 32 32">
+    <title>bgm chave 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-chave-3x</title>
+        <path class="cls-1" d="M26.209 31.951a5.644 5.644 0 0 1-4.08-1.905L10.685 17.122a8.931 8.931 0 0 1-3.758.067 8.704 8.704 0 0 1-6.636-6.136 10.47 10.47 0 0 1-.229-2.807 1.954 1.954 0 0 1 1.273-1.733 2.018 2.018 0 0 1 2.142.453L5.521 9.01l3.535-3.535L7.01 3.429A1.977 1.977 0 0 1 6.554 1.3 1.985 1.985 0 0 1 8.316.011a9.929 9.929 0 0 1 1.197.007 8.775 8.775 0 0 1 7.882 8.733 8.41 8.41 0 0 1-.225 1.89l12.913 11.432a5.5 5.5 0 0 1 1.913 4.008 5.687 5.687 0 0 1-1.65 4.218 5.58 5.58 0 0 1-3.978 1.654c-.053 0-.107 0-.16-.002zM8.423 2.014l2.047 2.047a2 2 0 0 1 0 2.828l-3.534 3.534a2.05 2.05 0 0 1-2.829 0L2.064 8.38l.707-.707-.712.686a8.44 8.44 0 0 0 .172 2.21 6.67 6.67 0 0 0 5.09 4.66 7.09 7.09 0 0 0 3.425-.188l.609-.18 12.268 13.855a3.654 3.654 0 0 0 2.64 1.235 3.607 3.607 0 0 0 2.668-1.066 3.677 3.677 0 0 0 1.066-2.73 3.526 3.526 0 0 0-1.23-2.576L14.904 11.307l.183-.613a6.836 6.836 0 0 0 .307-1.96 6.742 6.742 0 0 0-6.034-6.722 7.21 7.21 0 0 0-.938.002z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-card-3x" viewBox="0 0 32 32">
+    <title>bgm card 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-card-3x</title>
+        <path class="cls-1" d="M12.566 13.074h-12a.5.5 0 0 1-.5-.5v-12a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5zm-11.5-1h11v-11h-11z" fill="currentColor"/>
+        <path class="cls-1" d="M31.427 13.074h-12a.5.5 0 0 1-.5-.5v-12a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5zm-11.5-1h11v-11h-11z" fill="currentColor"/>
+        <path class="cls-1" d="M12.566 31.936h-12a.5.5 0 0 1-.5-.5v-12a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5zm-11.5-1h11v-11h-11z" fill="currentColor"/>
+        <path class="cls-1" d="M31.427 31.936h-12a.5.5 0 0 1-.5-.5v-12a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5zm-11.5-1h11v-11h-11z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-chave-4x" viewBox="0 0 48 48">
+    <title>bgm chave 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-chave-4x</title>
+        <path class="cls-1" d="M39.661 47.95a8.121 8.121 0 0 1-5.875-2.743L16.022 25.143a13.216 13.216 0 0 1-5.848.173 12.798 12.798 0 0 1-9.762-9 15.154 15.154 0 0 1-.211-5.442A2.004 2.004 0 0 1 3.6 9.736l4.312 4.311 6.177-6.177-4.31-4.309A2.003 2.003 0 0 1 10.893.164a14.152 14.152 0 0 1 3.096-.133A12.92 12.92 0 0 1 25.59 12.896a12.582 12.582 0 0 1-.404 3.086l20.051 17.753a7.907 7.907 0 0 1 2.75 5.762 8.184 8.184 0 0 1-2.375 6.075 8.03 8.03 0 0 1-5.724 2.381c-.075 0-.151 0-.228-.004zM11.194 2.145l4.31 4.31a2 2 0 0 1 0 2.828l-6.178 6.177a2.047 2.047 0 0 1-2.829 0l-4.311-4.31-.007.013a13.101 13.101 0 0 0 .174 4.668 10.762 10.762 0 0 0 8.214 7.524 11.434 11.434 0 0 0 5.51-.3l.609-.18 18.594 21a6.136 6.136 0 0 0 4.436 2.074 6.03 6.03 0 0 0 4.483-1.792 6.18 6.18 0 0 0 1.791-4.587 5.932 5.932 0 0 0-2.068-4.329l-21.007-18.6.184-.612a10.828 10.828 0 0 0-9.263-14.005Q13.435 2 13.042 2a11.622 11.622 0 0 0-1.848.146zm-8.31 8.297z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-card-4x" viewBox="0 0 48 48">
+    <title>bgm card 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-card-4x</title>
+        <path class="cls-1" d="M19.5 20.001H.5a.5.5 0 0 1-.5-.5v-19a.5.5 0 0 1 .5-.5h19a.5.5 0 0 1 .5.5v19a.5.5 0 0 1-.5.5zm-18.5-1h18v-18H1z" fill="currentColor"/>
+        <path class="cls-1" d="M47.5 20.001h-19a.5.5 0 0 1-.5-.5v-19a.5.5 0 0 1 .5-.5h19a.5.5 0 0 1 .5.5v19a.5.5 0 0 1-.5.5zm-18.5-1h18v-18H29z" fill="currentColor"/>
+        <path class="cls-1" d="M19.5 48H.5a.5.5 0 0 1-.5-.5v-19a.5.5 0 0 1 .5-.5h19a.5.5 0 0 1 .5.5v19a.5.5 0 0 1-.5.5zM1 47h18V29H1z" fill="currentColor"/>
+        <path class="cls-1" d="M47.5 48h-19a.5.5 0 0 1-.5-.5v-19a.5.5 0 0 1 .5-.5h19a.5.5 0 0 1 .5.5v19a.5.5 0 0 1-.5.5zM29 47h18V29H29z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-encerrar-1x" viewBox="0 0 16 16">
+    <title>bgm encerrar 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-encerrar-1x</title>
+        <g data-name="Camada 3">
+          <path class="cls-1" fill="currentColor" d="M8 0H9V8H8z"/>
+          <path class="cls-1" d="M8.5 16A7.45 7.45 0 0 1 1 8.62a7.32 7.32 0 0 1 3.76-6.39L5.19 2l.49.87-.44.24A6.32 6.32 0 0 0 2 8.62 6.45 6.45 0 0 0 8.5 15 6.45 6.45 0 0 0 15 8.62a6.32 6.32 0 0 0-3.25-5.52l-.43-.25.5-.87.43.25A7.31 7.31 0 0 1 16 8.62 7.45 7.45 0 0 1 8.5 16z" fill="currentColor"/>
+        </g>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-encerrar-2x" viewBox="0 0 24 24">
+    <title>bgm encerrar 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-encerrar-2x</title>
+        <g data-name="Camada 3">
+          <path class="cls-1" fill="currentColor" d="M12 0H13V12H12z"/>
+          <path class="cls-1" d="M12.5 24A11.17 11.17 0 0 1 1.25 13a11 11 0 0 1 5.63-9.63l.44-.24.48.87-.44.24A10 10 0 0 0 2.25 13 10.17 10.17 0 0 0 12.5 23a10.17 10.17 0 0 0 10.25-10 10 10 0 0 0-5.12-8.71L17.19 4l.5-.87.43.25A11 11 0 0 1 23.75 13 11.17 11.17 0 0 1 12.5 24z" fill="currentColor"/>
+        </g>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-encerrar-3x" viewBox="0 0 32 32">
+    <title>bgm encerrar 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-encerrar-3x</title>
+        <g data-name="Camada 3">
+          <path class="cls-1" fill="currentColor" d="M15 0H17V16H15z"/>
+          <path class="cls-1" d="M16 32A14.9 14.9 0 0 1 1 17.24 14.64 14.64 0 0 1 8.51 4.46L9.39 4l1 1.75-.87.49a12.64 12.64 0 0 0-6.52 11A12.9 12.9 0 0 0 16 30a12.9 12.9 0 0 0 13-12.76 12.64 12.64 0 0 0-6.5-11l-.87-.5 1-1.73.87.5A14.62 14.62 0 0 1 31 17.24 14.9 14.9 0 0 1 16 32z" fill="currentColor"/>
+        </g>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-encerrar-4x" viewBox="0 0 48 48">
+    <title>bgm encerrar 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-encerrar-4x</title>
+        <g data-name="Camada 3">
+          <path class="cls-1" fill="currentColor" d="M23 0H25V23H23z"/>
+          <path class="cls-1" d="M24 48A22.31 22.31 0 0 1 1.53 25.9 21.91 21.91 0 0 1 12.78 6.77l.87-.49 1 1.75-.87.49A19.91 19.91 0 0 0 3.53 25.9 20.31 20.31 0 0 0 24 46a20.31 20.31 0 0 0 20.47-20.1A19.91 19.91 0 0 0 34.24 8.51L33.37 8l1-1.73.87.5A21.89 21.89 0 0 1 46.47 25.9 22.31 22.31 0 0 1 24 48z" fill="currentColor"/>
+        </g>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-play-1x" viewBox="0 0 16 16">
+    <title>bgm play 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>chave-16x16</title>
+        <path class="cls-1" d="M1 1.66L13.68 8 1 14.34V1.66M0 0v16l15.92-8L0 0z" fill="currentColor" data-name="Camada 3"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-play-2x" viewBox="0 0 24 24">
+    <title>bgm play 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>chave-24x24</title>
+        <path class="cls-1" d="M1 1.62L21.65 12 1 22.38V1.62M0 0v24l23.87-12L0 0z" fill="currentColor" data-name="Camada 3"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-play-3x" viewBox="0 0 32 32">
+    <title>bgm play 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>chave-32x32</title>
+        <path class="cls-1" d="M2 3.24L27.53 16 2 28.76V3.24M0 0v32l32-16L0 0z" fill="currentColor" data-name="Camada 3"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-play-4x" viewBox="0 0 48 48">
+    <title>bgm play 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>chave-48x48</title>
+        <path class="cls-1" d="M2 3.24L43.53 24 2 44.76V3.24M0 0v48l48-24L0 0z" fill="currentColor" data-name="Camada 3"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-retorno-1x" viewBox="0 0 16 16">
+    <title>bgm retorno 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-retorno-1x</title>
+        <path class="cls-1" d="M10.5 16H6v-1h4.5a4.79 4.79 0 0 0 4.5-5 4.74 4.74 0 0 0-4.5-5H1.73V4h8.77a5.74 5.74 0 0 1 5.5 6 5.79 5.79 0 0 1-5.5 6z" fill="currentColor"/>
+        <path class="cls-1" fill="currentColor" d="M3.75 8.1L0.54 4.45 3.75 0.79 4.49 1.47 1.89 4.45 4.49 7.43 3.75 8.1z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-retorno-2x" viewBox="0 0 24 24">
+    <title>bgm retorno 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-retorno-2x</title>
+        <path class="cls-1" d="M15.83 24H8.17v-1h7.67c4 0 7.17-3.58 7.17-8s-3.21-8-7.17-8H1.5V6h14.33C20.34 6 24 10.08 24 15s-3.66 9-8.17 9z" fill="currentColor"/>
+        <path class="cls-1" fill="currentColor" d="M5.93 12.31L0.83 6.55 5.93 0.79 6.68 1.46 2.17 6.55 6.68 11.65 5.93 12.31z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-retorno-3x" viewBox="0 0 32 32">
+    <title>bgm retorno 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-retorno-3x</title>
+        <path class="cls-1" d="M21 32H11v-2h10c5 0 9-4.51 9-10.05S26 10 21 10H3V8h18c6.07 0 11 5.3 11 11.95S27.07 32 21 32z" fill="currentColor"/>
+        <path class="cls-1" fill="currentColor" d="M10.07 18.2L1.65 8.89 10.07 -0.41 11.55 0.93 4.35 8.89 11.55 16.86 10.07 18.2z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-retorno-4x" viewBox="0 0 48 48">
+    <title>bgm retorno 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-retorno-4x</title>
+        <path class="cls-1" d="M31.67 48H16v-2h15.67C39.57 46 46 38.85 46 30.05S39.57 14 31.67 14H2v-2h29.67c9 0 16.33 8.1 16.33 18.05S40.67 48 31.67 48z" fill="currentColor"/>
+        <path class="cls-1" fill="currentColor" d="M11.94 25.41L0.65 13.11 11.93 0.59 13.41 1.93 3.35 13.1 13.41 24.06 11.94 25.41z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-seta-direita-1x" viewBox="0 0 16 16">
+    <title>bgm seta direita 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-seta-direita-1x</title>
+        <path class="cls-1" fill="currentColor" data-name="Camada 3" d="M4.25 16.21L3.54 15.5 11.04 8 3.54 0.5 4.25 -0.21 12.46 8 4.25 16.21z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-seta-direita-2x" viewBox="0 0 24 24">
+    <title>bgm seta direita 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-seta-direita-2x</title>
+        <path class="cls-1" fill="currentColor" data-name="Camada 3" d="M6.38 23.96L5.67 23.25 16.92 12 5.67 0.75 6.38 0.04 18.33 12 6.38 23.96z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-seta-direita-3x" viewBox="0 0 32 32">
+    <title>bgm seta direita 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-seta-direita-3x</title>
+        <path class="cls-1" fill="currentColor" data-name="Camada 3" d="M8.5 32.41L7.09 31 22.09 16 7.09 1 8.5 -0.41 24.91 16 8.5 32.41z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-seta-direita-4x" viewBox="0 0 48 48">
+    <title>bgm seta direita 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-seta-direita-4x</title>
+        <path class="cls-1" fill="currentColor" data-name="Camada 3" d="M12.75 47.91L11.34 46.5 33.84 24 11.34 1.5 12.75 0.09 36.66 24 12.75 47.91z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-seta-baixo-1x" viewBox="0 0 16 16">
+    <title>bgm seta baixo 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-seta-baixo-1x</title>
+        <path class="cls-1" fill="currentColor" data-name="Camada 3" d="M8 12.457L-0.207 4.25 0.5 3.543 8 11.043 15.5 3.543 16.207 4.25 8 12.457z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-seta-baixo-2x" viewBox="0 0 24 24">
+    <title>bgm seta baixo 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-seta-baixo-3x</title>
+        <path class="cls-1" fill="currentColor" data-name="Camada 3" d="M12 18.332L0.043 6.375 0.75 5.668 12 16.918 23.25 5.668 23.957 6.375 12 18.332z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-seta-baixo-3x" viewBox="0 0 32 32">
+    <title>bgm seta baixo 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-seta-baixo-2x</title>
+        <path class="cls-1" fill="currentColor" data-name="Camada 3" d="M16 24.914L-0.414 8.5 1 7.086 16 22.086 31 7.086 32.414 8.5 16 24.914z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-seta-baixo-4x" viewBox="0 0 48 48">
+    <title>bgm seta baixo 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-seta-baixo-4x</title>
+        <path class="cls-1" fill="currentColor" data-name="Camada 3" d="M24 36.664L0.086 12.75 1.5 11.336 24 33.836 46.5 11.336 47.914 12.75 24 36.664z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-seta-cima-1x" viewBox="0 0 16 16">
+    <title>bgm seta cima 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-seta-cima-1x</title>
+        <path class="cls-1" fill="currentColor" data-name="Camada 3" d="M15.5 12.457L8 4.957 0.5 12.457 -0.207 11.75 8 3.543 16.207 11.75 15.5 12.457z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-seta-cima-2x" viewBox="0 0 24 24">
+    <title>bgm seta cima 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-seta-cima-2x</title>
+        <path class="cls-1" fill="currentColor" data-name="Camada 3" d="M23.25 18.332L12 7.082 0.75 18.332 0.043 17.625 12 5.668 23.957 17.625 23.25 18.332z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-seta-cima-3x" viewBox="0 0 32 32">
+    <title>bgm seta cima 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-seta-cima-3x</title>
+        <path class="cls-1" fill="currentColor" data-name="Camada 3" d="M31 24.914L16 9.914 1 24.914 -0.414 23.5 16 7.086 32.414 23.5 31 24.914z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-seta-cima-4x" viewBox="0 0 48 48">
+    <title>bgm seta cima 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-seta-cima-4x</title>
+        <path class="cls-1" fill="currentColor" data-name="Camada 3" d="M46.5 36.664L24 14.164 1.5 36.664 0.086 35.25 24 11.336 47.914 35.25 46.5 36.664z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-seta-esquerda-1x" viewBox="0 0 16 16">
+    <title>bgm seta esquerda 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-seta-esquerda-1x</title>
+        <path class="cls-1" fill="currentColor" data-name="Camada 3" d="M11.75 16.207L3.543 8 11.75 -0.207 12.457 0.5 4.957 8 12.457 15.5 11.75 16.207z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-seta-esquerda-2x" viewBox="0 0 24 24">
+    <title>bgm seta esquerda 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-seta-esquerda-2x</title>
+        <path class="cls-1" fill="currentColor" data-name="Camada 3" d="M17.625 23.957L5.668 12 17.625 0.043 18.332 0.75 7.082 12 18.332 23.25 17.625 23.957z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-seta-esquerda-3x" viewBox="0 0 32 32">
+    <title>bgm seta esquerda 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-seta-esquerda-3x</title>
+        <path class="cls-1" fill="currentColor" data-name="Camada 3" d="M23.5 32.414L7.086 16 23.5 -0.414 24.914 1 9.914 16 24.914 31 23.5 32.414z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-seta-esquerda-4x" viewBox="0 0 48 48">
+    <title>bgm seta esquerda 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-seta-esquerda-4x</title>
+        <path class="cls-1" fill="currentColor" data-name="Camada 3" d="M35.25 47.914L11.336 24 35.25 0.086 36.664 1.5 14.164 24 36.664 46.5 35.25 47.914z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-historico-1x" viewBox="0 0 16 16">
+    <title>bgm historico 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-historico-1x</title>
+        <g data-name="Camada 3">
+          <path class="cls-1" fill="currentColor" d="M5 5L1 5 1 1 2 1 2 4 5 4 5 5z"/>
+          <path class="cls-1" fill="currentColor" d="M7 8H12V9H7z"/>
+          <path class="cls-1" fill="currentColor" d="M7 4H8V8H7z"/>
+          <path class="cls-1" d="M8 15.98A7.99 7.99 0 0 1 .02 8h1A6.98 6.98 0 1 0 8 1.019a6.77 6.77 0 0 0-6.046 3.45l-.838-.546A7.79 7.79 0 0 1 8 .019 7.98 7.98 0 0 1 8 15.98z" fill="currentColor"/>
+        </g>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-historico-2x" viewBox="0 0 24 24">
+    <title>bgm historico 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-historico-2x</title>
+        <g data-name="Camada 3">
+          <path class="cls-1" fill="currentColor" d="M7 7L1 7 1 1 2 1 2 6 7 6 7 7z"/>
+          <path class="cls-1" fill="currentColor" d="M11 12H18V13H11z"/>
+          <path class="cls-1" fill="currentColor" d="M11 6H12V12H11z"/>
+          <path class="cls-1" d="M12 24A12.013 12.013 0 0 1 0 12h1A11 11 0 1 0 12 1C7.978 1 4.864 2.775 2.481 6.426l-.837-.547C4.226 1.923 7.614 0 12 0a12 12 0 0 1 0 24z" fill="currentColor"/>
+        </g>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-historico-3x" viewBox="0 0 32 32">
+    <title>bgm historico 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-historico-3x</title>
+        <path class="cls-1" fill="currentColor" d="M7 11L0 11 0 4 2 4 2 9 7 9 7 11z"/>
+        <path class="cls-1" fill="currentColor" d="M13 16H21V18H13z"/>
+        <path class="cls-1" fill="currentColor" d="M13 8.04H15V16H13z"/>
+        <path class="cls-1" d="M15.541 32C6.681 32 0 25.121 0 16h2c0 7.981 5.821 14 13.541 14A14.251 14.251 0 0 0 30 16 14.251 14.251 0 0 0 15.541 2 15.393 15.393 0 0 0 2.293 9.765L.561 8.767A17.4 17.4 0 0 1 15.54 0 16.253 16.253 0 0 1 32 16a16.253 16.253 0 0 1-16.459 16z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-historico-4x" viewBox="0 0 48 48">
+    <title>bgm historico 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-historico-4x</title>
+        <path class="cls-1" fill="currentColor" d="M10 15L0 15 0 5 2 5 2 13 10 13 10 15z"/>
+        <path class="cls-1" fill="currentColor" d="M20 25H31V27H20z"/>
+        <path class="cls-1" fill="currentColor" d="M20 13.06H22V25H20z"/>
+        <path class="cls-1" d="M23.295 48C10.015 48 0 37.683 0 24h2c0 12.542 9.155 22 21.295 22C35.815 46 46 36.13 46 24S35.814 2 23.295 2A24.135 24.135 0 0 0 2.521 14.174l-1.733-.998A26.143 26.143 0 0 1 23.295 0C36.918 0 48 10.767 48 24S36.918 48 23.295 48z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-check-1x" viewBox="0 0 16 16">
+    <title>bgm check 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-check-1x</title>
+        <path class="cls-1" fill="currentColor" d="M5.952 12.206L0.126 6.38 0.833 5.673 5.952 10.792 15.167 1.578 15.874 2.285 5.952 12.206z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-check-2x" viewBox="0 0 24 24">
+    <title>bgm check 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-check-2x</title>
+        <path class="cls-1" fill="currentColor" d="M8.838 19.618L0.093 10.872 0.8 10.165 8.838 18.204 23.308 3.734 24.015 4.441 8.838 19.618z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-check-3x" viewBox="0 0 32 32">
+    <title>bgm check 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-check-3x</title>
+        <path class="cls-1" fill="currentColor" d="M11.904 25.628L0.253 13.976 1.667 12.562 11.904 22.8 30.333 4.372 31.747 5.786 11.904 25.628z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-check-4x" viewBox="0 0 48 48">
+    <title>bgm check 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-check-4x</title>
+        <path class="cls-1" fill="currentColor" d="M17.521 41.99L-0.089 24.38 1.325 22.966 17.521 39.162 46.675 10.009 48.089 11.423 17.521 41.99z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-volante-1x" viewBox="0 0 16 16">
+    <title>bgm volante 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-volante-1x</title>
+        <path class="cls-1" d="M6.18 15.139A7.423 7.423 0 0 0 .639 8.073l.248-.969a8.425 8.425 0 0 1 6.295 8.017z" fill="currentColor"/>
+        <path class="cls-1" d="M9.82 15.139l-1-.018a8.425 8.425 0 0 1 6.294-8.017l.248.969a7.423 7.423 0 0 0-5.543 7.066z" fill="currentColor"/>
+        <path class="cls-1" fill="currentColor" d="M1 5H15V6H1z"/>
+        <path class="cls-1" d="M8 1a7 7 0 1 1-7 7 7.008 7.008 0 0 1 7-7m0-1a8 8 0 1 0 8 8 8 8 0 0 0-8-8z" fill="currentColor"/>
+        <circle class="cls-1" cx="8" cy="9" r="1.5" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-volante-2x" viewBox="0 0 24 24">
+    <title>bgm volante 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-volante-2x</title>
+        <path class="cls-1" d="M10 23.509c-.09-5.36-5.144-10.376-9.624-11.525l.248-.968C5.454 12.254 10.904 17.683 11 23.49z" fill="currentColor"/>
+        <path class="cls-1" d="M14 23.509l-1-.018c.097-5.808 5.546-11.237 10.376-12.475l.248.968C19.144 13.133 14.09 18.148 14 23.51z" fill="currentColor"/>
+        <path class="cls-1" fill="currentColor" d="M1 8H23V9H1z"/>
+        <path class="cls-1" d="M12 1A11 11 0 1 1 1 12 11.012 11.012 0 0 1 12 1m0-1a12 12 0 1 0 12 12A12 12 0 0 0 12 0z" fill="currentColor"/>
+        <path class="cls-1" d="M12 14.967a2 2 0 1 1 2-2 2.003 2.003 0 0 1-2 2zm0-3a1 1 0 1 0 1 1 1.001 1.001 0 0 0-1-1z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-volante-3x" viewBox="0 0 32 32">
+    <title>bgm volante 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-volante-3x</title>
+        <path class="cls-1" d="M13.044 31.017C12.936 24.54 6.201 17.995.252 16.469l.496-1.938c6.66 1.709 14.169 8.885 14.296 16.452z" fill="currentColor"/>
+        <path class="cls-1" d="M19.956 31.017l-2-.034c.13-7.733 7.374-14.957 13.796-16.604l.496 1.937c-5.722 1.468-12.178 7.867-12.292 14.7z" fill="currentColor"/>
+        <path class="cls-1" fill="currentColor" d="M1.652 9.957H30.347V11.957H1.652z"/>
+        <path class="cls-1" d="M16 2A14 14 0 1 1 2 16 14.016 14.016 0 0 1 16 2m0-2a16 16 0 1 0 16 16A16 16 0 0 0 16 0z" fill="currentColor"/>
+        <path class="cls-1" d="M16 20.76a3.5 3.5 0 1 1 3.5-3.5 3.504 3.504 0 0 1-3.5 3.5zm0-5a1.5 1.5 0 1 0 1.5 1.5 1.502 1.502 0 0 0-1.5-1.5z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-volante-4x" viewBox="0 0 48 48">
+    <title>bgm volante 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-volante-4x</title>
+        <path class="cls-1" d="M20.5 47.517C20.332 37.409 9.422 26.507.501 24.219L1 22.28c9.79 2.511 21.315 14.068 21.501 25.202z" fill="currentColor"/>
+        <path class="cls-1" d="M28.5 47.517l-2-.034c.188-11.3 11.578-22.95 21.252-25.43l.496 1.938C39.443 26.248 28.67 37.246 28.5 47.517z" fill="currentColor"/>
+        <path class="cls-1" fill="currentColor" d="M2 15H46V17H2z"/>
+        <path class="cls-1" d="M24 2A22 22 0 1 1 2 24 22.025 22.025 0 0 1 24 2m0-2a24 24 0 1 0 24 24A24 24 0 0 0 24 0z" fill="currentColor"/>
+        <path class="cls-1" d="M24 30.392a4.5 4.5 0 1 1 4.5-4.5 4.505 4.505 0 0 1-4.5 4.5zm0-7a2.5 2.5 0 1 0 2.5 2.5 2.503 2.503 0 0 0-2.5-2.5z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-mecanico-1x" viewBox="0 0 16 16">
+    <title>bgm mecanico 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-mecanico-1x</title>
+        <path class="cls-1" d="M13.5 6H13l-.54-3.65s0-.41-.68-.89A7.48 7.48 0 0 0 8.16.19h-.62a7.48 7.48 0 0 0-3.62 1.27c-.68.48-.68.89-.68.89L3 6h-.5a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5H3a3.53 3.53 0 0 0 1.71 3L8 16l3.29-2A3.53 3.53 0 0 0 13 11h.5a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5zm-.5 4h-1v1a2.55 2.55 0 0 1-1.23 2.17L8 14.83l-2.77-1.66A2.55 2.55 0 0 1 4 11v-1H3V7h.67L5 9h.13a8.83 8.83 0 0 1 5.72 0l1.43-2H13z" fill-rule="evenodd"/>
+        <path class="cls-1" d="M8 11a2 2 0 0 0-2 2h4a2 2 0 0 0-2-2z" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-mecanico-2x" viewBox="0 0 24 24">
+    <title>bgm mecanico 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-mecanico-2x</title>
+        <path d="M12 17c-1.66 0-3 .9-3 2h6c0-1.1-1.34-2-3-2z"/>
+        <path d="M20 9V3.48s0-.62-1-1.33A11.22 11.22 0 0 0 13.48.24h-3a11.22 11.22 0 0 0-5.41 1.91C4 2.86 4 3.48 4 3.48V9a1 1 0 0 0-1 1v5.23a.75.75 0 0 0 .75.75h.75a6.09 6.09 0 0 0 2.57 5L12 24l4.93-3a6.09 6.09 0 0 0 2.57-5h.75a.75.75 0 0 0 .75-.75V10a1 1 0 0 0-1-1zm0 6h-1.5v1a5.1 5.1 0 0 1-2.09 4.14L12 22.79l-4.41-2.65A5.1 5.1 0 0 1 5.5 16v-1H4v-5h.78l2.72 3.45.2-.07a13.25 13.25 0 0 1 8.58.07L19.12 10H20z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-mecanico-3x" viewBox="0 0 32 32">
+    <title>bgm mecanico 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-mecanico-3x</title>
+        <path d="M16 22c-2.21 0-4 1.34-4 3h8c0-1.66-1.79-3-4-3z"/>
+        <path d="M26.64 12l.12-.14V4.39s0-.83-1.39-1.8A15.18 15.18 0 0 0 18 0h-4a15.18 15.18 0 0 0-7.37 2.58c-1.39 1-1.39 1.8-1.39 1.8v7.53l.07.08A1.36 1.36 0 0 0 4 13.36v6.71a1 1 0 0 0 1 1h.84v.85a9 9 0 0 0 .61 2.38A7.32 7.32 0 0 0 9.33 28L16 32l6.67-4a7.93 7.93 0 0 0 3.15-4.75 8.69 8.69 0 0 0 .34-2.3H27a1 1 0 0 0 .53-.18A1 1 0 0 0 28 20v-6.64A1.37 1.37 0 0 0 26.64 12zM9.93 17.88l.27-.09a17.93 17.93 0 0 1 11.6.09L25 14h1v5h-1.86v2c0 2-1.17 4.54-2.5 5.33L16 29.67l-5.65-3.35C9 25.54 7.85 23 7.85 21v-2H6v-5h.89z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-mecanico-4x" viewBox="0 0 48 48">
+    <title>bgm mecanico 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-mecanico-4x</title>
+        <path class="cls-1" d="M39 18h-.13l.14-.19-1.62-10.95s0-1.23-2.05-2.67A22.44 22.44 0 0 0 24.48.38h-1.85A22.44 22.44 0 0 0 11.76 4.2C9.71 5.63 9.71 6.86 9.71 6.86L9 17.81l.13.19H9a3 3 0 0 0-3 3v9a3 3 0 0 0 3 3 10.52 10.52 0 0 0 5.14 9L24 48l9.86-6A10.52 10.52 0 0 0 39 33a3 3 0 0 0 3-3v-9a3 3 0 0 0-3-3zm1 12a1 1 0 0 1-1 1h-2v2a8.55 8.55 0 0 1-4.17 7.32L24 45.65l-8.83-5.33A8.55 8.55 0 0 1 11 33v-2H9a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h1.47L15 26.81l.4-.13a26.5 26.5 0 0 1 17.15.13L37.42 20H39a1 1 0 0 1 1 1z" fill-rule="evenodd"/>
+        <path class="cls-1" d="M24 34c-3.31 0-6 1.34-6 4h12c0-2.66-2.69-4-6-4z" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-mecanico-add-1x" viewBox="0 0 16 16">
+    <title>bgm mecanico add 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-mecanico-add-1x</title>
+        <path class="cls-1" d="M7 11a2 2 0 0 0-2 2h4a2 2 0 0 0-2-2z" fill-rule="evenodd"/>
+        <path class="cls-1" d="M12.5 6H12l-.29-2H11a1 1 0 0 1-1-1V2a1 1 0 0 1 .4-.78 7.53 7.53 0 0 0-3.24-1h-.62a7.48 7.48 0 0 0-3.62 1.24c-.68.48-.68.89-.68.89L2 6h-.5a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5H2a3.53 3.53 0 0 0 1.71 3L7 16l3.29-2A3.53 3.53 0 0 0 12 11h.5a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5zm-.5 4h-1v1a2.55 2.55 0 0 1-1.23 2.17L7 14.83l-2.77-1.66A2.55 2.55 0 0 1 3 11v-1H2V7h.67L4 9h.13a8.83 8.83 0 0 1 5.72 0l1.43-2H12z" fill-rule="evenodd"/>
+        <path d="M13 1H14V4H13z"/>
+        <path class="cls-1" fill-rule="evenodd" d="M16 2L14 2 14 0 13 0 13 2 11 2 11 3 13 3 13 5 14 5 14 3 16 3 16 2z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-mecanico-add-2x" viewBox="0 0 24 24">
+    <title>bgm mecanico add 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-mecanico-add-2x</title>
+        <path d="M11 17c-1.66 0-3 .9-3 2h6c0-1.1-1.34-2-3-2z"/>
+        <path d="M19 9V6h-2a1 1 0 0 1-1-1V2a1 1 0 0 1 .35-.74 11.35 11.35 0 0 0-3.87-1h-3a11.22 11.22 0 0 0-5.41 1.89C3 2.86 3 3.48 3 3.48V9a1 1 0 0 0-1 1v5.23a.75.75 0 0 0 .75.75h.75a6.09 6.09 0 0 0 2.57 5L11 24l4.93-3a6.09 6.09 0 0 0 2.57-5h.75a.75.75 0 0 0 .75-.75V10a1 1 0 0 0-1-1zm0 6h-1.5v1a5.1 5.1 0 0 1-2.09 4.14L11 22.79l-4.41-2.65A5.1 5.1 0 0 1 4.5 16v-1H3v-5h.78l2.72 3.45.2-.07a13.25 13.25 0 0 1 8.58.07L18.12 10H19z"/>
+        <path class="cls-1" fill-rule="evenodd" d="M24 3L21 3 21 0 20 0 20 3 17 3 17 4 20 4 20 7 21 7 21 4 24 4 24 3z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-mecanico-add-3x" viewBox="0 0 32 32">
+    <title>bgm mecanico add 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-mecanico-add-3x</title>
+        <path d="M14 22c-2.21 0-4 1.34-4 3h8c0-1.66-1.79-3-4-3z"/>
+        <path d="M24.64 12l.12-.14V8H23a3 3 0 0 1-.48-6A15.28 15.28 0 0 0 16 0h-4a15.18 15.18 0 0 0-7.37 2.58c-1.39 1-1.39 1.8-1.39 1.8v7.53l.07.09a1.37 1.37 0 0 0-.93.42 1.35 1.35 0 0 0-.27.41 1.34 1.34 0 0 0-.08.43v7.06a1 1 0 0 0 1 1h.84A8.12 8.12 0 0 0 7.34 28L14 32l6.66-4a8.12 8.12 0 0 0 3.48-6.68H25a1 1 0 0 0 1-1v-7A1.37 1.37 0 0 0 24.64 12zM24 19.36h-1.86v2a6.18 6.18 0 0 1-2.5 5L14 29.67l-5.64-3.34a6.18 6.18 0 0 1-2.5-5v-2H4V14h.87l3 3.88.27-.09a17.93 17.93 0 0 1 11.6.09L23 14h1z"/>
+        <path class="cls-1" fill-rule="evenodd" d="M32 4L28 4 28 0 26 0 26 4 22 4 22 6 26 6 26 10 28 10 28 6 32 6 32 4z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-mecanico-add-4x" viewBox="0 0 48 48">
+    <title>bgm mecanico add 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-mecanico-add-4x</title>
+        <path class="cls-1" d="M36 18h-.13l.14-.19L35 11h-2a2 2 0 0 1-2-2V6a2 2 0 0 1 1.26-1.86A22.43 22.43 0 0 0 21.48.38h-1.85A22.44 22.44 0 0 0 8.76 4.2C6.71 5.63 6.71 6.86 6.71 6.86L6 17.81l.13.19H6a3 3 0 0 0-3 3v9a3 3 0 0 0 3 3 10.52 10.52 0 0 0 5.14 9L21 48l9.86-6A10.52 10.52 0 0 0 36 33a3 3 0 0 0 3-3v-9a3 3 0 0 0-3-3zm1 12a1 1 0 0 1-1 1h-2v2a8.55 8.55 0 0 1-4.17 7.32L21 45.65l-8.83-5.33A8.55 8.55 0 0 1 8 33v-2H6a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h1.47L12 26.81l.4-.13a26.5 26.5 0 0 1 17.15.13L34.42 20H36a1 1 0 0 1 1 1z" fill-rule="evenodd"/>
+        <path class="cls-1" d="M21 34c-3.31 0-6 1.34-6 4h12c0-2.66-2.69-4-6-4z" fill-rule="evenodd"/>
+        <path class="cls-1" fill-rule="evenodd" d="M48 6L42 6 42 0 39 0 39 6 33 6 33 9 39 9 39 15 42 15 42 9 48 9 48 6z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-pause-1x" viewBox="0 0 16 16">
+    <title>bgm pause 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-pause-1x</title>
+        <path d="M6 1v14H3V1h3m1-1H2v16h5V0z"/>
+        <path d="M13 1v14h-3V1h3m1-1H9v16h5V0z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-pause-2x" viewBox="0 0 24 24">
+    <title>bgm pause 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-pause-2x</title>
+        <path d="M9 1v22H5V1h4m1-1H4v24h6V0z"/>
+        <path d="M19 1v22h-4V1h4m1-1h-6v24h6V0z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-pause-3x" viewBox="0 0 32 32">
+    <title>bgm pause 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-pause-3x</title>
+        <path d="M25 2v28h-5V2h5m2-2h-9v32h9V0z"/>
+        <path d="M12 2v28H7V2h5m2-2H5v32h9V0z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-pause-4x" viewBox="0 0 48 48">
+    <title>bgm pause 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-pause-4x</title>
+        <path d="M18 2v44H8V2h10m2-2H6v48h14V0z"/>
+        <path d="M40 2v44H30V2h10m2-2H28v48h14V0z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-tela-cheia-1x" viewBox="0 0 16 16">
+    <title>bgm tela cheia 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-tela-cheia-1x</title>
+        <path class="cls-1" fill="none" stroke="currentColor" stroke-miterlimit="10" d="M6.5 15.5L0.5 15.5 0.5 9.5"/>
+        <path class="cls-1" fill="none" stroke="currentColor" stroke-miterlimit="10" d="M5.97 10.03L0.5 15.5"/>
+        <path class="cls-1" fill="none" stroke="currentColor" stroke-miterlimit="10" d="M9.5 0.5L15.5 0.5 15.5 6.5"/>
+        <path class="cls-1" fill="none" stroke="currentColor" stroke-miterlimit="10" d="M10.03 5.97L15.5 0.5"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-tela-cheia-2x" viewBox="0 0 24 24">
+    <title>bgm tela cheia 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-tela-cheia-2x</title>
+        <path class="cls-1" fill="none" stroke="currentColor" stroke-miterlimit="10" d="M9.5 23.5L0.5 23.5 0.5 14.5"/>
+        <path class="cls-1" fill="none" stroke="currentColor" stroke-miterlimit="10" d="M8.96 15.04L0.75 23.25"/>
+        <path class="cls-1" fill="none" stroke="currentColor" stroke-miterlimit="10" d="M14.5 0.5L23.5 0.5 23.5 9.5"/>
+        <path class="cls-1" fill="none" stroke="currentColor" stroke-miterlimit="10" d="M15.04 8.96L23.25 0.75"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-tela-cheia-3x" viewBox="0 0 32 32">
+    <title>bgm tela cheia 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-tela-cheia-3x</title>
+        <path class="cls-1" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" d="M13 31L1 31 1 19"/>
+        <path class="cls-1" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" d="M11.94 20.06L1 31"/>
+        <path class="cls-1" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" d="M19 1L31 1 31 13"/>
+        <path class="cls-1" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" d="M20.06 11.94L31 1"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-tela-cheia-4x" viewBox="0 0 48 48">
+    <title>bgm tela cheia 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-tela-cheia-4x</title>
+        <path class="cls-1" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" d="M20 47L1 47 1 28"/>
+        <path class="cls-1" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" d="M17.91 30.09L1.5 46.5"/>
+        <path class="cls-1" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" d="M28 1L47 1 47 20"/>
+        <path class="cls-1" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" d="M30.09 17.91L46.5 1.5"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-fechar-1x" viewBox="0 0 16 16">
+    <title>bgm fechar 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-fechar-1x</title>
+        <path d="M15.35 1.35L14.65 0.65 8 7.29 1.35 0.65 0.65 1.35 7.29 8 0.65 14.65 1.35 15.35 8 8.71 14.65 15.35 15.35 14.65 8.71 8 15.35 1.35z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-fechar-2x" viewBox="0 0 24 24">
+    <title>bgm fechar 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-fechar-2x</title>
+        <path d="M23.35 1.35L22.65 0.65 12 11.29 1.35 0.65 0.65 1.35 11.29 12 0.65 22.65 1.35 23.35 12 12.71 22.65 23.35 23.35 22.65 12.71 12 23.35 1.35z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-fechar-3x" viewBox="0 0 32 32">
+    <title>bgm fechar 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-fechar-3x</title>
+        <path d="M31.71 1.71L30.29 0.29 16 14.59 1.71 0.29 0.29 1.71 14.59 16 0.29 30.29 1.71 31.71 16 17.41 30.29 31.71 31.71 30.29 17.41 16 31.71 1.71z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-fechar-4x" viewBox="0 0 48 48">
+    <title>bgm fechar 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-fechar-4x</title>
+        <path d="M47.71 1.71L46.29 0.29 24 22.59 1.71 0.29 0.29 1.71 22.59 24 0.29 46.29 1.71 47.71 24 25.41 46.29 47.71 47.71 46.29 25.41 24 47.71 1.71z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-mais-1x" viewBox="0 0 16 16">
+    <title>bgm mais 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-mais-1x</title>
+        <path d="M15 8L8 8 8 1 7 1 7 8 0 8 0 9 7 9 7 16 8 16 8 9 15 9 15 8z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-mais-2x" viewBox="0 0 24 24">
+    <title>bgm mais 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-mais-2x</title>
+        <path d="M23 12L12 12 12 1 11 1 11 12 0 12 0 13 11 13 11 24 12 24 12 13 23 13 23 12z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-mais-3x" viewBox="0 0 32 32">
+    <title>bgm mais 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-mais-3x</title>
+        <path d="M32 15L17 15 17 0 15 0 15 15 0 15 0 17 15 17 15 32 17 32 17 17 32 17 32 15z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-mais-4x" viewBox="0 0 48 48">
+    <title>bgm mais 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-mais-4x</title>
+        <path d="M48 23L25 23 25 0 23 0 23 23 0 23 0 25 23 25 23 48 25 48 25 25 48 25 48 23z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-gravar-1x" viewBox="0 0 16 16">
+    <title>bgm gravar 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-gravar-1x</title>
+        <path class="cls-1" fill="currentColor" d="M11 6L3 6 3 0 4 0 4 5 10 5 10 0 11 0 11 6z"/>
+        <path class="cls-1" fill="currentColor" d="M8 2H9V4H8z"/>
+        <path class="cls-1" fill="currentColor" d="M14 14L13 14 13 10 4 10 4 14 3 14 3 9 14 9 14 14z"/>
+        <path class="cls-1" d="M16 16H0V0h12.348L16 5.112zM.996 15.004h14.008V5.43L11.837.996H.997z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-gravar-2x" viewBox="0 0 24 24">
+    <title>bgm gravar 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-gravar-2x</title>
+        <path class="cls-1" fill="currentColor" d="M16 9L4 9 4 0 5 0 5 8 15 8 15 0 16 0 16 9z"/>
+        <path class="cls-1" fill="currentColor" d="M12 3H13V6H12z"/>
+        <path class="cls-1" fill="currentColor" d="M21 21L20 21 20 15 5 15 5 21 4 21 4 14 21 14 21 21z"/>
+        <path class="cls-1" d="M24 24H0V0h18.531L24 7.658zM.997 23.003h22.006V7.977L18.017.997H.997z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-gravar-3x" viewBox="0 0 32 32">
+    <title>bgm gravar 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-gravar-3x</title>
+        <path class="cls-1" fill="currentColor" d="M21 12L5 12 5 0 7 0 7 10 19 10 19 0 21 0 21 12z"/>
+        <path class="cls-1" fill="currentColor" d="M16 4H18V9H16z"/>
+        <path class="cls-1" fill="currentColor" d="M28 28L26 28 26 20 7 20 7 28 5 28 5 18 28 18 28 28z"/>
+        <path class="cls-1" d="M32 32H0V0h24.696L32 10.225zM1.991 30.009h28.018V10.863L23.671 1.99H1.991z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-gravar-4x" viewBox="0 0 48 48">
+    <title>bgm gravar 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-gravar-4x</title>
+        <path class="cls-1" fill="currentColor" d="M31 17L8 17 8 0 10 0 10 15 29 15 29 0 31 0 31 17z"/>
+        <path class="cls-1" fill="currentColor" d="M24 6H26V13H24z"/>
+        <path class="cls-1" fill="currentColor" d="M42 42L40 42 40 30 10 30 10 42 8 42 8 28 42 28 42 42z"/>
+        <path class="cls-1" d="M48 48H0V0h37.06L48 15.316zM2 46h44V15.957L36.03 2H2z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-coletiva-1x" viewBox="0 0 16 16">
+    <title>bgm coletiva 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-coletiva-1x</title>
+        <path class="cls-1" fill="currentColor" d="M0 8H16V9H0z"/>
+        <path class="cls-1" fill="currentColor" d="M0 14H10V15H0z"/>
+        <path class="cls-1" fill="currentColor" d="M0 2H10V3H0z"/>
+        <path class="cls-1" fill="currentColor" d="M11.385 12.196L10.81 11.379 14.903 8.5 10.81 5.622 11.385 4.803 16.642 8.5 11.385 12.196z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-coletiva-2x" viewBox="0 0 24 24">
+    <title>bgm coletiva 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-coletiva-2x</title>
+        <path class="cls-1" fill="currentColor" d="M0 11H24V12H0z"/>
+        <path class="cls-1" fill="currentColor" d="M0 20H15V21H0z"/>
+        <path class="cls-1" fill="currentColor" d="M0 2H15V3H0z"/>
+        <path class="cls-1" fill="currentColor" d="M17.138 16.696L16.563 15.879 22.79 11.5 16.563 7.122 17.138 6.303 24.528 11.5 17.138 16.696z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-coletiva-3x" viewBox="0 0 32 32">
+    <title>bgm coletiva 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-coletiva-3x</title>
+        <path class="cls-1" fill="currentColor" d="M0 15H32V17H0z"/>
+        <path class="cls-1" fill="currentColor" d="M0 27H21V29H0z"/>
+        <path class="cls-1" fill="currentColor" d="M0 3H21V5H0z"/>
+        <path class="cls-1" fill="currentColor" d="M22.769 23.394L21.618 21.757 29.807 16 21.618 10.243 22.769 8.607 33.283 16 22.769 23.394z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-coletiva-4x" viewBox="0 0 48 48">
+    <title>bgm coletiva 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-coletiva-4x</title>
+        <path class="cls-1" fill="currentColor" d="M0 23H48V25H0z"/>
+        <path class="cls-1" fill="currentColor" d="M0 41H31V43H0z"/>
+        <path class="cls-1" fill="currentColor" d="M0 5H31V7H0z"/>
+        <path class="cls-1" fill="currentColor" d="M34.274 34.394L33.124 32.757 45.579 24 33.124 15.243 34.274 13.607 49.056 24 34.274 34.394z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-interrogação-1x" viewBox="0 0 16 16">
+    <title>bgm interrogação 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-interroga&#xE7;&#xE3;o-1x</title>
+        <circle class="cls-1" cx="7.5" cy="14.927" r="1.099" fill="currentColor"/>
+        <path class="cls-1" d="M8 13H7V9.215h.5A4.085 4.085 0 0 0 10.682 7.7a4.138 4.138 0 0 0 .823-3.471A4.068 4.068 0 0 0 8.23 1.083a4.124 4.124 0 0 0-4.487 2.396l-.2.458-.916-.4.2-.459A5.098 5.098 0 1 1 8 10.19z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-interrogação-2x" viewBox="0 0 24 24">
+    <title>bgm interrogação 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-interroga&#xE7;&#xE3;o-2x</title>
+        <circle class="cls-1" cx="11.5" cy="22.334" r="1.666" fill="currentColor"/>
+        <path class="cls-1" d="M12 19h-1v-5.065h.5a6.45 6.45 0 0 0 5.012-2.38 6.52 6.52 0 0 0 1.316-5.45A6.47 6.47 0 0 0 5.57 4.88l-.2.458-.916-.4.2-.458A7.469 7.469 0 1 1 12 14.918z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-interrogação-3x" viewBox="0 0 32 32">
+    <title>bgm interrogação 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-interroga&#xE7;&#xE3;o-3x</title>
+        <circle class="cls-1" cx="16.938" cy="29.411" r="2.25" fill="currentColor"/>
+        <path class="cls-1" d="M17.956 26.036h-2v-7.589h1a8.173 8.173 0 0 0 6.986-3.89 8.574 8.574 0 0 0 .21-8.485A6.807 6.807 0 0 0 21.02 2.99a8.632 8.632 0 0 0-6.914-.466 8.27 8.27 0 0 0-4.683 4.423l-.4.916-1.833-.801.4-.916A10.279 10.279 0 0 1 13.415.649a10.775 10.775 0 0 1 8.478.54 8.818 8.818 0 0 1 4.051 3.995 10.534 10.534 0 0 1-.301 10.426 10.154 10.154 0 0 1-7.686 4.79z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-interrogação-4x" viewBox="0 0 48 48">
+    <title>bgm interrogação 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-interroga&#xE7;&#xE3;o-4x</title>
+        <circle class="cls-1" cx="24" cy="45" r="3" fill="currentColor"/>
+        <path class="cls-1" d="M25 38h-2V27.968h1a12.92 12.92 0 0 0 10.963-6.036 13.453 13.453 0 0 0 .555-13.17 10.997 10.997 0 0 0-5.132-5.212A13.837 13.837 0 0 0 19.5 2.826a13.053 13.053 0 0 0-7.393 6.982l-.4.916-1.833-.801.4-.916A15.065 15.065 0 0 1 18.807.95a15.824 15.824 0 0 1 12.449.799 12.996 12.996 0 0 1 6.07 6.16 15.415 15.415 0 0 1-.674 15.094A14.903 14.903 0 0 1 25 29.935z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-tela-normal-2x" viewBox="0 0 24 24">
+    <title>bgm tela normal 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-tela-normal-2x</title>
+        <path class="cls-1" fill="currentColor" d="M10 23.5L9 23.5 9 15 0.5 15 0.5 14 10 14 10 23.5z"/>
+        <path class="cls-1" transform="rotate(-45 5.147 18.853)" fill="currentColor" d="M-0.656 18.353H10.949V19.353H-0.656z"/>
+        <path class="cls-1" fill="currentColor" d="M23.5 10L14 10 14 0.5 15 0.5 15 9 23.5 9 23.5 10z"/>
+        <path class="cls-1" transform="rotate(-45 18.853 5.147)" fill="currentColor" d="M13.05 4.647H24.655V5.647H13.05z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-tela-normal-1x" viewBox="0 0 16 16">
+    <title>bgm tela normal 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-tela-normal-1x</title>
+        <path class="cls-1" fill="currentColor" d="M7 15.5L6 15.5 6 10 0.5 10 0.5 9 7 9 7 15.5z"/>
+        <path class="cls-1" transform="rotate(-45 3.765 12.235)" fill="currentColor" d="M-0.104 11.735H7.633V12.735H-0.104z"/>
+        <path class="cls-1" fill="currentColor" d="M15.5 7L9 7 9 0.5 10 0.5 10 6 15.5 6 15.5 7z"/>
+        <path class="cls-1" transform="rotate(-45 12.235 3.765)" fill="currentColor" d="M8.367 3.265H16.104V4.265000000000001H8.367z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-tela-normal-3x" viewBox="0 0 32 32">
+    <title>bgm tela normal 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-tela-normal-3x</title>
+        <path class="cls-1" fill="currentColor" d="M14 31L12 31 12 20 1 20 1 18 14 18 14 31z"/>
+        <path class="cls-1" transform="rotate(-45 7.53 24.47)" fill="currentColor" d="M-0.207 23.471H15.266V25.471H-0.207z"/>
+        <path class="cls-1" fill="currentColor" d="M31 14L18 14 18 1 20 1 20 12 31 12 31 14z"/>
+        <path class="cls-1" transform="rotate(-45 24.47 7.53)" fill="currentColor" d="M16.734 6.529H32.207V8.529H16.734z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-tela-normal-4x" viewBox="0 0 48 48">
+    <title>bgm tela normal 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-tela-normal-4x</title>
+        <path class="cls-1" fill="currentColor" d="M21 47L19 47 19 29 1 29 1 27 21 27 21 47z"/>
+        <path class="cls-1" transform="rotate(-45 11.294 36.706)" fill="currentColor" d="M-0.311 35.706H22.899V37.706H-0.311z"/>
+        <path class="cls-1" fill="currentColor" d="M47 21L27 21 27 1 29 1 29 19 47 19 47 21z"/>
+        <path class="cls-1" transform="rotate(-45 36.706 11.294)" fill="currentColor" d="M25.101 10.294H48.311V12.294H25.101z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-limpar-1x" viewBox="0 0 16 16">
+    <title>bgm limpar 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-limpar-1x</title>
+        <path class="cls-1" fill="currentColor" d="M0 15H16V16H0z"/>
+        <path class="cls-1" fill="currentColor" d="M10.368 10.376L5.195 5.202 5.908 4.501 11.069 9.663 10.368 10.376z"/>
+        <path class="cls-1" d="M6.12 14.16a1.828 1.828 0 0 1-1.304-.54L1.98 10.785a1.844 1.844 0 0 1 0-2.609L9.456.7a1.847 1.847 0 0 1 2.61 0L14.9 3.535a1.846 1.846 0 0 1 0 2.61L7.424 13.62a1.832 1.832 0 0 1-1.305.54zm4.64-13.029a.873.873 0 0 0-.618.256L2.667 8.863a.874.874 0 0 0 0 1.236l2.835 2.835a.895.895 0 0 0 1.235 0l7.477-7.476a.876.876 0 0 0 0-1.236l-2.835-2.835a.873.873 0 0 0-.618-.256z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-limpar-3x" viewBox="0 0 32 32">
+    <title>bgm limpar 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-limpar-3x</title>
+        <path class="cls-1" fill="currentColor" d="M0 30H32V32H0z"/>
+        <path class="cls-1" transform="rotate(-45.004 15.802 14.953)" fill="currentColor" d="M14.802 7.047H16.802V22.861H14.802z"/>
+        <path class="cls-1" d="M11.616 28.75a3.775 3.775 0 0 1-2.68-1.108l-5.82-5.822a3.795 3.795 0 0 1 0-5.36L18.464 1.11a3.793 3.793 0 0 1 5.36 0l5.821 5.821a3.794 3.794 0 0 1 0 5.361l-15.35 15.35a3.78 3.78 0 0 1-2.68 1.108zm-1.266-2.522a1.796 1.796 0 0 0 2.533 0l15.35-15.35a1.793 1.793 0 0 0 0-2.533l-5.822-5.82a1.792 1.792 0 0 0-2.532 0L4.529 17.873a1.792 1.792 0 0 0 0 2.532z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-limpar-4x" viewBox="0 0 48 48">
+    <title>bgm limpar 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-limpar-4x</title>
+        <path class="cls-1" fill="currentColor" d="M0 46H48V48H0z"/>
+        <path class="cls-1" transform="rotate(-45.001 23.203 22.93)" fill="currentColor" d="M22.203 11.57H24.203V34.29H22.203z"/>
+        <path class="cls-1" d="M16.924 43.125a5.17 5.17 0 0 1-3.667-1.517l-8.73-8.731a5.192 5.192 0 0 1 0-7.334L27.55 2.519a5.192 5.192 0 0 1 7.335 0l8.731 8.731a5.187 5.187 0 0 1 0 7.334L20.592 41.608a5.173 5.173 0 0 1-3.668 1.517zm-2.253-2.93a3.19 3.19 0 0 0 4.507 0L42.202 17.17a3.188 3.188 0 0 0 0-4.505l-8.731-8.732a3.191 3.191 0 0 0-4.507 0L5.94 26.957a3.19 3.19 0 0 0 0 4.506z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-limpar-2x" viewBox="0 0 24 24">
+    <title>bgm limpar 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-limpar-2x</title>
+        <path class="cls-1" fill="currentColor" d="M0 23H24V24H0z"/>
+        <path class="cls-1" transform="rotate(-45.003 12.225 11.187)" fill="currentColor" d="M11.725 5.49H12.725V16.884999999999998H11.725z"/>
+        <path class="cls-1" d="M9.074 21.316a2.595 2.595 0 0 1-1.838-.76l-4.38-4.38a2.604 2.604 0 0 1 0-3.677L14.406.949a2.604 2.604 0 0 1 3.678 0l4.38 4.38a2.603 2.603 0 0 1 0 3.677l-11.55 11.55a2.6 2.6 0 0 1-1.84.76zm-1.13-1.466a1.604 1.604 0 0 0 2.263 0L21.757 8.3a1.602 1.602 0 0 0 0-2.264l-4.38-4.38a1.603 1.603 0 0 0-2.264 0l-11.55 11.55a1.603 1.603 0 0 0 0 2.263z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-alert-1x" viewBox="0 0 16 16">
+    <title>bgm alert 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-alert-1x</title>
+        <path class="cls-1" d="M16.099 16.023H.019L7.997-.02zm-14.466-1h12.84l-6.47-12.81z" fill="currentColor"/>
+        <circle class="cls-1" cx="8" cy="12.997" r="1" fill="currentColor"/>
+        <path class="cls-1" fill="currentColor" d="M7 7H9V11H7z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-alert-2x" viewBox="0 0 24 24">
+    <title>bgm alert 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-alert-2x</title>
+        <path class="cls-1" d="M24.03 23.997H-.002L11.848.167zm-22.419-1h20.785L11.859 2.388z" fill="currentColor"/>
+        <circle class="cls-1" cx="12" cy="19.501" r="1" fill="currentColor"/>
+        <path class="cls-1" fill="currentColor" d="M11 10.369H13V16.529H11z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-alert-3x" viewBox="0 0 32 32">
+    <title>bgm alert 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-alert-3x</title>
+        <path class="cls-1" d="M32.072 31.992H-.007L15.81.184zm-28.85-2h25.58L15.836 4.626z" fill="currentColor"/>
+        <circle class="cls-1" cx="16.011" cy="25.851" r="1.287" fill="currentColor"/>
+        <path class="cls-1" fill="currentColor" d="M15 14H17V22H15z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-lapis-2x" viewBox="0 0 24 24">
+    <title>bgm lapis 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-lapis-2x</title>
+        <path class="cls-1" transform="rotate(-45 10.464 13.536)" fill="currentColor" d="M0.767 13.036H20.160999999999998V14.036H0.767z"/>
+        <path class="cls-1" transform="rotate(-45 3.607 20.393)" fill="currentColor" d="M3.107 16.15H4.107V24.634999999999998H3.107z"/>
+        <path class="cls-1" transform="rotate(-45 17.321 6.679)" fill="currentColor" d="M16.821 2.436H17.821V10.921H16.821z"/>
+        <path class="cls-1" d="M6.815 24H0v-6.815L17.001.294l6.705 6.705zM1 23h5.4L22.293 7.001l-5.295-5.295L1 17.601z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-alert-4x" viewBox="0 0 48 48">
+    <title>bgm alert 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-alert-4x</title>
+        <path class="cls-1" d="M48.047 47.992H-.025L24.073.724zm-44.807-2h41.55L24.067 5.136z" fill="currentColor"/>
+        <circle class="cls-1" cx="24.5" cy="37.002" r="1.5" fill="currentColor"/>
+        <path class="cls-1" fill="currentColor" d="M23 21H26V33H23z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-lapis-1x" viewBox="0 0 16 16">
+    <title>bgm lapis 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-lapis-1x</title>
+        <path class="cls-1" transform="rotate(-45 7.143 8.857)" fill="currentColor" d="M0.678 8.357H13.608V9.357H0.678z"/>
+        <path class="cls-1" transform="rotate(-45 2.571 13.429)" fill="currentColor" d="M2.071 10.6H3.071V16.256999999999998H2.071z"/>
+        <path class="cls-1" transform="rotate(-45 11.714 4.286)" fill="currentColor" d="M11.214 1.457H12.214V7.114H11.214z"/>
+        <path class="cls-1" d="M4.78 16H0v-4.78L11.501-.205l4.705 4.705zM1 15h3.363l10.43-10.499L11.5 1.206 1 11.636z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-lapis-3x" viewBox="0 0 32 32">
+    <title>bgm lapis 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-lapis-3x</title>
+        <path class="cls-1" transform="rotate(-45 13.83 18.17)" fill="currentColor" d="M2.277 17.17H25.384V19.17H2.277z"/>
+        <path class="cls-1" transform="rotate(-45 5.661 26.339)" fill="currentColor" d="M4.661 19.975H6.661V32.703H4.661z"/>
+        <path class="cls-1" transform="rotate(-45 22.55 9.884)" fill="currentColor" d="M21.551 3.52H23.551V16.248H21.551z"/>
+        <path class="cls-1" d="M10.577 32H0V21.423L22.003-.412 32.41 9.998zM2 30h7.745L29.59 10.003l-7.592-7.591L2 22.255z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-bus-frente-1x" viewBox="0 0 16 16">
+    <title>bgm bus frente 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-bus-frente-1x</title>
+        <path class="cls-1" transform="rotate(-45 9.254 8.251)" fill="currentColor" d="M7.481 7.751H11.028V8.751000000000001H7.481z"/>
+        <path class="cls-1" fill="currentColor" d="M6 16L2 16 2 13 3 13 3 15 5 15 5 13 6 13 6 16z"/>
+        <path class="cls-1" fill="currentColor" d="M14 16L10 16 10 13 11 13 11 15 13 15 13 13 14 13 14 16z"/>
+        <path class="cls-1" d="M15 14H1V1.447A1.475 1.475 0 0 1 2.499 0H13.5A1.475 1.475 0 0 1 15 1.447zM2 13h12V1.484A.484.484 0 0 0 13.516 1H2.502A.502.502 0 0 0 2 1.502z" fill="currentColor"/>
+        <path class="cls-1" fill="currentColor" d="M6.497 1.481H9.503V2.481H6.497z"/>
+        <path class="cls-1" d="M3.987 12.762a1 1 0 1 1 1-1 1 1 0 0 1-1 1zm.013-1.5v.5h.001z" fill="currentColor"/>
+        <path class="cls-1" d="M12.013 12.762a1 1 0 1 1 1-1 1 1 0 0 1-1 1zm0-1.5l-.001.5z" fill="currentColor"/>
+        <path class="cls-1" fill="currentColor" d="M1 9H15V10H1z"/>
+        <path class="cls-1" fill="currentColor" d="M1 3H15V4H1z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-lapis-4x" viewBox="0 0 48 48">
+    <title>bgm lapis 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-lapis-4x</title>
+        <path class="cls-1" transform="rotate(-45 20.246 27.754)" fill="currentColor" d="M2.915 26.755H37.576V28.755H2.915z"/>
+        <path class="cls-1" transform="rotate(-45 7.991 40.009)" fill="currentColor" d="M6.991 30.463H8.991V49.555H6.991z"/>
+        <path class="cls-1" transform="rotate(-45 33.326 15.326)" fill="currentColor" d="M32.326 5.78H34.326V24.872H32.326z"/>
+        <path class="cls-1" d="M15.158 48H0V32.843l.295-.294L33.133-.037l14.863 14.944zM2 46h12.325l30.853-31.09L33.123 2.79 2 33.675z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-bus-frente-2x" viewBox="0 0 24 24">
+    <title>bgm bus frente 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-bus-frente-2x</title>
+        <path class="cls-1" transform="rotate(-45 13.93 12.386)" fill="currentColor" d="M11.201 11.886H16.657V12.886H11.201z"/>
+        <path class="cls-1" fill="currentColor" d="M9 24L3 24 3 21 4 21 4 23 8 23 8 21 9 21 9 24z"/>
+        <path class="cls-1" fill="currentColor" d="M21 24L15 24 15 21 16 21 16 23 20 23 20 21 21 21 21 24z"/>
+        <path class="cls-1" d="M23 22H1V2.043A2.045 2.045 0 0 1 3.043 0h17.914A2.045 2.045 0 0 1 23 2.043zM2 21h20V2.043A1.044 1.044 0 0 0 20.957 1H3.043A1.044 1.044 0 0 0 2 2.043z" fill="currentColor"/>
+        <path class="cls-1" fill="currentColor" d="M10 2H14V3H10z"/>
+        <path class="cls-1" d="M6.017 19.5a1.5 1.5 0 1 1 1.5-1.5 1.502 1.502 0 0 1-1.5 1.5zm0-2a.5.5 0 1 0 .5.5.501.501 0 0 0-.5-.5z" fill="currentColor"/>
+        <path class="cls-1" d="M17.964 19.5a1.5 1.5 0 1 1 1.5-1.5 1.502 1.502 0 0 1-1.5 1.5zm0-2a.5.5 0 1 0 .5.5.501.501 0 0 0-.5-.5z" fill="currentColor"/>
+        <path class="cls-1" fill="currentColor" d="M1 14H22V15H1z"/>
+        <path class="cls-1" fill="currentColor" d="M1 5H22V6H1z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-bus-frente-3x" viewBox="0 0 32 32">
+    <title>bgm bus frente 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-bus-frente-3x</title>
+        <path class="cls-1" transform="rotate(-45 18.529 16.457)" fill="currentColor" d="M14.953 15.457H22.105V17.457H14.953z"/>
+        <path class="cls-1" fill="currentColor" d="M13 32L4 32 4 28 6 28 6 30 11 30 11 28 13 28 13 32z"/>
+        <path class="cls-1" fill="currentColor" d="M28 32L19 32 19 28 21 28 21 30 26 30 26 28 28 28 28 32z"/>
+        <path class="cls-1" d="M31 30H1V3.023A3.026 3.026 0 0 1 4.022 0h23.956A3.026 3.026 0 0 1 31 3.023zM3 28h26V3.023A1.024 1.024 0 0 0 27.978 2H4.022A1.024 1.024 0 0 0 3 3.023z" fill="currentColor"/>
+        <path class="cls-1" fill="currentColor" d="M13 3H19V5H13z"/>
+        <path class="cls-1" d="M8.477 26.5a2.5 2.5 0 1 1 2.5-2.5 2.502 2.502 0 0 1-2.5 2.5zm0-3a.5.5 0 1 0 .5.5.501.501 0 0 0-.5-.5z" fill="currentColor"/>
+        <path class="cls-1" d="M23.542 26.5a2.5 2.5 0 1 1 2.5-2.5 2.502 2.502 0 0 1-2.5 2.5zm0-3a.5.5 0 1 0 .5.5.501.501 0 0 0-.5-.5z" fill="currentColor"/>
+        <path class="cls-1" fill="currentColor" d="M1 18H29V20H1z"/>
+        <path class="cls-1" fill="currentColor" d="M1 6H29V8H1z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-bus-frente-4x" viewBox="0 0 48 48">
+    <title>bgm bus frente 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-bus-frente-4x</title>
+        <path class="cls-1" transform="rotate(-45 27.867 24.666)" fill="currentColor" d="M22.398 23.667H33.335V25.667H22.398z"/>
+        <path class="cls-1" fill="currentColor" d="M18 48L6 48 6 43 8 43 8 46 16 46 16 43 18 43 18 48z"/>
+        <path class="cls-1" fill="currentColor" d="M42 48L30 48 30 43 32 43 32 46 40 46 40 43 42 43 42 48z"/>
+        <path class="cls-1" d="M47 45H1V4.093A4.098 4.098 0 0 1 5.093 0h37.814A4.098 4.098 0 0 1 47 4.093zM3 43h42V4.093A2.095 2.095 0 0 0 42.907 2H5.093A2.096 2.096 0 0 0 3 4.093z" fill="currentColor"/>
+        <path class="cls-1" fill="currentColor" d="M19 5H27V7H19z"/>
+        <path class="cls-1" d="M12.5 40a3.5 3.5 0 1 1 3.5-3.5 3.504 3.504 0 0 1-3.5 3.5zm0-5a1.5 1.5 0 1 0 1.5 1.5 1.502 1.502 0 0 0-1.5-1.5z" fill="currentColor"/>
+        <path class="cls-1" d="M35.532 40a3.5 3.5 0 1 1 3.5-3.5 3.504 3.504 0 0 1-3.5 3.5zm0-5a1.5 1.5 0 1 0 1.5 1.5 1.502 1.502 0 0 0-1.5-1.5z" fill="currentColor"/>
+        <path class="cls-1" fill="currentColor" d="M2 28H45V30H2z"/>
+        <path class="cls-1" fill="currentColor" d="M2 9H45V11H2z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-engrenagem-48x48" viewBox="0 0 48 48">
+    <title>engrenagem 48x48</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>engrenagem-48x48</title>
+        <path d="M23.825 14.355a9.599 9.599 0 1 0 9.598 9.599 9.61 9.61 0 0 0-9.598-9.6zm0 17.069a7.47 7.47 0 1 1 7.47-7.47 7.478 7.478 0 0 1-7.47 7.47z"/>
+        <path d="M47.144 28.52l-3.603-2.061-.009-4.705 3.61-2.065a1.065 1.065 0 0 0 .509-1.162 24.265 24.265 0 0 0-3.05-7.496 1.065 1.065 0 0 0-1.174-.464l-4.02 1.061-3.316-3.326 1.055-3.992a1.065 1.065 0 0 0-.472-1.18A24.347 24.347 0 0 0 29.2.08a1.07 1.07 0 0 0-1.147.509l-1.545 2.625h-4.713L20.19.49a1.069 1.069 0 0 0-1.125-.508 24.263 24.263 0 0 0-8.35 3.377 1.063 1.063 0 0 0-.455 1.165l.78 2.97-3.329 3.332-3.036-.796a1.065 1.065 0 0 0-1.158.44 24.195 24.195 0 0 0-3.404 8.07 1.143 1.143 0 0 0 .62 1.16l2.885 1.589v4.694L.603 27.646a1.103 1.103 0 0 0-.57 1.13 24.149 24.149 0 0 0 3.141 8.033 1.045 1.045 0 0 0 1.17.467l3.14-.852 3.31 3.32-.912 3.368a1.065 1.065 0 0 0 .434 1.162 24.307 24.307 0 0 0 7.865 3.525 1.065 1.065 0 0 0 1.166-.495l1.795-3.05 4.706.003 1.895 3.218a1.062 1.062 0 0 0 1.133.503 24.547 24.547 0 0 0 7.817-2.975 1.063 1.063 0 0 0 .48-1.165l-.919-3.705 3.341-3.345 3.838.953a1.064 1.064 0 0 0 1.152-.459 24.1 24.1 0 0 0 3.067-7.592 1.066 1.066 0 0 0-.508-1.17zm-3.956 6.965l-3.664-.91a1.065 1.065 0 0 0-1.01.282l-4.191 4.196a1.065 1.065 0 0 0-.28 1.008l.87 3.513a22.51 22.51 0 0 1-5.728 2.155l-1.81-3.077a1.091 1.091 0 0 0-.917-.551l-5.924-.032a1.092 1.092 0 0 0-.918.551l-1.697 2.896a22.166 22.166 0 0 1-5.781-2.603l.868-3.212a1.06 1.06 0 0 0-.274-1.028l-4.184-4.19a1.065 1.065 0 0 0-1.032-.276l-2.963.803a22.05 22.05 0 0 1-2.327-5.905l2.873-1.584a1.18 1.18 0 0 0 .648-.922V20.67a1.183 1.183 0 0 0-.647-.924L2.43 18.25a22.022 22.022 0 0 1 2.482-5.964l2.864.755a1.053 1.053 0 0 0 1.016-.277l4.188-4.197a1.064 1.064 0 0 0 .275-1.023l-.736-2.8a22.101 22.101 0 0 1 6.23-2.52L20.27 4.81a1.079 1.079 0 0 0 .917.533h5.928a1.076 1.076 0 0 0 .916-.533l1.455-2.465a22.212 22.212 0 0 1 5.396 2.204l-1.005 3.803a1.063 1.063 0 0 0 .276 1.023l4.18 4.192a1.066 1.066 0 0 0 1.026.277l3.84-1.013a22.172 22.172 0 0 1 2.19 5.41l-3.45 1.973a1.065 1.065 0 0 0-.536.927l.01 5.939a1.063 1.063 0 0 0 .537.922l3.438 1.967a22.097 22.097 0 0 1-2.201 5.517z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-engrenagem-32x32" viewBox="0 0 32 32">
+    <title>engrenagem 32x32</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>engrenagem-32x32</title>
+        <path d="M15.894 9.56a6.402 6.402 0 1 0 6.402 6.403 6.41 6.41 0 0 0-6.402-6.402zm0 11.385a4.982 4.982 0 1 1 4.982-4.982 4.988 4.988 0 0 1-4.982 4.982z"/>
+        <path d="M31.447 19.008l-2.403-1.375-.006-3.138 2.408-1.377a.71.71 0 0 0 .34-.775 16.183 16.183 0 0 0-2.034-4.999.71.71 0 0 0-.784-.31l-2.68.708-2.212-2.218.703-2.662a.71.71 0 0 0-.315-.787A16.238 16.238 0 0 0 19.48.039a.714.714 0 0 0-.765.34l-1.03 1.751H14.54L13.47.313a.713.713 0 0 0-.75-.339 16.182 16.182 0 0 0-5.57 2.252.709.709 0 0 0-.303.777l.52 1.981-2.22 2.223-2.025-.532a.71.71 0 0 0-.772.294 16.137 16.137 0 0 0-2.27 5.382.763.763 0 0 0 .413.774l1.924 1.06v3.13l-2.011 1.11a.736.736 0 0 0-.38.754 16.106 16.106 0 0 0 2.095 5.357.697.697 0 0 0 .78.312l2.094-.568 2.208 2.213-.608 2.247a.71.71 0 0 0 .289.775 16.211 16.211 0 0 0 5.246 2.35.71.71 0 0 0 .777-.33l1.197-2.034 3.139.002 1.264 2.147a.709.709 0 0 0 .755.335 16.371 16.371 0 0 0 5.214-1.984.71.71 0 0 0 .32-.777l-.613-2.47 2.228-2.232 2.56.636a.71.71 0 0 0 .769-.306 16.074 16.074 0 0 0 2.045-5.064.711.711 0 0 0-.339-.78zm-2.638 4.645l-2.444-.606a.71.71 0 0 0-.673.187l-2.796 2.799a.71.71 0 0 0-.186.672l.58 2.343a15.013 15.013 0 0 1-3.82 1.437l-1.208-2.052a.728.728 0 0 0-.611-.367l-3.951-.022a.729.729 0 0 0-.612.368l-1.132 1.932A14.783 14.783 0 0 1 8.1 28.607l.58-2.142a.707.707 0 0 0-.184-.685l-2.79-2.795a.71.71 0 0 0-.688-.184l-1.976.535a14.706 14.706 0 0 1-1.553-3.938l1.917-1.056a.787.787 0 0 0 .432-.615v-3.954a.789.789 0 0 0-.432-.616l-1.78-.999A14.687 14.687 0 0 1 3.281 8.18l1.91.504a.703.703 0 0 0 .678-.185l2.793-2.8a.71.71 0 0 0 .183-.681l-.49-1.867a14.74 14.74 0 0 1 4.154-1.681l1.015 1.724a.72.72 0 0 0 .612.356h3.953a.717.717 0 0 0 .611-.356l.97-1.644a14.814 14.814 0 0 1 3.6 1.47l-.67 2.537a.71.71 0 0 0 .183.682l2.789 2.796a.71.71 0 0 0 .684.185l2.56-.676a14.787 14.787 0 0 1 1.461 3.607l-2.3 1.317a.71.71 0 0 0-.358.618l.007 3.96a.709.709 0 0 0 .358.616l2.293 1.312a14.737 14.737 0 0 1-1.468 3.68z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-engrenagem-24x24" viewBox="0 0 24 24">
+    <title>engrenagem 24x24</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>engrenagem-24x24</title>
+        <path d="M11.93 7.164a4.803 4.803 0 1 0 4.803 4.803 4.809 4.809 0 0 0-4.804-4.803zm0 8.541a3.738 3.738 0 1 1 3.737-3.738 3.742 3.742 0 0 1-3.738 3.738z"/>
+        <path d="M23.599 14.252l-1.803-1.032-.005-2.354 1.807-1.033a.533.533 0 0 0 .254-.581A12.143 12.143 0 0 0 22.327 5.5a.533.533 0 0 0-.588-.233l-2.012.531-1.66-1.664.529-1.998a.533.533 0 0 0-.237-.59A12.183 12.183 0 0 0 14.62.02a.535.535 0 0 0-.573.254l-.774 1.314h-2.358L10.11.225a.535.535 0 0 0-.563-.254 12.141 12.141 0 0 0-4.179 1.69.532.532 0 0 0-.228.583l.39 1.486-1.665 1.667L2.346 5a.533.533 0 0 0-.578.22A12.108 12.108 0 0 0 .064 9.257a.572.572 0 0 0 .31.58l1.444.796v2.349l-1.509.832a.552.552 0 0 0-.286.566 12.084 12.084 0 0 0 1.573 4.02.523.523 0 0 0 .585.234l1.571-.427 1.657 1.661-.456 1.686a.533.533 0 0 0 .216.581A12.163 12.163 0 0 0 9.105 23.9a.533.533 0 0 0 .584-.247l.898-1.527 2.355.002.948 1.61a.532.532 0 0 0 .567.252A12.283 12.283 0 0 0 18.37 22.5a.532.532 0 0 0 .24-.583l-.46-1.854 1.672-1.674 1.92.477a.532.532 0 0 0 .577-.23 12.06 12.06 0 0 0 1.535-3.799.533.533 0 0 0-.254-.585zm-1.98 3.486l-1.833-.456a.533.533 0 0 0-.506.141l-2.097 2.1a.533.533 0 0 0-.14.504l.436 1.758a11.264 11.264 0 0 1-2.867 1.078l-.906-1.539a.546.546 0 0 0-.459-.276l-2.964-.016a.547.547 0 0 0-.46.276l-.849 1.45a11.092 11.092 0 0 1-2.893-1.304l.435-1.607a.53.53 0 0 0-.138-.514l-2.093-2.097a.533.533 0 0 0-.516-.138l-1.483.401a11.034 11.034 0 0 1-1.165-2.955l1.438-.792a.59.59 0 0 0 .324-.462v-2.966a.592.592 0 0 0-.324-.462l-1.335-.75a11.02 11.02 0 0 1 1.241-2.984l1.433.378a.527.527 0 0 0 .51-.139l2.095-2.1a.533.533 0 0 0 .137-.512l-.368-1.4A11.06 11.06 0 0 1 9.39 1.092l.761 1.294a.54.54 0 0 0 .459.267h2.966a.538.538 0 0 0 .459-.267l.728-1.234a11.115 11.115 0 0 1 2.7 1.103L16.96 4.16a.532.532 0 0 0 .138.512L19.19 6.77a.533.533 0 0 0 .513.139l1.922-.507a11.095 11.095 0 0 1 1.096 2.706l-1.727.988a.533.533 0 0 0-.268.464l.006 2.972a.532.532 0 0 0 .268.461l1.72.985a11.057 11.057 0 0 1-1.1 2.76z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-engrenagem-16x16" viewBox="0 0 16 16">
+    <title>engrenagem 16x16</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>engrenagem-16x16</title>
+        <path d="M8 4.788a3.22 3.22 0 1 0 3.219 3.219 3.223 3.223 0 0 0-3.22-3.22zm0 5.724a2.505 2.505 0 1 1 2.505-2.505A2.508 2.508 0 0 1 8 10.512z"/>
+        <path d="M15.82 9.538l-1.208-.691-.003-1.578 1.21-.692a.357.357 0 0 0 .171-.39 8.138 8.138 0 0 0-1.022-2.514.357.357 0 0 0-.394-.156l-1.348.356-1.113-1.115.354-1.339a.357.357 0 0 0-.158-.395A8.165 8.165 0 0 0 9.802 0a.359.359 0 0 0-.384.17l-.518.881H7.319L6.781.138a.358.358 0 0 0-.377-.17 8.137 8.137 0 0 0-2.8 1.132.356.356 0 0 0-.153.39l.261.997-1.116 1.117-1.018-.267a.357.357 0 0 0-.389.148A8.114 8.114 0 0 0 .048 6.19a.383.383 0 0 0 .208.389l.967.533v1.574l-1.011.558a.37.37 0 0 0-.191.38 8.099 8.099 0 0 0 1.053 2.693.35.35 0 0 0 .393.157l1.053-.286 1.11 1.113-.306 1.13a.357.357 0 0 0 .145.39 8.152 8.152 0 0 0 2.638 1.182.357.357 0 0 0 .39-.166l.603-1.023h1.578l.636 1.08a.356.356 0 0 0 .38.169 8.232 8.232 0 0 0 2.621-.998.357.357 0 0 0 .16-.39l-.307-1.243 1.12-1.122 1.287.32a.357.357 0 0 0 .387-.154A8.082 8.082 0 0 0 15.99 9.93a.357.357 0 0 0-.17-.393zm-1.327 2.336l-1.228-.305a.357.357 0 0 0-.339.094L11.52 13.07a.357.357 0 0 0-.093.339l.292 1.178a7.549 7.549 0 0 1-1.922.722l-.607-1.031a.366.366 0 0 0-.307-.185l-1.987-.01a.366.366 0 0 0-.308.184l-.569.971a7.434 7.434 0 0 1-1.939-.873l.292-1.077a.356.356 0 0 0-.092-.345l-1.403-1.405a.357.357 0 0 0-.346-.092l-.994.269a7.395 7.395 0 0 1-.78-1.98l.963-.532a.396.396 0 0 0 .217-.31V6.907a.397.397 0 0 0-.217-.31l-.895-.502a7.385 7.385 0 0 1 .832-2l.96.253a.353.353 0 0 0 .341-.093l1.405-1.408a.357.357 0 0 0 .092-.342l-.247-.94A7.412 7.412 0 0 1 6.298.72l.51.867a.362.362 0 0 0 .307.18h1.988a.36.36 0 0 0 .308-.18L9.899.76a7.449 7.449 0 0 1 1.81.74l-.338 1.275a.357.357 0 0 0 .093.343l1.402 1.405a.357.357 0 0 0 .344.093l1.287-.34a7.436 7.436 0 0 1 .735 1.815l-1.157.662a.357.357 0 0 0-.18.31l.004 1.992a.357.357 0 0 0 .18.31l1.153.659a7.41 7.41 0 0 1-.739 1.85z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-menos-3x" viewBox="0 0 32 32">
+    <title>bgm menos 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-menos-3x</title>
+        <path d="M0 15h32v2H0z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-menos-4x" viewBox="0 0 48 48">
+    <title>bgm menos 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-menos-4x</title>
+        <path d="M0 23h48v2H0z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-menos-2x" viewBox="0 0 24 24">
+    <title>bgm menos 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-menos-2x</title>
+        <path d="M1 12h22v1H1z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-menos-1x" viewBox="0 0 16 16">
+    <title>bgm menos 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-menos-1x</title>
+        <path d="M1 8h14v1H1z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-registro-de-disponibilidade-1x" viewBox="0 0 16 16">
+    <title>bgm registro de disponibilidade 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-registro-de-disponibilidade-1x</title>
+        <path class="cls-1" d="M12.5 12.5a3 3 0 0 0-3 3h6a3 3 0 0 0-3-3z" fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10"/>
+        <path class="cls-1" d="M12.5 12a1.25 1.25 0 0 0 1.25-1.25v-.5a1.25 1.25 0 0 0-2.5 0v.5A1.25 1.25 0 0 0 12.5 12z" fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10"/>
+        <path class="cls-1" d="M3.5 12.5a3 3 0 0 0-3 3h6a3 3 0 0 0-3-3z" fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10"/>
+        <path class="cls-1" d="M3.5 12a1.25 1.25 0 0 0 1.25-1.25v-.5a1.25 1.25 0 0 0-2.5 0v.5A1.25 1.25 0 0 0 3.5 12z" fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10"/>
+        <path class="cls-1" d="M8 4.25a3 3 0 0 0-3 3h6a3 3 0 0 0-3-3z" fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10"/>
+        <path class="cls-1" d="M8 3.75A1.25 1.25 0 0 0 9.25 2.5V2a1.25 1.25 0 0 0-2.5 0v.5A1.25 1.25 0 0 0 8 3.75z" fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-registro-de-disponibilidade-4x" viewBox="0 0 48 48">
+    <title>bgm registro de disponibilidade 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-registro-de-disponibilidade-4x</title>
+        <path class="cls-1" d="M32 22h2v-2a9.25 9.25 0 0 0-6.23-8.51A5 5 0 0 0 29.2 8V5a5 5 0 0 0-5-5h-.4a5 5 0 0 0-5 5v3a5 5 0 0 0 1.43 3.49A9.25 9.25 0 0 0 14 20v2h18zM20.8 5a3 3 0 0 1 3-3h.4a3 3 0 0 1 3 3v3a3 3 0 0 1-3 3h-.4a3 3 0 0 1-3-3zm1.59 8a3.61 3.61 0 0 0 1.44.31h.33a3.61 3.61 0 0 0 1.45-.31A7.43 7.43 0 0 1 32 20H16a7.43 7.43 0 0 1 6.39-7z" fill="currentColor"/>
+        <path class="cls-1" d="M13.77 37.49A5 5 0 0 0 15.2 34v-3a5 5 0 0 0-5-5h-.4a5 5 0 0 0-5 5v3a5 5 0 0 0 1.43 3.49A9.25 9.25 0 0 0 0 46v2h20v-2a9.25 9.25 0 0 0-6.23-8.51zM6.8 31a3 3 0 0 1 3-3h.4a3 3 0 0 1 3 3v3a3 3 0 0 1-3 3h-.4a3 3 0 0 1-3-3zM2 46a7.43 7.43 0 0 1 6.39-7 3.61 3.61 0 0 0 1.44.31h.33a3.61 3.61 0 0 0 1.45-.31A7.43 7.43 0 0 1 18 46z" fill="currentColor"/>
+        <path class="cls-1" d="M41.77 37.49A5 5 0 0 0 43.2 34v-3a5 5 0 0 0-5-5h-.4a5 5 0 0 0-5 5v3a5 5 0 0 0 1.43 3.49A9.25 9.25 0 0 0 28 46v2h20v-2a9.25 9.25 0 0 0-6.23-8.51zM34.8 31a3 3 0 0 1 3-3h.4a3 3 0 0 1 3 3v3a3 3 0 0 1-3 3h-.4a3 3 0 0 1-3-3zM30 46a7.43 7.43 0 0 1 6.39-7 3.61 3.61 0 0 0 1.44.31h.33a3.61 3.61 0 0 0 1.45-.31A7.43 7.43 0 0 1 46 46z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-registro-de-disponibilidade-3x" viewBox="0 0 32 32">
+    <title>bgm registro de disponibilidade 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-registro-de-disponibilidade-3x</title>
+        <path class="cls-1" d="M27.94 24.56a3.89 3.89 0 0 0 .92-2.49v-1.14a3.93 3.93 0 0 0-7.86 0v1.14a3.89 3.89 0 0 0 1 2.54A6 6 0 0 0 18 30v2h14v-2a6 6 0 0 0-4.06-5.44zM23 20.93a1.93 1.93 0 0 1 3.86 0v1.14a1.93 1.93 0 1 1-3.86 0zM20 30c0-1.94 1.72-3.56 4-3.93a2.49 2.49 0 0 0 .9.17h.2a2.49 2.49 0 0 0 .9-.17c2.28.37 4 2 4 3.93z" fill="currentColor"/>
+        <path class="cls-1" d="M21 15h2v-2a6 6 0 0 0-4.06-5.44 3.89 3.89 0 0 0 .92-2.49V3.93a3.93 3.93 0 0 0-7.86 0v1.14a3.89 3.89 0 0 0 1 2.54A6 6 0 0 0 9 13v2h12zM14 3.93a1.93 1.93 0 0 1 3.86 0v1.14a1.93 1.93 0 1 1-3.86 0zm1 5.14a2.49 2.49 0 0 0 .9.17h.2a2.49 2.49 0 0 0 .9-.17c2.28.37 4 2 4 3.93H11c0-1.94 1.72-3.56 4-3.93z" fill="currentColor"/>
+        <path class="cls-1" d="M9.94 24.56a3.89 3.89 0 0 0 .92-2.49v-1.14a3.93 3.93 0 0 0-7.86 0v1.14a3.89 3.89 0 0 0 1 2.54A6 6 0 0 0 0 30v2h14v-2a6 6 0 0 0-4.06-5.44zM5 20.93a1.93 1.93 0 0 1 3.86 0v1.14a1.93 1.93 0 1 1-3.86 0zM2 30c0-1.94 1.72-3.56 4-3.93a2.49 2.49 0 0 0 .9.17h.2a2.49 2.49 0 0 0 .9-.17c2.28.37 4 2 4 3.93z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-registro-de-disponibilidade-2x" viewBox="0 0 24 24">
+    <title>bgm registro de disponibilidade 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-registro-de-disponibilidade-2x</title>
+        <path class="cls-1" d="M7.31 18.21A2.49 2.49 0 0 0 8 16.5v-1a2.5 2.5 0 0 0-5 0v1a2.49 2.49 0 0 0 .69 1.71A5.13 5.13 0 0 0 0 23v1h11v-1a5.13 5.13 0 0 0-3.69-4.79zM4 15.5a1.5 1.5 0 0 1 3 0v1a1.5 1.5 0 0 1-3 0zM1 23a4.2 4.2 0 0 1 3.6-4 2 2 0 0 0 .81.17h.18A2 2 0 0 0 6.4 19a4.2 4.2 0 0 1 3.6 4z" fill="currentColor"/>
+        <path class="cls-1" d="M16 12h1v-1a5.13 5.13 0 0 0-3.69-4.79A2.49 2.49 0 0 0 14 4.5v-1a2.5 2.5 0 0 0-5 0v1a2.49 2.49 0 0 0 .69 1.71A5.13 5.13 0 0 0 6 11v1h10zm-6-8.5a1.5 1.5 0 0 1 3 0v1a1.5 1.5 0 0 1-3 0zm.6 3.5a2 2 0 0 0 .81.17h.18A2 2 0 0 0 12.4 7a4.2 4.2 0 0 1 3.6 4H7a4.2 4.2 0 0 1 3.6-4z" fill="currentColor"/>
+        <path class="cls-1" d="M20.31 18.21A2.49 2.49 0 0 0 21 16.5v-1a2.5 2.5 0 0 0-5 0v1a2.49 2.49 0 0 0 .69 1.71A5.13 5.13 0 0 0 13 23v1h11v-1a5.13 5.13 0 0 0-3.69-4.79zM17 15.5a1.5 1.5 0 0 1 3 0v1a1.5 1.5 0 0 1-3 0zM14 23a4.2 4.2 0 0 1 3.6-4 2 2 0 0 0 .81.17h.18a2 2 0 0 0 .81-.17 4.2 4.2 0 0 1 3.6 4z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-bus-valeta-4x" viewBox="0 0 48 48">
+    <title>bgm bus valeta 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-bus-valeta-4x</title>
+        <circle class="cls-1" cx="9" cy="35.88" r="3" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"/>
+        <circle class="cls-1" cx="38" cy="35.88" r="3" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"/>
+        <path class="cls-2" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" stroke-linecap="square" d="M46.9 23.13v6.37"/>
+        <path class="cls-2" d="M42.07 35.88A3.1 3.1 0 0 0 45 32.65V13.24A3.1 3.1 0 0 0 42.07 10H3.93A3.1 3.1 0 0 0 1 13.24v19.41a3.1 3.1 0 0 0 2.93 3.24H6" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" stroke-linecap="square"/>
+        <path class="cls-2" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" stroke-linecap="square" d="M12.61 35.88h22.12"/>
+        <path class="cls-3" fill="currentColor" d="M2 22h42v2H2z"/>
+        <path class="cls-3" fill="currentColor" d="M33 11h2v11h-2z"/>
+        <path class="cls-3" fill="currentColor" d="M46 40h2v4h-2z"/>
+        <path class="cls-3" fill="currentColor" d="M0 42h46v2H0z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-bus-valeta-3x" viewBox="0 0 32 32">
+    <title>bgm bus valeta 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-bus-valeta-3x</title>
+        <circle class="cls-1" cx="7.02" cy="23.94" r="2" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"/>
+        <circle class="cls-1" cx="24" cy="23.94" r="2" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"/>
+        <path class="cls-2" fill="currentColor" d="M2 15h28v2H2z"/>
+        <path class="cls-2" fill="currentColor" d="M21 8h2v7h-2z"/>
+        <path class="cls-2" fill="currentColor" d="M8 23h15v2H8z"/>
+        <path class="cls-2" fill="currentColor" d="M31 15h1v6h-1z"/>
+        <path class="cls-3" d="M26 23.94h2.07a2 2 0 0 0 1.93-2V10a2 2 0 0 0-1.93-2H3a2 2 0 0 0-1.9 2v12a2 2 0 0 0 1.93 2H5" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" stroke-linecap="square"/>
+        <path class="cls-2" fill="currentColor" d="M0 29h32v2H0z"/>
+        <path class="cls-2" fill="currentColor" d="M30 27h2v3h-2z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-bus-valeta-2x" viewBox="0 0 24 24">
+    <title>bgm bus valeta 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-bus-valeta-2x</title>
+        <circle class="cls-1" cx="5" cy="17.61" r="2" fill="currentColor"/>
+        <circle class="cls-1" cx="19" cy="17.61" r="2" fill="currentColor"/>
+        <path class="cls-1" fill="currentColor" d="M1 11h22v1H1z"/>
+        <path class="cls-2" d="M21 17.61h1.05a1.48 1.48 0 0 0 1.42-1.53V6.93a1.48 1.48 0 0 0-1.41-1.53H2A1.48 1.48 0 0 0 .59 6.93v9.16A1.48 1.48 0 0 0 2 17.61h.87" fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10"/>
+        <path class="cls-1" fill="currentColor" d="M7 17h10v1H7z"/>
+        <path class="cls-1" fill="currentColor" d="M17 6h1v5h-1z"/>
+        <path class="cls-1" fill="currentColor" d="M23 20h1v3h-1z"/>
+        <path class="cls-1" fill="currentColor" d="M0 22h23v1H0z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-bus-valeta-1x" viewBox="0 0 16 16">
+    <title>bgm bus valeta 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-bus-valeta-1x</title>
+        <circle class="cls-1" cx="3.51" cy="11.5" r="1.5" fill="currentColor"/>
+        <circle class="cls-1" cx="11.5" cy="11.5" r="1.5" fill="currentColor"/>
+        <path class="cls-1" fill="currentColor" d="M1 7h13v1H1z"/>
+        <path class="cls-1" fill="currentColor" d="M10 4h1v3h-1z"/>
+        <path class="cls-1" fill="currentColor" d="M4 11h7v1H4z"/>
+        <path class="cls-2" d="M12.88 11.5h.69a1 1 0 0 0 .93-1v-6a1 1 0 0 0-.93-1H1.43a1 1 0 0 0-.93 1v6a1 1 0 0 0 .93 1H2" fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10"/>
+        <path class="cls-1" fill="currentColor" d="M15 13h1v2h-1z"/>
+        <path class="cls-1" fill="currentColor" d="M0 14h15v1H0z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-lista-1-1x" viewBox="0 0 16 16">
+    <title>bgm lista 1 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-lista-1-1x</title>
+        <path class="cls-1" d="M0 4h4V0H0zm1-3h2v2H1z" fill="currentColor"/>
+        <path class="cls-1" d="M0 10h4V6H0zm1-3h2v2H1z" fill="currentColor"/>
+        <path class="cls-1" d="M0 16h4v-4H0zm1-3h2v2H1z" fill="currentColor"/>
+        <path class="cls-1" fill="currentColor" d="M6 14h10v1H6z"/>
+        <path class="cls-1" fill="currentColor" d="M6 8h10v1H6z"/>
+        <path class="cls-1" fill="currentColor" d="M6 2h10v1H6z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-lista-1-4x" viewBox="0 0 48 48">
+    <title>bgm lista 1 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-lista-1-4x</title>
+        <path class="cls-1" fill="currentColor" d="M18 41.5V43h28v-3H18v1.5z"/>
+        <path class="cls-1" fill="currentColor" d="M18 25.5V27h28v-3H18v1.5z"/>
+        <path class="cls-1" fill="currentColor" d="M18 8v3h28V8H18z"/>
+        <path class="cls-1" d="M3 15h12V3H3zm3-9h6v6H6z" fill="currentColor"/>
+        <path class="cls-1" d="M3 31h12V19H3zm3-9h6v6H6z" fill="currentColor"/>
+        <path class="cls-1" d="M3 47h12V35H3zm3-9h6v6H6z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-lista-1-3x" viewBox="0 0 32 32">
+    <title>bgm lista 1 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-lista-1-3x</title>
+        <path class="cls-1" fill="currentColor" d="M11 27v1h19v-2H11v1z"/>
+        <path class="cls-1" fill="currentColor" d="M11 16v1h19v-2H11v1z"/>
+        <path class="cls-1" fill="currentColor" d="M11 4v2h19V4H11z"/>
+        <path class="cls-1" d="M1 9h8V1H1zm2-6h4v4H3z" fill="currentColor"/>
+        <path class="cls-1" d="M1 20h8v-8H1zm2-6h4v4H3z" fill="currentColor"/>
+        <path class="cls-1" d="M1 31h8v-8H1zm2-6h4v4H3z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-lista-1-2x" viewBox="0 0 24 24">
+    <title>bgm lista 1 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-lista-1-2x</title>
+        <path class="cls-1" d="M0 6h6V0H0zm1-5h4v4H1z" fill="currentColor"/>
+        <path class="cls-1" d="M0 15h6V9.1H0zm1-4.9h4V14H1z" fill="currentColor"/>
+        <path class="cls-1" d="M0 24h6v-6H0zm1-5h4v4H1z" fill="currentColor"/>
+        <path class="cls-1" fill="currentColor" d="M9 21h15v1H9z"/>
+        <path class="cls-1" fill="currentColor" d="M9 12h15v1H9z"/>
+        <path class="cls-1" fill="currentColor" d="M9 3h15v1H9z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-cards-grupo-1x" viewBox="0 0 16 16">
+    <title>bgm cards grupo 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-cards-grupo-1x</title>
+        <path class="cls-1" d="M0 7h4V1H0zm1-5h2v4H1z" fill="currentColor"/>
+        <path class="cls-1" d="M0 15h4V9H0zm1-5h2v4H1z" fill="currentColor"/>
+        <path class="cls-1" d="M6 7h4V1H6zm1-5h2v4H7z" fill="currentColor"/>
+        <path class="cls-1" d="M6 15h4V9H6zm1-5h2v4H7z" fill="currentColor"/>
+        <path class="cls-1" d="M12 7h4V1h-4zm1-5h2v4h-2z" fill="currentColor"/>
+        <path class="cls-1" d="M12 15h4V9h-4zm1-5h2v4h-2z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-cards-grupo-4x" viewBox="0 0 48 48">
+    <title>bgm cards grupo 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-cards-grupo-4x</title>
+        <path class="cls-1" d="M18 21h12V0H18zm3-18h6v15h-6z" fill="currentColor"/>
+        <path class="cls-1" d="M36 0v21h12V0zm9 18h-6V3h6z" fill="currentColor"/>
+        <path class="cls-1" d="M0 21h12V0H0zM3 3h6v15H3z" fill="currentColor"/>
+        <path class="cls-1" d="M18 48h12V27H18zm3-18h6v15h-6z" fill="currentColor"/>
+        <path class="cls-1" d="M36 48h12V27H36zm3-18h6v15h-6z" fill="currentColor"/>
+        <path class="cls-1" d="M0 48h12V27H0zm3-18h6v15H3z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm--cards-grupo-3x" viewBox="0 0 32 32">
+    <title>bgm  cards grupo 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm--cards-grupo-3x</title>
+        <path class="cls-1" d="M12 14h8V0h-8zm2-12h4v10h-4z" fill="currentColor"/>
+        <path class="cls-1" d="M24 0v14h8V0zm6 12h-4V2h4z" fill="currentColor"/>
+        <path class="cls-1" d="M0 14h8V0H0zM2 2h4v10H2z" fill="currentColor"/>
+        <path class="cls-1" d="M12 32h8V18h-8zm2-12h4v10h-4z" fill="currentColor"/>
+        <path class="cls-1" d="M24 32h8V18h-8zm2-12h4v10h-4z" fill="currentColor"/>
+        <path class="cls-1" d="M0 32h8V18H0zm2-12h4v10H2z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm--cards-grupo-2x" viewBox="0 0 24 24">
+    <title>bgm  cards grupo 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm--cards-grupo-2x</title>
+        <path class="cls-1" d="M0 10h6V0H0zm1-9h4v8H1z" fill="currentColor"/>
+        <path class="cls-1" d="M9 10h6V0H9zm1-9h4v8h-4z" fill="currentColor"/>
+        <path class="cls-1" d="M18 10h6V0h-6zm1-9h4v8h-4z" fill="currentColor"/>
+        <path class="cls-1" d="M0 24h6V14H0zm1-9h4v8H1z" fill="currentColor"/>
+        <path class="cls-1" d="M9 24h6V14H9zm1-9h4v8h-4z" fill="currentColor"/>
+        <path class="cls-1" d="M18 24h6V14h-6zm1-9h4v8h-4z" fill="currentColor"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-agrupamento-valetas-4x" viewBox="0 0 48 48">
+    <title>bgm agrupamento valetas 4x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-agrupamento-valetas-4x</title>
+        <path class="cls-1" fill="currentColor" d="M19 0h3v21h-3z"/>
+        <path class="cls-1" fill="currentColor" d="M26 0h3v21h-3z"/>
+        <path class="cls-1" fill="currentColor" d="M1 0h3v21H1z"/>
+        <path class="cls-1" fill="currentColor" d="M8 0h3v21H8z"/>
+        <path class="cls-1" fill="currentColor" d="M40 18V0h-3v21h3v-3z"/>
+        <path class="cls-1" fill="currentColor" d="M44 0v21h3V0h-3z"/>
+        <path class="cls-1" fill="currentColor" d="M19 27h3v21h-3z"/>
+        <path class="cls-1" fill="currentColor" d="M26 27h3v21h-3z"/>
+        <path class="cls-1" fill="currentColor" d="M1 27h3v21H1z"/>
+        <path class="cls-1" fill="currentColor" d="M8 27h3v21H8z"/>
+        <path class="cls-1" fill="currentColor" d="M37 27h3v21h-3z"/>
+        <path class="cls-1" fill="currentColor" d="M44 27h3v21h-3z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-agrupamento-valetas-3x" viewBox="0 0 32 32">
+    <title>bgm agrupamento valetas 3x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-agrupamento-valetas-3x</title>
+        <path class="cls-1" fill="currentColor" d="M13 0h2v14h-2z"/>
+        <path class="cls-1" fill="currentColor" d="M17 0h2v14h-2z"/>
+        <path class="cls-1" fill="currentColor" d="M1 0h2v14H1z"/>
+        <path class="cls-1" fill="currentColor" d="M5 0h2v14H5z"/>
+        <path class="cls-1" fill="currentColor" d="M25 0h2v14h-2z"/>
+        <path class="cls-1" fill="currentColor" d="M29 0h2v14h-2z"/>
+        <path class="cls-1" fill="currentColor" d="M13 18h2v14h-2z"/>
+        <path class="cls-1" fill="currentColor" d="M17 18h2v14h-2z"/>
+        <path class="cls-1" fill="currentColor" d="M1 18h2v14H1z"/>
+        <path class="cls-1" fill="currentColor" d="M25 18h2v14h-2z"/>
+        <path class="cls-1" fill="currentColor" d="M29 18h2v14h-2z"/>
+        <path class="cls-1" fill="currentColor" d="M5 18h2v14H5z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-agrupamento-valetas-2x" viewBox="0 0 24 24">
+    <title>bgm agrupamento valetas 2x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-agrupamento-valetas-2x</title>
+        <path class="cls-1" fill="currentColor" d="M1 0h1v11H1z"/>
+        <path class="cls-1" fill="currentColor" d="M4 0h1v11H4z"/>
+        <path class="cls-1" fill="currentColor" d="M10 0h1v11h-1z"/>
+        <path class="cls-1" fill="currentColor" d="M13 0h1v11h-1z"/>
+        <path class="cls-1" fill="currentColor" d="M19 0h1v11h-1z"/>
+        <path class="cls-1" fill="currentColor" d="M22 0h1v11h-1z"/>
+        <path class="cls-1" fill="currentColor" d="M1 13h1v11H1z"/>
+        <path class="cls-1" fill="currentColor" d="M4 13h1v11H4z"/>
+        <path class="cls-1" fill="currentColor" d="M10 13h1v11h-1z"/>
+        <path class="cls-1" fill="currentColor" d="M13 13h1v11h-1z"/>
+        <path class="cls-1" fill="currentColor" d="M19 13h1v11h-1z"/>
+        <path class="cls-1" fill="currentColor" d="M22 13h1v11h-1z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-agrupamento-valetas-1x" viewBox="0 0 16 16">
+    <title>bgm agrupamento valetas 1x</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-agrupamento-valetas-1x</title>
+        <path class="cls-1" fill="currentColor" d="M0 0h1v7H0z"/>
+        <path class="cls-1" fill="currentColor" d="M2 0h1v7H2z"/>
+        <path class="cls-1" fill="currentColor" d="M6 0h1v7H6z"/>
+        <path class="cls-1" fill="currentColor" d="M8 0h1v7H8z"/>
+        <path class="cls-1" fill="currentColor" d="M12 0h1v7h-1z"/>
+        <path class="cls-1" fill="currentColor" d="M14 0h1v7h-1z"/>
+        <path class="cls-1" fill="currentColor" d="M0 9h1v7H0z"/>
+        <path class="cls-1" fill="currentColor" d="M2 9h1v7H2z"/>
+        <path class="cls-1" fill="currentColor" d="M6 9h1v7H6z"/>
+        <path class="cls-1" fill="currentColor" d="M8 9h1v7H8z"/>
+        <path class="cls-1" fill="currentColor" d="M12 9h1v7h-1z"/>
+        <path class="cls-1" fill="currentColor" d="M14 9h1v7h-1z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-check-4x-2" viewBox="0 0 48 48">
+    <title>bgm check 4x 2</title>
+    <g>
+      <g class="nc-icon-wrapper" fill="currentColor">
+        <title>bgm-check-4x</title>
+        <path class="cls-1" fill="currentColor" d="M17.521 41.99L-0.089 24.38 1.325 22.966 17.521 39.162 46.675 10.009 48.089 11.423 17.521 41.99z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-busglyph-4x" viewBox="0 0 48 48">
+    <title>bgm busglyph 4x</title>
+    <g>
+      <g class="nc-icon-wrapper">
+        <title>bgm-busglyph-4x</title>
+        <path class="cls-1" d="M4.25 10.25h37.5a2.87 2.87 0 0 1 2.87 2.87v19.76a2.87 2.87 0 0 1-2.87 2.87H4.25a2.87 2.87 0 0 1-2.87-2.87V13.13a2.88 2.88 0 0 1 2.88-2.87z" fill="#fff"/>
+        <path class="cls-2" d="M47.9 22.13H46v-8.9A4.09 4.09 0 0 0 42.07 9H3.93A4.09 4.09 0 0 0 0 13.23v19.42a4.09 4.09 0 0 0 3.93 4.23h1.21a4 4 0 0 0 7.72 0h21.28a4 4 0 0 0 7.72 0h.21A4.09 4.09 0 0 0 46 32.65V30.5h1.9zM2 13.23A2.1 2.1 0 0 1 3.93 11H33v11H2zm42 19.42a2.1 2.1 0 0 1-1.93 2.23h-.21a4 4 0 0 0-7.72 0H12.86a4 4 0 0 0-7.72 0H3.93A2.1 2.1 0 0 1 2 32.65V24h42zM44 22h-9V11h7.07A2.1 2.1 0 0 1 44 13.23z" fill="#444"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="nc-bgm-busglyph-3x" viewBox="0 0 32 32">
+    <title>bgm busglyph 3x</title>
+    <g>
+      <g class="nc-icon-wrapper">
+        <title>bgm-busglyph-3x</title>
+        <path class="cls-1" d="M3.87 7.61h23.38a2.88 2.88 0 0 1 2.88 2.88V20.8a2.88 2.88 0 0 1-2.87 2.88H3.88A2.88 2.88 0 0 1 1 20.8V10.48a2.87 2.87 0 0 1 2.87-2.87z" fill="#fff"/>
+        <path class="cls-2" d="M31 15v-5a3 3 0 0 0-2.93-3H3a3 3 0 0 0-2.9 3v12a3 3 0 0 0 2.92 3H4.2a3 3 0 0 0 5.61 0H21.2a3 3 0 0 0 5.62-.06h1.25A3 3 0 0 0 31 22v-1h1v-6zm-2-5v5h-6V9h5.07a1 1 0 0 1 .93 1zM3 9h18v6H2.1v-5A1 1 0 0 1 3 9zm25.07 13.94h-1.25a3 3 0 0 0-5.65.06H9.85a3 3 0 0 0-5.65-.06H3a1 1 0 0 1-.92-1V17H29v5a1 1 0 0 1-.93.94z" fill="#444"/>
+      </g>
+    </g>
+  </symbol>
+</svg>

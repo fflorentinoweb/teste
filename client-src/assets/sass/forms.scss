@@ -1,0 +1,286 @@
+[placeholder] {
+  @include placeholder($cor-placeholder, 1);
+}
+
+.has-error {
+  .btn{
+    &.dropdown-toggle{
+      border: 1px solid $cor-alert-danger !important;
+    }
+  }
+}
+
+.succeed {
+  .btn{
+    &.dropdown-toggle{
+      border: 1px solid green !important;
+    }
+  }
+}
+
+.form-group {
+  margin: 0;
+
+  .control-label {
+    text-transform: uppercase;
+    color: rgba($cor-branco, 0.5);
+  }
+
+  textarea.form-control {
+    height: auto;
+    min-height: 56px;
+    resize: none;
+    -webkit-resize: none;
+    -moz-resize: none;
+  }
+
+  .form-control {
+    font-size: 14px;
+    font-family: $font-Book;
+    border: none;
+    background: rgba($cor-branco, 0.1);
+    height: 56px;
+    color: $cor-branco !important;
+    pointer-events: inherit;
+    @include transition-padrao;
+
+    &:focus {
+      background: rgba($cor-branco, 0.2);
+    }
+
+    &.succeed {
+      border: 1px solid green;   
+    }
+
+    &:disabled,
+    &.dx-state-disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+      background: rgba($cor-branco, 0.1);
+
+      .dx-texteditor-container,
+      .dx-selectbox-container,
+      .dx-texteditor-input {
+        cursor: not-allowed;
+      }
+
+      .dx-texteditor-buttons-container {
+        display: none;
+      }
+    }
+
+    &.has-error {
+      border: 1px solid $cor-alert-danger;
+    }
+
+    &.dx-selectbox {
+      .dx-dropdowneditor-icon {
+        font: normal normal normal 22px/1 FontAwesome;
+        color: $cor-branco;
+        @include flex-center;
+
+        &:before {
+          content: "\F107";
+          position: relative;
+          top: inherit;
+          left: inherit;
+          margin: 0;
+        }
+      }
+    }
+
+    &.dx-lookup {
+      .dx-lookup-arrow {
+        font: normal normal normal 22px/1 FontAwesome;
+        color: $cor-branco;
+        @include flex-center;
+
+        &:before {
+          content: "\F107";
+          position: relative;
+          top: inherit;
+          left: inherit;
+          margin: 0;
+        }
+      }
+    }
+
+    &.dx-tagbox {
+      min-height: 56px;
+      height: inherit;
+
+      &.dx-dropdowneditor-active{
+        border-radius: 8px 8px 0 0 ;
+        border:0!important;
+        background: $cor-card-bg;
+        
+      }
+
+      .dx-selectbox-container {
+        min-height: 56px;
+      }
+
+      .dx-placeholder {
+        min-height: 56px;
+      }
+
+      .dx-texteditor-container {
+        padding-bottom: 4px;
+      }
+
+      .dx-tag {
+        .dx-tag-content {
+          background: $cor-card-bg;
+          color: $cor-branco;
+          font-size: 14px;
+          font-family: $font-Book;
+          padding: 6px 40px 8px 10px;
+          border-radius: 5px;
+
+          .dx-tag-remove-button {
+            border-left: 2px solid $cor-border-tagbox;
+            width: 30px;
+
+            &:before,
+            &:after {
+              color: $cor-branco;
+              background: $cor-branco;
+            }
+
+            &:before {
+              height: 18px;
+              width: 2px;
+              opacity: 1;
+              right: 12px;
+              margin-top: -10px;
+            }
+
+            &:after {
+              width: 18px;
+              height: 2px;
+              right: 5px;
+              margin-top: -2px;
+            }
+          }
+        }
+      }
+    }
+
+    .dx-placeholder {
+      font-size: 14px;
+      font-family: $font-Book;
+    }
+
+    .dx-dropdowneditor-icon {
+      background: none !important;
+    }
+
+    .dx-texteditor,
+    .dx-texteditor-input {
+      background: none;
+      border: none;
+      color: $cor-branco;
+    }
+  }
+
+ 
+
+  .dx-texteditor-buttons-container {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    font: 14px/1 DXIcons;
+    &:after {
+      position: relative;
+      background: $cor-button-dark;
+      border-radius: 5px;
+      width: 33px;
+      height: 33px;
+      top: 1px;
+      left: inherit;
+      bottom: inherit;
+      right: inherit;
+      display: inline-block;
+      line-height: 33px;
+      text-align: center;
+      content: "\f00b";
+      margin: 0 0 0 -20px;
+    }
+  }
+
+  .form-control {
+    &.dx-texteditor-empty {
+      .dx-texteditor-buttons-container {
+        margin: 10px 0 0 86%;
+      }
+    }
+  }
+}
+
+.mat-checkbox {
+  &:not(.mat-checkbox-disabled) {
+    &.mat-accent {
+      .mat-checkbox-ripple {
+        .mat-ripple-element {
+          transform: scale(0.58) !important;
+          background: rgba($cor-azulado, 0.2) !important;
+        }
+      }
+    }
+  }
+}
+
+.mat-radio-button {
+  &.mat-accent {
+    .mat-radio-ripple {
+      .mat-ripple-element {
+        background: rgba($cor-azulado, 0.2);
+      }
+    }
+  }
+}
+
+.dx-selectbox-popup-wrapper {
+  .dx-overlay-content {
+    background: none;
+    border: none;
+    box-shadow:0 !important;
+    border-radius: 0 0 8px 8px;
+  
+    .dx-empty-message {
+      color: $cor-branco;
+    }
+
+    .dx-popup-content {
+      background: $cor-card-bg;
+      border-radius: 0;
+      padding: 0;
+      max-height: 197px;
+      overflow:hidden;
+
+      .dx-list {
+        background: none;
+
+        .dx-list-item {
+          color: $cor-branco !important;
+          font-size: 14px;
+          border-top: 2px solid rgba($cor-card-cinza, 0.1);
+
+          &:first-child{
+            border:0!important;
+          }
+
+          &.dx-state-hover,
+          &.dx-list-item-selected,
+          &.dx-state-active {
+            background: rgba(0, 0, 0, 0.04);
+          }
+
+          .dx-list-item-content {
+            padding: 14px 10px;
+          }
+        }
+      }
+    }
+  }
+}

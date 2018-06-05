@@ -1,0 +1,55 @@
+.btn-acoes-coletivas {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 15px;
+
+	@media screen and (min-width: 320px) {
+		width: 44px;
+		height: 44px;
+		min-width: inherit;
+		padding: 0;
+
+		.text-button {
+			display: none;
+		}
+
+		svg {
+			width: 16px;
+			height: 16px;
+			margin: 0;
+		}
+	}
+
+	@media screen and (min-width: 767px) {
+		width: inherit;
+		height: inherit;
+		padding: 0 16px;
+
+		.text-button {
+			display: inline-block;
+		}
+
+		svg {
+			margin: 0 5px;
+		}
+	}
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+}
+
+.btn-acoes-coletivas-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 15px;
+	.mat-icon {
+    font-size: 30px;
+		color: #1db4e9;
+	}
+	@media screen and (max-width: 767px) {
+		display: block;
+	}
+}

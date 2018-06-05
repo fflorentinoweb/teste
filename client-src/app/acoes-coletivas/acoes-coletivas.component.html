@@ -1,0 +1,13 @@
+<button md-button [mdMenuTriggerFor]="menu" class="btn-acoes-coletivas" tabindex="2">
+  <span class="text-button">Açoes coletivas</span>
+  <svg class="nc-icon nc-icon-grid-24"><use _ngcontent-c12="" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-seta-baixo-1x"></use></svg>
+</button>
+<button md-icon-button [mdMenuTriggerFor]="menu" class="btn-acoes-coletivas-mobile">
+  <md-icon>more_vert</md-icon>
+</button>
+<md-menu #menu="mdMenu" class="menu-acoes-coletivas">
+  <app-iniciar-todos-servicos [servicoEDefeitosEmExecucao]="execucao" (servicosIniciados)="notificarServicosAtualizados()"></app-iniciar-todos-servicos>
+  <app-pausar-todos-servicos [servicoEDefeitosEmExecucao]="execucao" (servicosPausados)="notificarServicosAtualizados()" [hidden]="mostrarApenasIniciar"></app-pausar-todos-servicos>  
+  <app-finalizar-todos-servicos [servicoEDefeitosEmExecucao]="execucao" (servicosFinalizados)="notificarServicosFinalizados()" [hidden]="mostrarApenasIniciar"></app-finalizar-todos-servicos>
+  <app-desfazer-todos-servicos [servicoEDefeitosEmExecucao]="execucao" (servicosDesfeitos)="notificarServicosAtualizados()" [hidden]="mostrarApenasIniciar"></app-desfazer-todos-servicos>  
+</md-menu>

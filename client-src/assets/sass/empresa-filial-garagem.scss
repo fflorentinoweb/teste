@@ -1,0 +1,242 @@
+.search-empresa-filial{
+    padding:0;
+    background: rgba($cor-branco, 0.1);
+
+    &.ngx-disabled{
+        opacity: 0.4;
+        cursor: not-allowed;
+        background: rgba($cor-branco, 0.1);
+
+        .dropdown{
+            .btn{
+                cursor: not-allowed;
+            }
+        }
+    }
+
+    .dropdown{
+        &.show{
+            border-radius: 6px;
+            @include box-shadow(0 0 0 10px rgba($cor-branco, 0.01), 0 0 0 20px rgba($cor-branco, 0.01));
+        }
+
+        .btn{
+            border:none;
+            background: transparent;
+            color: $cor-branco;
+            @include box-shadow(none);
+            height: 56px;
+            cursor: pointer;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            padding-right: 50px;
+            &:focus{
+                background: rgba($cor-branco, 0.2);
+
+                &:after{
+                    background: rgba($cor-escura, 0.2);
+                }
+            }
+
+            &:after{
+                position: absolute;
+                font: normal normal normal 22px/1 FontAwesome;
+                color: $cor-branco;
+                content: "\F107";
+                margin: 0;
+                border: none;
+                vertical-align: inherit;
+                width: 32px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                border-radius: 50%;
+                top: 50%;
+                margin-top: -16px !important;
+                right: 10px;
+            }
+        }
+
+        .dropdown-container{
+            padding: 0 !important;
+        }
+
+        .dropdown-menu{
+            width: 100%;
+            padding: 0;
+            border:none;
+            margin: -56px 0 0 0;
+            background: $cor-treeview-bg;
+            position: relative;
+            top: inherit;
+            left: inherit;
+
+            .dropdown-divider{
+                display: none;
+            }
+
+            .treeview-header{
+                position: relative;
+                z-index: 101;
+
+                .row-filter{
+                    position: relative;
+                    margin:0;
+
+                    &:after{
+                        position: absolute;
+                        bottom: -7px;
+                        left: 0;
+                        z-index: 10;
+                        display: block;
+                        content: "";
+                        width: 100%;
+                        height: 8px;
+                        @include linear-gradient(rgba($cor-escura, 0.08), transparent);
+                    }
+
+                    .col-filter{
+                        padding: 0;
+
+                        .form-control{
+                            border-radius: .25rem .25rem 0 0;
+                            background: $cor-bg-empresa-filial;
+                            font-size: 14px;
+                            font-family: $font-Book;
+                            border: none;
+                            height: 56px;
+                            color: #fff !important;
+                            pointer-events: inherit;
+                        }
+                    }
+                }
+            }
+
+            .treeview-container{
+                padding:0;
+                margin: 0;
+                @include box-shadow(0 6px 12px rgba($cor-escura, 0.175));
+                // border-radius: 6px;
+
+                .treeview-item{
+                    .fa{
+                        display: none;
+                    }
+
+                    .form-check{
+                        // border-top: 1px solid $cor-card-border;
+                        margin: 0 0 -1px 0;
+                        background: $cor-bg-empresa-filial;
+                        position: sticky;
+                        top: 0;
+                        z-index: 100;
+
+                        label{
+                            border-radius:10px;
+                            color: $cor-branco;
+                            font-family: $font-Roman;
+                            text-transform: none;
+                            font-size: 14px;
+                            padding: 10px 15px 10px 15px;
+                            margin: 0 0 -10px 0;
+                            max-width: 100%;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            display: block;
+                            position: relative;
+
+                            &:before{
+                                display: inline-block;
+                                content: "EMP.";
+                                background: $cor-card-bg;
+                                padding: 0px 4px;
+                                border-radius: 50px;
+                                margin: 0 5px 0 0;
+                            }
+                        }
+                    }
+
+                    .treeview-item{
+                        margin:0;
+                        border-top: 1px solid $cor-card-border;
+
+                        .form-check{
+                            border:none;
+                            padding: 0;
+                            z-index: 99;
+                            top: 30px;
+
+                            label{
+                                background: none;
+                                color: $cor-card-desfazer;
+                                font-family: $font-Roman;
+                                text-transform: none;
+                                font-size: 14px;
+                                text-transform: uppercase;
+                                margin: 0;
+
+                                &:before{
+                                    content: "FIL.";
+                                    background: none;
+                                }
+                            }
+                        }
+
+                        .treeview-item{
+                            border-top: 1px solid $cor-card-border;
+
+                            .form-check{
+                                margin: 0;
+                                padding:0;
+                                border:none;
+                                position: relative;
+                                z-index: 1;
+                                top: inherit;
+
+                                label{
+                                    color: $cor-branco;
+                                    background:$cor-card-bg;
+                                    font-family: $font-Roman;
+                                    text-transform: none;
+                                    font-size: 14px;
+                                    padding: 18px 15px;
+                                    width: 100%;
+                                    border-radius: 0 !important;
+                                    height: inherit;
+                                    line-height: 1;
+                                    min-height: inherit;
+                                    text-decoration: none;
+                                    text-align: left;
+                                    margin: 0;
+                                    overflow: hidden;
+                                    cursor: pointer;
+                                    display:block;
+
+                                    &:before{
+                                        content: "GAR.";
+                                        background: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .treeview-text{
+                background: none;
+                color: $cor-azulado;
+                font-family: $font-Roman;
+                text-transform: none;
+                font-size: 14px;
+                padding: 10px;
+                @include box-shadow(0 6px 12px rgba($cor-escura, 0.175));
+                border-radius: 6px;
+            }
+        }
+    }
+}

@@ -1,0 +1,82 @@
+<div class="row h-100 bg-manu">
+    <div class="col-12 row align-items-center justify-content-center">
+        <form class="login" name="formAutenticacaoMecanico" (ngSubmit)="login(formAutenticacaoMecanico.form)" #formAutenticacaoMecanico="ngForm" novalidate>
+            <h1>
+                Registro de disponibilidade dos funcionários
+            </h1>
+            <div *ngIf="usuarioSenhaInvalido" class="alert alert-danger invalid-value" role="alert">
+                <div *ngIf="usuarioSenhaInvalido">
+                    <svg class="nc-icon  nc-icon-grid-16">
+            <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-alert-1x" />
+          </svg> *Usuário e/ou Senha inválido(s)
+                </div>
+            </div>
+
+            <div *ngIf="matriculaInvalida" class="alert alert-danger invalid-value" role="alert">
+                <div *ngIf="matriculaInvalida">
+                    <svg class="nc-icon  nc-icon-grid-16"><use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-alert-1x"/></svg> Matricula inválida
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-12">
+                    <label class="control-label">Matrícula*</label>
+
+                    <input type="text" (keypress)="onKeyPress()" [(ngModel)]="userMecanico.matricula" [ngClass]="
+          {
+            'has-error': (matricula.invalid || ativouCapsLock) && (matricula.dirty || submitted) || usuarioSenhaInvalido,
+            'succeed': !matricula.invalid || usuarioSenhaInvalido
+          }" class="form-control" maxlength="32" name="matricula" #matricula="ngModel" required (change)="verificarMultiEmpresa()">
+
+                    <div *ngIf="matricula.invalid && (matricula.dirty || submitted)" class="alert alert-danger">
+                        <div *ngIf="matricula.errors.required">
+                            *O campo Matricula é obrigatória.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-12">
+                    <div class="col-12">
+                        <label class="control-label">Funcionário<strong mdTooltipShowDelay="1200" mdTooltip="Campo obrigatório">*</strong></label>
+                        <app-empresa-filial [items]="empresas" [value]="userMecanico.funcionarioId" [dropdownDisabled]="dropdownDisabled" (valueChange)="handleValueUpdated($event)" [ngClass]="{ 'has-error': !userMecanico.funcionarioId && submitted, 'succeed' : userMecanico.funcionarioId }"
+                            class="empresa-fial-func">
+                        </app-empresa-filial>
+
+                        <div *ngIf="!userMecanico.funcionarioId && submitted" class="alert alert-danger">
+                            <div>
+                                *O campo Funcionário é obrigatório.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-12">
+                    <label class="control-label">Senha
+            <strong mdTooltipShowDelay="1200" mdTooltip="Campo obrigatório">*</strong>
+          </label>
+                    <input myActiveCapsLock (keypress)="onKeyPress()" (capsLock)="capsLockEvent($event)" [(ngModel)]="userMecanico.senha" [ngClass]="
+          {
+            'has-error': (senha.invalid || ativouCapsLock) && (senha.dirty || submitted) || usuarioSenhaInvalido,
+            'succeed': !senha.invalid || usuarioSenhaInvalido
+          }" class="form-control" name="senha" maxlength="32" type="password" name="senha" #senha="ngModel" required>
+
+                    <div *ngIf="senha.invalid && (senha.dirty || submitted)" class="alert alert-danger">
+                        <div *ngIf="senha.errors.required">
+                            *O campo Senha é obrigatório.
+                        </div>
+                    </div>
+                    <div class="alert alert-danger" [hidden]="!ativouCapsLock">
+                        <span>ATENÇÃO: Capslock está ligado</span>
+                    </div>
+                </div>
+                <div class="form-group col-12">
+                    <button md-button class="button-block" type="submit" [disabled]="process">
+            <md-spinner *ngIf="process"></md-spinner>
+            <svg *ngIf="!process" class="nc-icon nc-icon-grid-32">
+              <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-seta-direita-3x" />
+            </svg>
+            <span class="text-button">Confirmar</span>
+          </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

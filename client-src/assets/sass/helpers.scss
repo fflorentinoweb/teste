@@ -1,0 +1,137 @@
+$cor-fundo: #2e3740;
+$cor-azulado: #1db4e9;
+$cor-branco: #fff;
+$cor-escura: #000;
+$cor-dialog: #41505f;
+$cor-balao: #3c444d;
+$cor-alert-danger: #ed4a4a;
+$cor-alert-success: #10c710;
+$cor-dialog-bg: #41505f;
+$cor-placeholder: #999;
+$cor-card-bg: #414b57;
+$cor-card-border: #333b45;
+$cor-card-cinza: #d6d6d6;
+$cor-card-execusao: #70a83b;
+$cor-card-aberto: $cor-azulado;
+$cor-card-pausada: #e6da78;
+$cor-card-finalizado: #2f373f;
+$cor-card-defeito: #ff775c;
+$cor-card-desfazer: #beddff;
+$cor-card-action-top-bg: #455767;
+$cor-componente-form: #343d47;
+$cor-componente-form-active: rgba($cor-branco, 0.3);
+$cor-button-dark: #3c4651;
+$cor-border-tagbox: #4f5c6b;
+$cor-valeta: #3d434a;
+$cor-font-valeta: #2e363e;
+$cor-valeta-livre: $cor-branco;
+$cor-valeta-atrasado: #f46464;
+$cor-valeta-finalizado: #bee678;
+$cor-valeta-alocado: #fdd35d;
+$cor-valeta-execucao: #1ba8da;
+$cor-component-lookup-header: #43515d;
+$cor-component-lookup-item: #3a4a57;
+$cor-component-lookup-item-active: #3e4e5a;
+$cor-component-lookup-scrollbar: #2f3e49;
+$cor-card-checkbox-inactive: #313b45;
+$cor-treeview-bg: #49525e;
+$cor-registro-presenca-bg: #404950;
+$cor-bg-empresa-filial: #4E5760;
+
+$font-Book: 'Avenir LT Std Book';
+$font-MediumOblique: 'Avenir LT Std MediumOblique';
+$font-Oblique: 'Avenir LT Std Oblique';
+$font-BookOblique: 'Avenir LT Std BookOblique';
+$font-Black: 'Avenir LT Std Black';
+$font-Light: 'Avenir LT Std Light';
+$font-Medium: 'Avenir LT Std Medium';
+$font-HeavyOblique: 'Avenir LT Std HeavyOblique';
+$font-LightOblique: 'Avenir LT Std LightOblique';
+$font-BlackOblique: 'Avenir LT Std BlackOblique';
+$font-Roman: 'Avenir LT Std Roman';
+$font-Heavy: 'Avenir LT Std Heavy';
+
+$break-sm: 575px;
+$break-md: 767px;
+$break-lg: 991px;
+$break-xl: 1199px;
+
+@mixin animation-duration{
+  -webkit-animation-duration: 0.3s;
+  -moz-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+
+@mixin transition($value...) {
+  -webkit-transition: $value !important;
+  -moz-transition: $value !important;
+  -o-transition: $value !important;
+  transition: $value !important;
+}
+
+@mixin transition-padrao {
+  -webkit-transition: all .3s ease-in-out !important;
+  -moz-transition: all .3s ease-in-out !important;
+  -o-transition: all .3s ease-in-out !important;
+  transition: all .3s ease-in-out !important;
+}
+
+
+@mixin box-shadow($value...) {
+  -webkit-box-shadow: $value !important;
+  -moz-box-shadow: $value !important;
+  box-shadow: $value !important;
+}
+
+@mixin scale($value) {
+  -webkit-transform: scale($value);
+  -moz-transform: scale($value);
+  transform: scale($value);
+}
+
+@mixin transform($value) {
+  -webkit-transform: $value;
+  -moz-transform: $value;
+  transform: $value;
+}
+
+@mixin placeholder($color, $opacity) {
+  &::-webkit-input-placeholder {
+    color: $color;
+    opacity: $opacity;
+  }
+  &:-moz-placeholder {
+    color: $color;
+    opacity: $opacity;
+  }
+  &::-moz-placeholder {
+    color: $color;
+    opacity: $opacity;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+    opacity: $opacity;
+  }
+}
+
+@mixin flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin focus-buttons{
+  background: rgba($cor-branco, 0.2)!important;
+  @include box-shadow(0 0 0 10px rgba($cor-branco, 0.01), 0 0 0 20px rgba($cor-branco, 0.01));
+}
+
+
+@mixin linear-gradient($from, $to) {
+  background: $to;
+	background: -moz-linear-gradient(top, $from 0%, $to 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$from), color-stop(100%,$to));
+	background: -webkit-linear-gradient(top, $from 0%,$to 100%);
+	background: -o-linear-gradient(top, $from 0%,$to 100%);
+	background: linear-gradient(to bottom, $from 0%,$to 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#{$from}, endColorstr=#{$to})
+}

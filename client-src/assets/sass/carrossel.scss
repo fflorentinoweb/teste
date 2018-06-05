@@ -1,0 +1,226 @@
+.dialog-panel-carrossel {
+	width: 100% !important;
+
+	@media screen and (min-width: $break-sm) {
+		.mat-dialog-actions {
+			display: none;
+		}
+	}
+
+	@media screen and (max-width: $break-sm) {
+		.solucoes-action-top {
+			.dialog-title-carrossel {
+				display: none;
+			}
+
+			.mat-button {
+				width: 114px;
+			}
+		}
+
+		.swiper-container {
+			.swiper-wrapper {
+				.swiper-slide {
+					// margin: 76px 0 0 0;
+					margin: 0;
+					max-width: 100%;
+
+					.btn-prev,
+					.btn-next {
+						display: none !important;
+					}
+				}
+			}
+		}
+	}
+
+	.dialog-title-carrossel {
+		color: $cor-branco;
+
+		@media screen and (max-width: $break-md) {
+			display: none;
+		}
+	}
+
+	.swiper-container {
+		margin: 76px 0 0 0;
+
+		.swiper-container {
+			margin: 0;
+		}
+
+		.swiper-wrapper {
+			width: 100%;
+
+			.swiper-slide {
+				max-width: 460px;
+				min-height: 460px;
+				background: $cor-dialog-bg;
+				opacity: 0.2;
+				@include transform(scale(0.8));
+				@include transition-padrao;
+
+				&.swiper-slide-active {
+					opacity: 1;
+					@include transform(scale(1));
+
+					.btn-prev,
+					.btn-next {
+						display: block;
+					}
+				}
+			}
+
+			.swiper-button-next {
+				background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
+			}
+
+			.swiper-button-prev {
+				background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
+			}
+
+			.btn-prev,
+			.btn-next {
+				display: none;
+				background: none;
+				cursor: pointer;
+				border: none;
+				position: absolute;
+				top: 50%;
+				transform: translate(0, -50%);
+
+				svg {
+					color: $cor-branco;
+                }
+                
+                &:focus {
+                    svg {
+                        filter: drop-shadow(0 0 5px $cor-branco);
+                    }
+                }
+			}
+
+			.btn-prev {
+				left: -50px;
+			}
+
+			.btn-next {
+				right: -50px;
+			}
+
+			.action-swiper-slide {
+				position: absolute;
+				top: 0;
+				right: 0;
+				margin: 15px;
+
+				.btn-header {
+					background: rgba($cor-card-cinza, 0.1);
+					border-radius: 50px !important;
+					width: 42px;
+					height: 42px;
+					min-width: inherit;
+					padding: 0;
+					min-height: inherit;
+					overflow: hidden;
+					position: relative;
+
+					.mat-button-ripple {
+						border-radius: 50px;
+					}
+
+					svg {
+						width: 16px;
+						height: 16px;
+						color: $cor-fundo;
+					}
+				}
+			}
+
+			.empty-solucao {
+				color: red;
+
+				* {
+					&:empty {
+						border-radius: 5px;
+					}
+				}
+
+				.mat-dialog-title {
+					&:empty {
+						width: 180px;
+						height: 28px;
+						background: rgba($cor-branco, 0.5);
+					}
+				}
+
+				.card-defeito {
+					&:empty {
+						display: inline-block;
+						width: 66px;
+						height: 20px;
+						background: rgba($cor-card-defeito, 0.5);
+					}
+				}
+
+				.form-group {
+					.control-label {
+						&:empty {
+							background: rgba($cor-azulado, 0.5);
+							height: 21px;
+							margin: 15px 0 10px;
+						}
+					}
+
+					&:nth-child(1) {
+						.control-label {
+							&:empty {
+								width: 60px;
+							}
+						}
+					}
+
+					&:nth-child(2) {
+						.control-label {
+							&:empty {
+								width: 70px;
+							}
+						}
+					}
+
+					&:nth-child(2) {
+						.control-label {
+							&:empty {
+								width: 120px;
+							}
+						}
+					}
+
+					&:nth-child(3) {
+						.control-label {
+							&:empty {
+								width: 180px;
+							}
+						}
+					}
+
+					&:nth-child(4) {
+						.control-label {
+							&:empty {
+								width: 240px;
+							}
+						}
+					}
+
+					div {
+						&:empty {
+							background: rgba($cor-branco, 0.1);
+							height: 56px;
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}

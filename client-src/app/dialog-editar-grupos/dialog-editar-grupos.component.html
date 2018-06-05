@@ -1,0 +1,60 @@
+<form novalidate (ngSubmit)="salvarGrupo(formCadastroGrupoFuncionario.form)" #formCadastroGrupoFuncionario="ngForm" (change)="OnChange()">
+    <div class="dialog-header row align-items-center">
+        <button md-mini-fab class="btn-close" mdTooltipShowDelay="1200" mdTooltip="Fechar" (click)="OnClose()" type="button">
+      <svg class="nc-icon  nc-icon-grid-16">
+        <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-fechar-1x">
+          <title></title>
+        </use>
+      </svg>
+    </button>
+        <h1 md-dialog-title>
+            Cadastro de grupo de funcionários
+        </h1>
+    </div>
+
+    <div md-dialog-content>
+        <div class="dialog-content">
+            <div class="row form-group">
+                <div class="col-12">
+                    <label class="control-label">Nome
+            <strong mdTooltipShowDelay="1200" mdTooltip="Campo obrigatório">*</strong>
+          </label>
+                    <dx-select-box class="form-control top-position" [(ngModel)]="grupoDeFuncionarios.descricao" name="grupos" [items]="listaGrupos" [displayExpr]="displayGrupos" valueExpr="id" [acceptCustomValue]="true" (onCustomItemCreating)="addCustomItem($event)" (onOptionChanged)="onOptionChanged($event)"
+                        (onKeyPress)="onKeyPress($event)" (onValueChanged)="onValueChanged($event)" name="descricao" #Descricao="ngModel" [maxLength]="100" [ngClass]="{'has-error': !validationGrupoValid && validationGrupoDirty}" [searchEnabled]="true" required>
+                    </dx-select-box>
+
+                    <div *ngIf="!validationGrupoValid && (validationGrupoDirty || submitted)" class="alert alert-danger">
+                        <div *ngIf="!validationGrupoValid && (validationGrupoDirty || submitted)">
+                            *O campo Grupo é obrigatório.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div md-dialog-actions>
+        <div class="row">
+            <div class="col-6">
+                <button md-button type="submit" [disabled]="globals.processSpinner || disabledAdicionar">
+                <md-spinner *ngIf="globals.processSpinner" class="spinner-small"></md-spinner>
+                <svg *ngIf="!globals.processSpinner" class="nc-icon nc-icon-grid-24 cor-card-execusao">
+                    <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-mais-2x" />
+                </svg>
+                <span *ngIf="!globals.processSpinner">Adicionar</span>
+                <span *ngIf="globals.processSpinner">Carregando</span>
+        </button>
+            </div>
+            <div class="col-6">
+                <button md-button (click)="excluir(formCadastroGrupoFuncionario.form)" type="button" [disabled]="deleteSpinner || disableGrupo">
+          <md-spinner *ngIf="deleteSpinner" class="spinner-small"></md-spinner>
+          <svg class="nc-icon nc-icon-grid-16" *ngIf="!deleteSpinner">
+            <use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-fechar-1x" />
+          </svg>
+          <span *ngIf="!deleteSpinner">Excluir</span>
+          <span *ngIf="deleteSpinner">Carregando</span>
+        </button>
+            </div>
+        </div>
+    </div>
+</form>

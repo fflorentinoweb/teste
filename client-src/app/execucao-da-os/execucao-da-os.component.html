@@ -1,0 +1,68 @@
+<header>
+  <div class="row">
+    <div class="col row justify-content-end actions-options">
+      <div class="col-auto mr-3 logout">
+        <app-logout></app-logout>
+      </div>
+       <div class="col-auto fullscreen">
+         <app-fullscreen></app-fullscreen> 
+      </div> 
+    </div>
+  </div>
+</header>
+<section class="row justify-content-center align-items-center">
+  <div class="execucao">
+    <div class="row justify-content-center align-items-center descricao-os">
+       <div class="col-12 col-md-auto numero-os">
+        <h2>
+          <small>Nº DA OS</small>
+          {{painelExecucaoOS.numeroOS}}
+        </h2>
+      </div>
+      <div class="row prefixo-valeta">
+        <div class="col-auto">
+          <h2>
+            <small>Prefixo</small>
+            {{painelExecucaoOS.prefixo}} 
+          </h2>
+        </div>
+        <div class="col-auto">
+          <h2>
+            <small>Valeta</small>
+            {{painelExecucaoOS.codigoValeta}} 
+          </h2>
+        </div>
+      </div> 
+    </div>
+    <div class="row justify-content-center align-items-center actions">
+      <div class="col-auto">
+        <button md-fab class="row justify-content-center align-items-center" (click)="RetirarVeiculoValeta()" [ngClass]="{'fab-large' : !funcionarios.length > 0}" tabindex="3">
+          <svg class="nc-icon" [ngClass]="{ 'nc-icon-grid-48' : funcionarios.length > 0, 'nc-icon-grid-64' : !funcionarios.length > 0 }"><use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-bus-4x"/></svg>
+          <span class="text">Saída do <br />Veículo</span>
+        </button>
+      </div>
+      <div class="col-auto" [hidden]="painelExecucaoOS.status != 0" *ngIf="funcionarios.length > 0">
+        <app-pausar-os [tempoExecucao]="tempoExecucao" [emExecucao]="emExecucao" (pausaEfetuada)="atualizarPainelExecucaoOS()"></app-pausar-os>   
+      </div>
+      <div class="col-auto" [hidden]="painelExecucaoOS.status != 0" *ngIf="funcionarios.length > 0">
+        <button md-fab class="row justify-content-center align-items-center" (click)="obterServicosFinalizados()" tabindex="5">
+          <svg class="nc-icon nc-icon-grid-48"><use xlink:href="/assets/icons/icons/nc-icons.svg#nc-bgm-encerrar-4x"/></svg>
+          <span class="text">Finalizar</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="alert-persona-pausado" [hidden]="!painelExecucaoOS.nomeFuncionarioPausaGeralAtual">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-auto">
+        <svg class="nc-icon nc-icon-grid-64 nc-icon-outline stroke-2"><use xlink:href="/assets/icons/manutencao/nc-icons.svg#nc-alert"/></svg>
+      </div>
+      <div class="col-auto">
+        <p>Os pausada pelo usuário {{painelExecucaoOS.nomeFuncionarioPausaGeralAtual}}</p> 
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-adicionar-funcionario [listaMecanicoActive]="activeMechanicsList" [funcionarios]="funcionarios" [hidden]="painelExecucaoOS.status !=0"></app-adicionar-funcionario>
+<app-lista-mecanicos (valueChange)="handleValueUpdated($event)" [funcionarios]="funcionarios" [hidden]="painelExecucaoOS.status !=0"></app-lista-mecanicos> 
